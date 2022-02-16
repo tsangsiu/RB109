@@ -9,5 +9,6 @@
 ## List of Problems Solved
 | Date | Problem |
 | --- | --- |
-| 20220216 | [Study Session] Sum of Integers in a String |
+| 20220216 | [#1, Codewars] [Count Letters in a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/202202176B.rb) |
+| 20220216 | [Study Session] [Sum of Integers in a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220216.rb) |
 | 20220215 | [#1, Medium 2] [Longest Sentence](https://github.com/tsangsiu/RB101_Programming_Foundations/blob/main/Small_Problems/12_Medium_2/01.rb) |
