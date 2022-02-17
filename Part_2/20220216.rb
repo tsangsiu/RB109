@@ -24,7 +24,7 @@ p sum_of_integers("The30quick20brown10f0x1203jumps914ov3r1349the102l4zy dog") ==
 p sum_of_integers("HELLO WORLD!") == 0
 p sum_of_integers("HELLO WORLD77!") == 77
 
-Algorithm:
+Data Structures:
 - input: string
 - intermediate**: array
 - output: integer
