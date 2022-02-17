@@ -9,6 +9,7 @@
 ## List of Problems Solved
 | Date | Problem | Remark |
 | --- | --- | --- |
+| 20220217C | [#4, Codewars] [Alphabet Symmetry](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220217C.rb) |
 | 20220217B | [#3, Codewars] [Return Substring Instance Count](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220217B.rb) | :star: |
 | 20220217 | [#2, Codewars] [Find All Pairs](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220217.rb) | :star: |
 | 20220216B | [#1, Codewars] [Count Letters in a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220216B.rb) |
