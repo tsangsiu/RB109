@@ -9,6 +9,7 @@
 ## List of Problems Solved
 | Date | Problem | Remark |
 | --- | --- | --- |
+| 20220218 | [#5, Codewars] [Longest Vowel Chain](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220217C.rb) |
 | 20220217C | [#4, Codewars] [Alphabet Symmetry](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220217C.rb) |
 | 20220217B | [#3, Codewars] [Return Substring Instance Count](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220217B.rb) | :star: |
 | 20220217 | [#2, Codewars] [Find All Pairs](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220217.rb) | :star: |
@@ -17,6 +18,24 @@
 | 20220215 | [#1, Medium 2] [Longest Sentence](https://github.com/tsangsiu/RB101_Programming_Foundations/blob/main/Small_Problems/12_Medium_2/01.rb) |
 
 ## Notes
+
+### 20220218
+#### `Array#each` and `String#each_char`
+I used to use both `String#split` and `Array#each` to iterate through each character. I could've used only `String#each_char` instead.
+````ruby
+str = 'ABC'
+str.split('').each do |char|
+  puts char
+end
+# => A B C
+
+str = 'ABC'
+str.each_char do |char|
+  puts char
+end
+# => A B C
+````
+
 
 ### 20220217B
 #### `String#count` vs `String#scan`
