@@ -9,7 +9,8 @@
 ## List of Problems Solved
 | Date | Problem | Remark |
 | --- | --- | --- |
-| 20220218 | [#5, Codewars] [Longest Vowel Chain](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220217C.rb) |
+| 20220218B | [#6, Codewars] [Non-Even Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220218B.rb) |
+| 20220218 | [#5, Codewars] [Longest Vowel Chain](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220218.rb) |
 | 20220217C | [#4, Codewars] [Alphabet Symmetry](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220217C.rb) |
 | 20220217B | [#3, Codewars] [Return Substring Instance Count](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220217B.rb) | :star: |
 | 20220217 | [#2, Codewars] [Find All Pairs](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220217.rb) | :star: |
@@ -19,6 +20,10 @@
 
 ## Notes
 
+### 20220218B
+#### Substrings
+- A substring of the original string must be consecutive.
+- For example, `"1"`, `"134"` and `"1341"` are substrings of `"1341"`, while `"11"` and `"113"` are not.
 ### 20220218
 #### `Array#each` and `String#each_char`
 I used to use both `String#split` and `Array#each` to iterate through each character. I could've used only `String#each_char` instead.
