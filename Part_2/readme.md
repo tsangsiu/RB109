@@ -9,6 +9,7 @@
 ## List of Problems Solved
 | Date | Problem | Remark |
 | --- | --- | --- |
+| 20220221 | [#9, Codewars] [Typoglycemia Generator](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220221.rb) | :star::star:
 | 20220220 | [#8, Codewars] [Repeated Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220220.rb) | :star:
 | 20220219 | [#7, Codewars] [Substring Fun](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220219.rb) |
 | 20220218B | [#6, Codewars] [Non-Even Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220218B.rb) |
@@ -21,6 +22,22 @@
 | 20220215 | [#1, Medium 2] [Longest Sentence](https://github.com/tsangsiu/RB101_Programming_Foundations/blob/main/Small_Problems/12_Medium_2/01.rb) |
 
 ## Notes
+
+### 20220221
+#### `Array#delete` and `Array#delete_at`
+- `Array#delete` deletes all elements as specified by the argument.
+````ruby
+array = [1, 2, 2, 3]
+array.delete(2) # => returns 2
+array # => [1, 3]
+````
+- `Array#delete_at` deletes the element at the specified position.
+````ruby
+array = [1, 2, 2, 3]
+array.delete_at(2) # => returns 2
+array # => [1, 2, 3]
+````
+- Both the above methods are destructive.
 
 ### 20220218B
 #### Substrings
