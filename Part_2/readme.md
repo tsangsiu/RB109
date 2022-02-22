@@ -9,6 +9,7 @@
 ## List of Problems Solved
 | Date | Problem | Remark |
 | --- | --- | --- |
+| 20220222 | [#10, Codewars] [Most Frequently Used Words in a Text](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220222.rb) | :star::star::star:
 | 20220221 | [#9, Codewars] [Typoglycemia Generator](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220221.rb) | :star::star:
 | 20220220 | [#8, Codewars] [Repeated Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220220.rb) | :star:
 | 20220219 | [#7, Codewars] [Substring Fun](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220219.rb) |
@@ -22,6 +23,20 @@
 | 20220215 | [#1, Medium 2] [Longest Sentence](https://github.com/tsangsiu/RB101_Programming_Foundations/blob/main/Small_Problems/12_Medium_2/01.rb) |
 
 ## Notes
+
+### 20220222
+#### Regular Expressions
+````ruby
+# to split at non-alphabets and non-apostrophes
+"I won't give up".split(/[^a-zA-Z']/) # => ["I", "won't", "give", "up"]
+
+# to check if a string is purely apostrophes
+"'''''".match?(/'+/) # true
+"  '  ".match?(/'+/) # true
+
+"'''''".match?(/^'+$/) # true
+"  '  ".match?(/^'+$/) # false
+````
 
 ### 20220221
 #### `Array#delete` and `Array#delete_at`
