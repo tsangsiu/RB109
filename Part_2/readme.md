@@ -9,6 +9,7 @@
 ## List of Problems Solved
 | Date | Problem | Remark |
 | --- | --- | --- |
+| 20220223 | [Study Session (Advanced)] [Maximum Occurrence of Elements in an Array](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220223.rb) |
 | 20220222 | [#10, Codewars] [Most Frequently Used Words in a Text](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220222.rb) | :star::star::star:
 | 20220221 | [#9, Codewars] [Typoglycemia Generator](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220221.rb) | :star::star:
 | 20220220 | [#8, Codewars] [Repeated Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220220.rb) | :star:
@@ -31,11 +32,11 @@
 "I won't give up".split(/[^a-zA-Z']/) # => ["I", "won't", "give", "up"]
 
 # to check if a string is purely apostrophes
-"'''''".match?(/'+/) # true
-"  '  ".match?(/'+/) # true
+"'''''".match?(/'+/) # => true
+"  '  ".match?(/'+/) # => true
 
-"'''''".match?(/^'+$/) # true
-"  '  ".match?(/^'+$/) # false
+"'''''".match?(/^'+$/) # => true
+"  '  ".match?(/^'+$/) # => false
 ````
 
 ### 20220221
