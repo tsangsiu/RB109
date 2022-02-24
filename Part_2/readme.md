@@ -9,6 +9,7 @@
 ## List of Problems Solved
 | Date | Problem | Remark |
 | --- | --- | --- |
+| 20220224 | [#11, Codewars] [Extract the Domain Name From a URL](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220224.rb) | :star:
 | 20220223 | [Study Session (Advanced)] [Maximum Occurrence of Elements in an Array](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220223.rb) |
 | 20220222 | [#10, Codewars] [Most Frequently Used Words in a Text](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220222.rb) | :star::star::star:
 | 20220221 | [#9, Codewars] [Typoglycemia Generator](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220221.rb) | :star::star:
@@ -24,6 +25,14 @@
 | 20220215 | [#1, Medium 2] [Longest Sentence](https://github.com/tsangsiu/RB101_Programming_Foundations/blob/main/Small_Problems/12_Medium_2/01.rb) |
 
 ## Notes
+
+### 20220224
+#### `String#split` with Regular Expressions
+````ruby
+str = 'abc.def/ghi?'
+str.split(/\.|\/|\?/) # => ["abc", "def", "ghi"]
+str.split(/(\.)|(\/)|(\?)/) # => ["abc", ".", "def", "/", "ghi", "?"], why?
+````
 
 ### 20220222
 #### Regular Expressions
