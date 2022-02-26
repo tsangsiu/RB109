@@ -9,8 +9,9 @@
 ## List of Problems Solved
 | Date | Problem | Remark |
 | --- | --- | --- |
-| 20220225 | [#13, Codewars] [Kebabize](https://github.com/tsangsiu/RB109/blob/main/Part_2/2022025.rb) |
-| 20220224B | [#12, Codewars] [Detect Pangram](https://github.com/tsangsiu/RB109/blob/main/Part_2/2022024B.rb) |
+| 20220226 | [#14, Codewars] [Dubstep](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220226.rb) |
+| 20220225 | [#13, Codewars] [Kebabize](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220225.rb) |
+| 20220224B | [#12, Codewars] [Detect Pangram](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220224B.rb) |
 | 20220224 | [#11, Codewars] [Extract the Domain Name From a URL](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220224.rb) | :star:
 | 20220223 | [Study Session (Advanced)] [Maximum Occurrence of Elements in an Array](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220223.rb) |
 | 20220222 | [#10, Codewars] [Most Frequently Used Words in a Text](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220222.rb) | :star::star::star:
