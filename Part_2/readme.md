@@ -9,6 +9,7 @@
 ## List of Problems Solved
 | Date | Problem | Remark |
 | --- | --- | --- |
+| 20220228 | [#16, Codewars] [Stop gninnipS My sdroW!](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220228.rb) |
 | 20220227 | [#15, Codewars] [Take a Ten-Minute Walk](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220227.rb) | :star:
 | 20220226 | [#14, Codewars] [Dubstep](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220226.rb) |
 | 20220225 | [#13, Codewars] [Kebabize](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220225.rb) |
