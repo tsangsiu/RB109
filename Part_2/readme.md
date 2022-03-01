@@ -9,6 +9,7 @@
 ## List of Problems Solved
 | Date | Problem | Remark |
 | --- | --- | --- |
+| 20220302 | [#18, Codewars] [Persistent Bugger](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220302.rb) |
 | 20220301 | [#17, Codewars] [Write Number in Expanded Form](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220301.rb) |
 | 20220228 | [#16, Codewars] [Stop gninnipS My sdroW!](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220228.rb) |
 | 20220227 | [#15, Codewars] [Take a Ten-Minute Walk](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220227.rb) | :star:
