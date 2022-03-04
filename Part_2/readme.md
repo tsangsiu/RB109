@@ -9,6 +9,7 @@
 ## List of Problems Solved
 | Date | Problem | Remark |
 | --- | --- | --- |
+| 20220304 | [#20, Codewars] [Count and Group Character Occurrences in a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220304.rb) | :star::star::star:
 | 20220303 | [#19, Codewars] [Title Case](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220303.rb) |
 | 20220302 | [#18, Codewars] [Persistent Bugger](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220302.rb) |
 | 20220301 | [#17, Codewars] [Write Number in Expanded Form](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220301.rb) |
