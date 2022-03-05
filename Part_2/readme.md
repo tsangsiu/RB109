@@ -9,6 +9,7 @@
 ## List of Problems Solved
 | Date | Problem | Remark |
 | --- | --- | --- |
+| 20220305 | [#21, Codewars] [Find the Mine!](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220305.rb) |
 | 20220304 | [#20, Codewars] [Count and Group Character Occurrences in a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220304.rb) | :star::star::star:
 | 20220303 | [#19, Codewars] [Title Case](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220303.rb) |
 | 20220302 | [#18, Codewars] [Persistent Bugger](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220302.rb) |
