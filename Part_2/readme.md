@@ -9,6 +9,7 @@
 ## List of Problems Solved
 | Date | Problem | Remark |
 | --- | --- | --- |
+| 20220307 | [#23, Codewars] [Longest Alphabetical Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220307.rb) | :star::star::star:
 | 20220306 | [#22, Codewars] [Scramblies](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220306.rb) |
 | 20220305 | [#21, Codewars] [Find the Mine!](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220305.rb) |
 | 20220304 | [#20, Codewars] [Count and Group Character Occurrences in a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220304.rb) | :star::star::star:
@@ -36,6 +37,14 @@
 | 20220215 | [#1, Medium 2] [Longest Sentence](https://github.com/tsangsiu/RB101_Programming_Foundations/blob/main/Small_Problems/12_Medium_2/01.rb) |
 
 ## Notes
+
+### 20220307
+#### `Enumerable#max_by` and `Enumerable#min_by`
+- `Enumerable#max_by` and `Enumerable#min_by` return only the first object for which the block returns a truthy value.
+````ruby
+strings = ['a', 'boy', 'car', 'toy']
+strings.max_by { |str| str.length } # => 'boy'
+````
 
 ### 20220224
 #### `String#split` with Regular Expressions
