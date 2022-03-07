@@ -62,7 +62,7 @@ def longest(str)
   end
 
   output = outputs.max_by { |substr| substr.length }
-  outputs
+  output
 end
 
 p longest('asasd') == 'as'
