@@ -9,6 +9,7 @@
 ## List of Problems Solved
 | Date | Problem | Remark |
 | --- | --- | --- |
+| 20220308 | [#24, Codewars] [The Hashtag Generator](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220308.rb) |
 | 20220307 | [#23, Codewars] [Longest Alphabetical Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220307.rb) | :star::star::star:
 | 20220306 | [#22, Codewars] [Scramblies](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220306.rb) |
 | 20220305 | [#21, Codewars] [Find the Mine!](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220305.rb) |
