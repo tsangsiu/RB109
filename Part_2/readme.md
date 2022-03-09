@@ -1,14 +1,18 @@
 # PEDAC Practice
 
 ## Problem Lists
+
 - [Codewars Practice Problems](https://docs.google.com/document/d/1usQUJQFr6PGVo3ZWgMi3nVtDRdeUuOUNRtZPtSKkYuE/edit#heading=h.8sf25q8ccj8w) by Christian Larwood
 
 ## Resources
+
 - [Study Guide Companion Materials](https://docs.google.com/document/d/1DmmqXC1GLADlFoFmvIeZmvvLnO-wP3cPmPvjIe5vbEw/edit) by Megan Turley
 
 ## List of Problems Solved
+
 | Date | Problem | Remark |
 | --- | --- | --- |
+| 20220309 | [Study Session (Advanced)] [Maximum Occurrence of Elements in an Array](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220309.rb) |
 | 20220308 | [#24, Codewars] [The Hashtag Generator](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220308.rb) |
 | 20220307 | [#23, Codewars] [Longest Alphabetical Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220307.rb) | :star::star::star:
 | 20220306 | [#22, Codewars] [Scramblies](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220306.rb) |
@@ -39,16 +43,43 @@
 
 ## Notes
 
+### 20220309
+
+#### `Enumerable#each_with_index` and [`Enumerator#with_index`](https://ruby-doc.org/core-2.5.0/Enumerator.html#method-i-with_index)
+
+- The `with_index` method takes an optional parameter to offset the starting index. The `each_with_index` does the same thing, but has no optional starting index.
+
+````ruby
+[:foo, :bar, :baz].each.with_index(2) do |value, index|
+    puts "#{index}: #{value}"
+end
+# => 2: foo
+# => 3: bar
+# => 4: baz
+
+[:foo, :bar, :baz].each_with_index do |value, index|
+    puts "#{index}: #{value}"
+end
+# => 0: foo
+# => 1: bar
+# => 2: baz
+````
+
 ### 20220307
+
 #### `Enumerable#max_by` and `Enumerable#min_by`
+
 - `Enumerable#max_by` and `Enumerable#min_by` return only the first object for which the block returns a truthy value.
+
 ````ruby
 strings = ['a', 'boy', 'car', 'toy']
 strings.max_by { |str| str.length } # => 'boy'
 ````
 
 ### 20220224
+
 #### `String#split` with Regular Expressions
+
 ````ruby
 str = 'abc.def/ghi?'
 str.split(/\.|\/|\?/) # => ["abc", "def", "ghi"]
@@ -56,7 +87,9 @@ str.split(/(\.)|(\/)|(\?)/) # => ["abc", ".", "def", "/", "ghi", "?"], why?
 ````
 
 ### 20220222
+
 #### Regular Expressions
+
 ````ruby
 # to split at non-alphabets and non-apostrophes
 "I won't give up".split(/[^a-zA-Z']/) # => ["I", "won't", "give", "up"]
@@ -70,28 +103,40 @@ str.split(/(\.)|(\/)|(\?)/) # => ["abc", ".", "def", "/", "ghi", "?"], why?
 ````
 
 ### 20220221
+
 #### `Array#delete` and `Array#delete_at`
+
 - `Array#delete` deletes all elements as specified by the argument.
+
 ````ruby
 array = [1, 2, 2, 3]
 array.delete(2) # => returns 2
 array # => [1, 3]
 ````
+
 - `Array#delete_at` deletes the element at the specified position.
+
 ````ruby
 array = [1, 2, 2, 3]
 array.delete_at(2) # => returns 2
 array # => [1, 2, 3]
 ````
+
 - Both the above methods are destructive.
 
 ### 20220218B
+
 #### Substrings
+
 - A substring of the original string must be consecutive.
 - For example, `"1"`, `"134"` and `"1341"` are substrings of `"1341"`, while `"11"` and `"113"` are not.
+
 ### 20220218
+
 #### `Array#each` and `String#each_char`
+
 I used to use both `String#split` and `Array#each` to iterate through each character. I could've used only `String#each_char` instead.
+
 ````ruby
 str = 'ABC'
 str.split('').each do |char|
@@ -106,10 +151,12 @@ end
 # => A B C
 ````
 
-
 ### 20220217B
+
 #### `String#count` vs `String#scan`
-- `String#count` counts the intersection of sets defined by the arguments.
+
+- `String#count` counts the intersection of sets defined by the arguments..
+
 ````ruby
 # count the number of 'b' ({'b', 'b'} = {'b'})
 'abbc'.count('bb') # => 2
@@ -120,7 +167,9 @@ end
 # count the number of non-'b'
 'abbc'.count('^b') # => 2
 ````
+
 - `String#scan`, however, returns an array of substrings which match the given pattern.
+
 ````ruby
 'abbc'.scan('bb') # => ["bb"]
 'abbc'.scan(/bb/) # => ["bb"]
