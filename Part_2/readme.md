@@ -12,6 +12,7 @@
 
 | Date | Problem | Remark |
 | --- | --- | --- |
+| 20220309B | [#25, Codewars] [Pete, the Baker](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220309B.rb) |
 | 20220309 | [Study Session (Advanced)] [Maximum Occurrence of Elements in an Array](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220309.rb) |
 | 20220308 | [#24, Codewars] [The Hashtag Generator](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220308.rb) |
 | 20220307 | [#23, Codewars] [Longest Alphabetical Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220307.rb) | :star::star::star:
@@ -47,18 +48,18 @@
 
 #### `Enumerable#each_with_index` and [`Enumerator#with_index`](https://ruby-doc.org/core-2.5.0/Enumerator.html#method-i-with_index)
 
-- The `with_index` method takes an optional parameter to offset the starting index. The `each_with_index` does the same thing, but has no optional starting index.
+- The `with_index` method takes an optional parameter to offset the starting index. `each_with_index` does the same thing, but has no optional starting index.
 
 ````ruby
 [:foo, :bar, :baz].each.with_index(2) do |value, index|
-    puts "#{index}: #{value}"
+  puts "#{index}: #{value}"
 end
 # => 2: foo
 # => 3: bar
 # => 4: baz
 
 [:foo, :bar, :baz].each_with_index do |value, index|
-    puts "#{index}: #{value}"
+  puts "#{index}: #{value}"
 end
 # => 0: foo
 # => 1: bar
