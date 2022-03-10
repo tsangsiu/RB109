@@ -12,6 +12,7 @@
 
 | Date | Problem | Remark |
 | --- | --- | --- |
+| 20220310 | [#26, Codewars] [Mean Square Error](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220310.rb) |
 | 20220309B | [#25, Codewars] [Pete, the Baker](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220309B.rb) |
 | 20220309 | [Study Session (Advanced)] [Maximum Occurrence of Elements in an Array](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220309.rb) |
 | 20220308 | [#24, Codewars] [The Hashtag Generator](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220308.rb) |
@@ -43,6 +44,18 @@
 | 20220215 | [#1, Medium 2] [Longest Sentence](https://github.com/tsangsiu/RB101_Programming_Foundations/blob/main/Small_Problems/12_Medium_2/01.rb) |
 
 ## Notes
+
+### 20220310
+
+#### `Integer` and `Float`
+
+- Objects from different classes can be equal?
+
+````ruby
+9.class # => Integer
+9.0.class # => Float
+9 == 9.0 # => true
+````
 
 ### 20220309
 
