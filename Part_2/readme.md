@@ -12,6 +12,7 @@
 
 | Date | Problem | Remark |
 | --- | --- | --- |
+| 20220311 | [#27, Codewars] [Exponent Method](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220311.rb) |
 | 20220310 | [#26, Codewars] [Mean Square Error](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220310.rb) |
 | 20220309B | [#25, Codewars] [Pete, the Baker](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220309B.rb) |
 | 20220309 | [Study Session (Advanced)] [Maximum Occurrence of Elements in an Array](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220309.rb) |
