@@ -1,49 +1,59 @@
-# PEDAC Practice
+# Interview Assessment
 
-## Problem Lists
+## Codewars
 
-- [Codewars Practice Problems](https://docs.google.com/document/d/1usQUJQFr6PGVo3ZWgMi3nVtDRdeUuOUNRtZPtSKkYuE/edit#heading=h.8sf25q8ccj8w) by Christian Larwood
+- [Practice Problems](https://docs.google.com/document/d/1usQUJQFr6PGVo3ZWgMi3nVtDRdeUuOUNRtZPtSKkYuE/edit#heading=h.8sf25q8ccj8w)
+
+| # | Problem | Remark |
+| --- | --- | --- |
+| 28 | [Where My Anagrams At?](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/28.rb) |
+| 27 | [Exponent Method](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/27.rb) |
+| 26 | [Mean Square Error](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/26.rb) |
+| 25 | [Pete, the Baker](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/25.rb) |
+| 24 | [The Hashtag Generator](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/24.rb) |
+| 23 | [Longest Alphabetical Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/23.rb) | :star::star::star:
+| 22 | [Scramblies](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/22.rb) |
+| 21 | [Find the Mine!](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/21.rb) |
+| 20 | [Count and Group Character Occurrences in a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/20.rb) | :star::star::star:
+| 19 | [Title Case](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/19.rb) |
+| 18 | [Persistent Bugger](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/18.rb) |
+| 17 | [Write Number in Expanded Form](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/17.rb) |
+| 16 | [Stop gninnipS My sdroW!](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/16.rb) |
+| 15 | [Take a Ten-Minute Walk](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/15.rb) | :star:
+| 14 | [Dubstep](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/14.rb) |
+| 13 | [Kebabize](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/13.rb) |
+| 12 | [Detect Pangram](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/12.rb) |
+| 11 | [Extract the Domain Name From a URL](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/11.rb) | :star:
+| 10 | [Most Frequently Used Words in a Text](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/10.rb) | :star::star::star:
+| 9 | [Typoglycemia Generator](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/09.rb) | :star::star:
+| 8 | [Repeated Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/08.rb) | :star:
+| 7 | [Substring Fun](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/07.rb) |
+| 6 | [Non-Even Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/06.rb) |
+| 5 | [Longest Vowel Chain](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/05.rb) |
+| 4 | [Alphabet Symmetry](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/04.rb) |
+| 3 | [Return Substring Instance Count](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/03.rb)| :star:
+| 2 | [Find All Pairs](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/02.rb) | :star:
+| 1 | [Count Letters in a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/01.rb) |
+
+## RB101-RB109 - Small Problems
+
+### Medium 1
+
+| # | Problem | Remark |
+| --- | --- | --- |
+| 1 | [Longest Sentence](https://github.com/tsangsiu/RB101_Programming_Foundations/blob/main/Small_Problems/12_Medium_2/01.rb) |
+
+## Study Sessions
+
+| Date | Problem | Remark |
+| --- | --- | --- |
+| 20220309 | [Maximum Occurrence of Elements in an Array](https://github.com/tsangsiu/RB109/blob/main/Part_2/Study_Sessions/20220309.rb) |
+| 20220223 | [Maximum Occurrence of Elements in an Array](https://github.com/tsangsiu/RB109/blob/main/Part_2/Study_Sessions/20220223.rb) |
+| 20220216 | [Sum of Integers in a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Study_Sessions/20220216.rb) |
 
 ## Resources
 
 - [Study Guide Companion Materials](https://docs.google.com/document/d/1DmmqXC1GLADlFoFmvIeZmvvLnO-wP3cPmPvjIe5vbEw/edit) by Megan Turley
-
-## List of Problems Solved
-
-| # | Date | Problem | Remark |
-| --- | --- | --- | --- |
-| 28 | | [Where My Anagrams At?](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/28.rb) |
-| 27 | | [Exponent Method](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/27.rb) |
-|| 20220310 | [#26, Codewars] [Mean Square Error](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220310.rb) |
-|| 20220309B | [#25, Codewars] [Pete, the Baker](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220309B.rb) |
-|| 20220309 | [Study Session (Advanced)] [Maximum Occurrence of Elements in an Array](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220309.rb) |
-|| 20220308 | [#24, Codewars] [The Hashtag Generator](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220308.rb) |
-|| 20220307 | [#23, Codewars] [Longest Alphabetical Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220307.rb) | :star::star::star:
-|| 20220306 | [#22, Codewars] [Scramblies](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220306.rb) |
-|| 20220305 | [#21, Codewars] [Find the Mine!](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220305.rb) |
-|| 20220304 | [#20, Codewars] [Count and Group Character Occurrences in a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220304.rb) | :star::star::star:
-|| 20220303 | [#19, Codewars] [Title Case](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220303.rb) |
-|| 20220302 | [#18, Codewars] [Persistent Bugger](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220302.rb) |
-|| 20220301 | [#17, Codewars] [Write Number in Expanded Form](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220301.rb) |
-|| 20220228 | [#16, Codewars] [Stop gninnipS My sdroW!](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220228.rb) |
-|| 20220227 | [#15, Codewars] [Take a Ten-Minute Walk](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220227.rb) | :star:
-|| 20220226 | [#14, Codewars] [Dubstep](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220226.rb) |
-|| 20220225 | [#13, Codewars] [Kebabize](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220225.rb) |
-|| 20220224B | [#12, Codewars] [Detect Pangram](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220224B.rb) |
-|| 20220224 | [#11, Codewars] [Extract the Domain Name From a URL](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220224.rb) | :star:
-|| 20220223 | [Study Session (Advanced)] [Maximum Occurrence of Elements in an Array](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220223.rb) |
-|| 20220222 | [#10, Codewars] [Most Frequently Used Words in a Text](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220222.rb) | :star::star::star:
-|| 20220221 | [#9, Codewars] [Typoglycemia Generator](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220221.rb) | :star::star:
-|| 20220220 | [#8, Codewars] [Repeated Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220220.rb) | :star:
-|| 20220219 | [#7, Codewars] [Substring Fun](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220219.rb) |
-|| 20220218B | [#6, Codewars] [Non-Even Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220218B.rb) |
-|| 20220218 | [#5, Codewars] [Longest Vowel Chain](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220218.rb) |
-|| 20220217C | [#4, Codewars] [Alphabet Symmetry](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220217C.rb) |
-|| 20220217B | [#3, Codewars] [Return Substring Instance Count](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220217B.rb) | :star: |
-|| 20220217 | [#2, Codewars] [Find All Pairs](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220217.rb) | :star: |
-|| 20220216B | [#1, Codewars] [Count Letters in a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220216B.rb) |
-|| 20220216 | [Study Session] [Sum of Integers in a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/20220216.rb) |
-|| 20220215 | [#1, Medium 2] [Longest Sentence](https://github.com/tsangsiu/RB101_Programming_Foundations/blob/main/Small_Problems/12_Medium_2/01.rb) |
 
 ## Notes
 
