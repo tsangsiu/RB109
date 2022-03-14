@@ -6,6 +6,7 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
+| 30 | [Anagram Difference](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/30.rb) |
 | 29 | [Split Strings](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/29.rb) |
 | 28 | [Where My Anagrams At?](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/28.rb) |
 | 27 | [Exponent Method](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/27.rb) |
@@ -57,6 +58,29 @@
 - [Study Guide Companion Materials](https://docs.google.com/document/d/1DmmqXC1GLADlFoFmvIeZmvvLnO-wP3cPmPvjIe5vbEw/edit) by Megan Turley
 
 ## Notes
+
+### 20220314
+
+#### Ways to Remove a Character from a String: `String#delete`, `String#gsub` and `String#sub`
+
+- `String#delete` and `String#gsub` remove all characters as specified by the argument.
+
+````ruby
+str = "abcabcabc"
+str.delete("a") # => "bcbcbc"
+str # => "abcabcabc" (String#delete is not destructive)
+
+str = "abcabcabc"
+str.gsub("a", "") # => "bcbcbc"
+str # => "abcabcabc"
+````
+
+- `String#sub` removes the first occurrence of the character as specified by the argument.
+
+````ruby
+str = "abcabcabc"
+str.sub("a", "") # => "bcabcabc"
+````
 
 ### 20220310
 
