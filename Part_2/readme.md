@@ -6,6 +6,7 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
+| 31 | [Anagram Detection](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/31.rb) |
 | 30 | [Anagram Difference](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/30.rb) |
 | 29 | [Split Strings](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/29.rb) |
 | 28 | [Where My Anagrams At?](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/28.rb) |
