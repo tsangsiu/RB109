@@ -6,6 +6,7 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
+| 32 | [Highest Scoring Word](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/32.rb) | :star::star:
 | 31 | [Anagram Detection](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/31.rb) |
 | 30 | [Anagram Difference](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/30.rb) |
 | 29 | [Split Strings](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/29.rb) |
@@ -59,6 +60,16 @@
 - [Study Guide Companion Materials](https://docs.google.com/document/d/1DmmqXC1GLADlFoFmvIeZmvvLnO-wP3cPmPvjIe5vbEw/edit) by Megan Turley
 
 ## Notes
+
+### 20220316
+
+#### `Enumerable#each_with_object`
+
+You can't use immutable objects like numbers, `true` or `false` as the memo.
+
+````ruby
+(1..5).each_with_object(1) { |value, memo| memo *= value } # => 1
+````
 
 ### 20220314
 
