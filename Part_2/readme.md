@@ -6,6 +6,7 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
+| 36 | [Delete a Digit](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/36.rb) |
 | 35 | [Mexican Wave](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/35.rb) |
 | 34 | |
 | 33 | [Replace with Alphabet Position](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/33.rb) |
