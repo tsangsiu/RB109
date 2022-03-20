@@ -6,6 +6,7 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
+| 37 | [Multiples of 3 and 5](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/37.rb) |
 | 36 | [Delete a Digit](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/36.rb) |
 | 35 | [Mexican Wave](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/35.rb) |
 | 34 | |
