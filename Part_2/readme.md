@@ -66,6 +66,27 @@
 
 ## Notes
 
+### 20220321
+
+#### Splitting a String at a Word Boundary
+
+````ruby
+"Input Example".split # => ["Input", "Example"]
+"Input Example".split(/\b/) # => ["Input", " ", "Example"]
+
+"  Input   Example  ".split # => ["Input", "Example"]
+"  Input   Example  ".split(/\b/) # => ["  ", "Input", "   ", "Example", "  "]
+
+"How are you?".split # => ["How", "are", "you?"]
+"How are you?".split(/\b/) # => ["How", " ", "are", " ", "you", "?"]
+````
+
+#### `String#swapcase`
+
+````ruby
+"How are you?".swapcase # => "hOW ARE YOU?"
+````
+
 ### 20220316
 
 #### `Enumerable#each_with_object`
