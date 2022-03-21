@@ -6,6 +6,7 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
+| 39 | [Largest Product in a Series](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/39.rb) |
 | 38 | [String Transformer](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/38.rb) | :star::star:
 | 37 | [Multiples of 3 and 5](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/37.rb) |
 | 36 | [Delete a Digit](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/36.rb) |
@@ -66,6 +67,13 @@
 - [Study Guide Companion Materials](https://docs.google.com/document/d/1DmmqXC1GLADlFoFmvIeZmvvLnO-wP3cPmPvjIe5vbEw/edit) by Megan Turley
 
 ## Notes
+
+### 20220322
+
+#### `Enumerable#inject` and `Enumerable#reduce`
+
+- They are aliases.
+- [Reference](https://medium.com/@terrancekoar/inject-method-explained-ed531eff9af8)
 
 ### 20220321
 
