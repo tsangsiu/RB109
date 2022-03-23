@@ -6,6 +6,7 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
+| 40 | [Duplicate Encoder](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/40.rb) |
 | 39 | [Largest Product in a Series](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/39.rb) |
 | 38 | [String Transformer](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/38.rb) | :star::star:
 | 37 | [Multiples of 3 and 5](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/37.rb) |
