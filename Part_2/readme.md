@@ -6,6 +6,7 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
+| 42 | [Sort Arrays (Ignoring Case)](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/42.rb) |
 | 41 | [Backspaces in String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/41.rb) |
 | 40 | [Duplicate Encoder](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/40.rb) |
 | 39 | [Largest Product in a Series](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/39.rb) |
