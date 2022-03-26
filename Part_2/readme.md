@@ -6,6 +6,7 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
+| 43 | [Transform to Prime](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/43.rb) | :star:
 | 42 | [Sort Arrays (Ignoring Case)](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/42.rb) |
 | 41 | [Backspaces in String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/41.rb) |
 | 40 | [Duplicate Encoder](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/40.rb) |
@@ -70,6 +71,27 @@
 - [Study Guide Companion Materials](https://docs.google.com/document/d/1DmmqXC1GLADlFoFmvIeZmvvLnO-wP3cPmPvjIe5vbEw/edit) by Megan Turley
 
 ## Notes
+
+### 20220326
+
+#### Ways to Determine if a Number is Prime
+
+- Self-Defined Methods
+
+````ruby
+def prime?(int)
+  (2..(int - 1)).none? { |num| int % num == 0 }
+end
+````
+
+- Using the `Prime` Class
+
+````ruby
+require 'prime'
+
+p Prime.prime?(2) # => "true"
+p Prime.prime?(4) # => "false"
+````
 
 ### 20220322
 
