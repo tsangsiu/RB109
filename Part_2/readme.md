@@ -6,6 +6,7 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
+| 45 | [Alphabetized](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/45.rb) | :star::star:
 | 44 | [Counting Duplicates](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/44.rb) |
 | 43 | [Transform to Prime](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/43.rb) | :star:
 | 42 | [Sort Arrays (Ignoring Case)](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/42.rb) |
@@ -72,6 +73,22 @@
 - [Study Guide Companion Materials](https://docs.google.com/document/d/1DmmqXC1GLADlFoFmvIeZmvvLnO-wP3cPmPvjIe5vbEw/edit) by Megan Turley
 
 ## Notes
+
+### 20220328
+
+#### `Enumerable#sort_by`
+
+- The result is not quaranteed to be stable. When two keys are equal, the order of the corresponding elements is unpredictable.
+
+````ruby
+"A b B a".delete("^a-zA-Z").chars.sort_by(&:downcase)
+# => ["A", "a", "b", "B"]
+# Note the "b" and "B", they follow the order in the original string.
+
+"The Holy Bible".delete("^a-zA-Z").chars.sort_by(&:downcase)
+# => ["B", "b", "e", "e", "H", "h", "i", "l", "l", "o", "T", "y"]
+# Note the "H" and "h", they do not follow the order in the original string.
+````
 
 ### 20220326
 
