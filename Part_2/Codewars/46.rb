@@ -2,8 +2,8 @@
 
 Problem
 Rules/Requirements
-- Given a number, find its digit root.
-- A digit root is the recursive sum of all digits in a number.
+- Given a number, find its digital root.
+- A digital root is the recursive sum of all digits in a number.
 - Given n, take the sum of the digits of n.
 - If that value has more than one digit, continue reducing in this way until a single-digit number is porduced.
 - The input will only be natural numbers
@@ -11,10 +11,10 @@ Input: Integer
 Output: Integer
 
 Examples
-p digit_root(16) == 7
-p digit_root(942) == 6
-p digit_root(132189) == 6
-p digit_root(493193) == 2
+p digital_root(16) == 7
+p digital_root(942) == 6
+p digital_root(132189) == 6
+p digital_root(493193) == 2
 
 Data Structure
 - Input: Integer
@@ -30,12 +30,12 @@ Algorithm
 
 =end
 
-def digit_root(n)
+def digital_root(n)
   sum = n.to_s.split('').map(&:to_i).sum
-  sum.to_s.length == 1 ? (return sum) : digit_root(sum)
+  sum.to_s.length == 1 ? (return sum) : digital_root(sum)
 end
 
-p digit_root(16) == 7
-p digit_root(942) == 6
-p digit_root(132189) == 6
-p digit_root(493193) == 2
+p digital_root(16) == 7
+p digital_root(942) == 6
+p digital_root(132189) == 6
+p digital_root(493193) == 2

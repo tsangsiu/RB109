@@ -6,7 +6,7 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
-| 46 | [Sum of Digits / Digit Root](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/46.rb) | Recursion
+| 46 | [Sum of Digits / Digital Root](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/46.rb) | Recursion
 | 45 | [Alphabetized](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/45.rb) | :star::star:
 | 44 | [Counting Duplicates](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/44.rb) |
 | 43 | [Transform to Prime](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/43.rb) | :star:
@@ -74,6 +74,22 @@
 - [Study Guide Companion Materials](https://docs.google.com/document/d/1DmmqXC1GLADlFoFmvIeZmvvLnO-wP3cPmPvjIe5vbEw/edit) by Megan Turley
 
 ## Notes
+
+### 20220329
+
+#### Splitting Strings and Integers
+
+- `String#chars`
+
+````ruby
+'abc'.chars # => ["a", "b", "c"]
+````
+
+- `Integer#digits`
+
+````ruby
+123.digits # => [3, 2, 1]
+````
 
 ### 20220328
 
