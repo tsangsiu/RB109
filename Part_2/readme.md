@@ -6,6 +6,7 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
+| 46 | [Sum of Digits / Digit Root](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/46.rb) | Recursion
 | 45 | [Alphabetized](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/45.rb) | :star::star:
 | 44 | [Counting Duplicates](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/44.rb) |
 | 43 | [Transform to Prime](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/43.rb) | :star:
