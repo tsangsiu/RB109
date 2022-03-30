@@ -6,6 +6,7 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
+| 47 | [Array.diff](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/47.rb) |
 | 46 | [Sum of Digits / Digital Root](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/46.rb) | Recursion
 | 45 | [Alphabetized](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/45.rb) | :star::star:
 | 44 | [Counting Duplicates](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/44.rb) |
@@ -74,6 +75,22 @@
 - [Study Guide Companion Materials](https://docs.google.com/document/d/1DmmqXC1GLADlFoFmvIeZmvvLnO-wP3cPmPvjIe5vbEw/edit) by Megan Turley
 
 ## Notes
+
+### 20220330
+
+#### `Array#delete` and `String#delete`
+
+- Unlike `String#delete`, `Array#delete` is destructive.
+
+````ruby
+str = "abcabcabc"
+str.delete("a") # => "bcbcbc"
+str # => "abcabcabc"
+
+array = [1, 2, 2, 3]
+array.delete(2) # => returns 2
+array # => [1, 3]
+````
 
 ### 20220329
 
