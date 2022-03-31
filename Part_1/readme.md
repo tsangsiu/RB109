@@ -9,8 +9,8 @@
 | [Local Variable Scope](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#local-variable-scope) | 1 |
 | [Local Variable Scope](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#local-variable-scope) | [2](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#2) | :white_check_mark:
 | [Local Variable Scope](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#local-variable-scope) | [3](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#3) | :white_check_mark:
-| [Local Variable Scope](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#local-variable-scope) | 4 |
-| [Local Variable Scope](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#local-variable-scope) | 5 |
+| [Local Variable Scope](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#local-variable-scope) | [4](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#4) | :white_check_mark:
+| [Local Variable Scope](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#local-variable-scope) | [5](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#5) | :white_check_mark:
 | [Local Variable Scope](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#local-variable-scope) | 6 |
 | [Local Variable Scope](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#local-variable-scope) | 7 |
 | [Local Variable Scope](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#local-variable-scope) | 8 |
