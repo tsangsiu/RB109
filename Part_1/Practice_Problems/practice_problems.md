@@ -58,3 +58,51 @@ On lines 4 to 8, the `do...end` alongside the `loop` method invocation defines a
 On lines 10 to 11, the `puts` methods are called with variables `a` and `b` passed to them as arguments respectively. As `a` and `b` now points to `3` and `2` repspectively, lines 10 and 11 output `3` and `2` respectively and both lines return `nil`.
 
 This code demonstrate the local variable scoping rules in Ruby: local variables initialized outside of a block is accessible inside of the block, but local variables initialized inside of a block is not accessible outside of the block.
+
+### 4
+
+What does the following code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+def example(str)      # 1
+  i = 3               # 2
+  loop do             # 3
+    puts str          # 4
+    i -= 1            # 5
+    break if i == 0   # 6
+  end                 # 7
+end                   # 8
+                      # 9
+example('hello')      # 10
+````
+
+The above code outputs `'hello'` three times and returns `nil`.
+
+On line 10, the method `example` is called with the String `'hello'` pass to it as an argument.
+
+Upon the method invocation of `example`, the method parameter `str` is assigned to the String `'hello'`. Inside the method definition, as defined on lines 1 to 8, the local variable `i` is initialized and assigned to the Integer `3` on line 2. The `do...end` alongside the `loop` method invocation on lines 3 to 7 defines a block, within with the `puts` method is called with variable `str` passed to it as an argument, hencing outputting `'hello'`. The local variable `i` is then reassigned to `i - 1`, which is now `2`. The `do...end` block is executed two more times until `i` reaches `0`. This is why the above code outputs `'hello'` three times. As the last statement in the method definition is `break if i == 0`, the method returns `nil`.
+
+The above code demonstrate method definiton and invocation. The method `example` is defined with an **parameter** `str` on lines 1 to 8, and it is called on line 10 with an **argument** `'hello'` passed to it.
+
+### 5
+
+What does the following code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+def greetings(str)   # 1
+  puts str           # 2
+  puts "Goodbye"     # 3
+end                  # 4
+                     # 5
+word = "Hello"       # 6
+                     # 7
+greetings(word)      # 8
+````
+
+The above code outputs `"Hello"` and `"Goodbye"`, and returns `nil`.
+
+On line 8, the method `greetings` is called with a variable `word` passed to it as an argument.
+
+Upon the method invocation of `greetings`, the method paramter `str` is assigned to the object that `word` is referencing, which is the String `"Hello"`. Inside the method defintion, as defined on lines 1 to 4, the `puts` methods are called with arguments `str` and `"Goodbye"` passed to them on lines 2 and 3 respectively, hencing outputting `"Hello"` and `"Goodbye"`. As the last evaluated statement in the method defintion is `puts "Goodbye"`, the method returns `nil`.
+
+This code demonstrates method defintion and invocation. The method `greetings` is defined with a method **parameter** `str` on lines 1 to 4, and it is called on line 8 with an **argument** `word`. This also demonstrates how local variables defined outside of a method definiton are made available inside of it by passing them into a method as arguements.

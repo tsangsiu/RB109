@@ -14,3 +14,7 @@
 | [Local Variable Scope](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#local-variable-scope) | 6 |
 | [Local Variable Scope](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#local-variable-scope) | 7 |
 | [Local Variable Scope](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#local-variable-scope) | 8 |
+
+## Resources
+
+- Srđan's Blog Series: [1](https://medium.com/how-i-started-learning-coding-from-scratch/advices-for-109-written-assessment-part-1-6f7fa821cf84), [2](https://medium.com/how-i-started-learning-coding-from-scratch/advice-for-109-written-assessment-part-2-594060594f6e), [3](https://medium.com/how-i-started-learning-coding-from-scratch/advice-for-109-written-assessment-part-3-d39dceb06c0c), [4](https://medium.com/how-i-started-learning-coding-from-scratch/advice-for-109-written-assessment-part-4-e205174ece7b)
