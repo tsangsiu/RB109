@@ -109,7 +109,7 @@ This code demonstrates method defintion and invocation. The method `greetings` i
 
 ## `each`, `select`, and `map`
 
-### 1
+### 33
 
 What does the following code return? What does it output? Why? What concept does it demonstrate?
 
@@ -127,7 +127,7 @@ On line 1, the local variable `array` is initialized and assigned to the Array o
 
 This example demonstrates the difference between `puts` and return values. `puts` here outputs the odd numbers to the console, but returns `nil`. Since the block's return value is `nil` for odd numbers, they are not selected. To select odd numbers, we should replace the if-conditional in the block with `num.odd?`. In that case, the output would be `[1, 3, 5]`.
 
-### 2
+### 34
 
 What does the following code return? What does it output? Why? What concept does it demonstrate?
 
@@ -140,5 +140,27 @@ arr.select { |n| n.odd? }                 # 3
 The above code does not output anything to the console, and returns `[1, 3, 5, 7, 9]`.
 
 On line 1, the local variable `arr` is initialized and assigned to the Array object `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`. On line 3, the `select` method is called on `arr` with the block `{ |n| n.odd? }` passed in as an argument. Upon the method invocation of `select`, every element in `arr` is passed into the block. The element is put into a new array for return if the block's return value is truthy for that element. Within the block, the last evaluated expression is `n.odd?`, which returns `true` for odd numbers and `false` for even numbers, and thus all odd numbers in `arr` is selected and returning `[1, 3, 5, 7, 9]`.
+
+This code demonstrates ...?
+
+### 35
+
+What does the following code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]     # 1
+                                          # 2
+new_array = arr.select do |n|             # 3
+  n + 1                                   # 4
+end                                       # 5
+                                          # 6
+p new_array                               # 7
+````
+
+The above code outputs `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]` and returns `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`.
+
+On line 1, the local variable `arr` is initialized and assigned to the Array object `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`. On line 3, the method `select` is called on `arr` and passed in the `do...end` block on lines 3 to 5 as an argument. Upon the invocation of `select`, every element in `arr` is passed into the `do...end` block. The element is put into a new array for return if the block's return value is truthy for that element. For every element in `arr`, it is assigned to the block parameter `n` and runs through the block. As for all `n`, the block's return value is `n + 1` (the last evaluated expression), which is always truthy, all elements in `arr` are selected. The return array `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]` by the `select` method is then assigned to the local varaible `new_array`.
+
+On line 7, the `p` method is invoked and passed in the variable `new_array` as an argument, hencing outputting and returning `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`.
 
 This code demonstrates ...?
