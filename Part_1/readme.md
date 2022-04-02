@@ -4,7 +4,7 @@
 
 - [Practice Problems](https://docs.google.com/document/d/16XteFXEm3lFbcavrXDZs45rNEc1iBxSYC8e4pLhT0Rw/edit#)
 
-# | Topics | Remark |
+| # | Topics | Remark |
 | --- | --- | --- |
 | 1 | [Local Variable Scope](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#local-variable-scope) |
 | [2](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#2) | [Local Variable Scope](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#local-variable-scope) | :white_check_mark:
