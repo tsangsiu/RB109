@@ -123,4 +123,22 @@ end                          # 5
 
 The above code returns an empty array (`[]`), and outputs `1`, `3` and `5`.
 
-On line 1, the local variable `array` is initialized and assigned to the Array object `[1, 2, 3, 4, 5]`. On line 3, the `select` method is called on `array`, and passed in the `do...end` block on lines 3 to 5 as an argument. Upon the method invocation of `select`, every element in `array` runs through the `do...end` block, and is put into a new array for output based on the truthiness of the return value of the `do...end` block. If the element is an odd number, the last evaluated expression is `puts num` and returns `nil`, which is falsy, and thus odd numbers are not selected. If the element is an even number, the conditional on line 4 is not run and thus the block returns `nil`, which is again falsy, and thus even are not selected either. Therefore, no elements are selected and an empty array is returned. For odd numbers, the `puts num` statement on line 4 is run, hence outputting `1`, `3` and `5`.
+On line 1, the local variable `array` is initialized and assigned to the Array object `[1, 2, 3, 4, 5]`. On line 3, the `select` method is called on `array`, and passed in the `do...end` block on lines 3 to 5 as an argument. Upon the method invocation of `select`, every element in `array` runs through the `do...end` block, and is put into a new array for output if the return value of the block is truthy for that element. If the element is an odd number, the last evaluated expression is `puts num` and returns `nil`, which is falsy, and thus odd numbers are not selected. If the element is an even number, the conditional on line 4 is not run and thus the block returns `nil`, which is again falsy, and thus even numbers are not selected either. Therefore, no element in `array` is selected and an empty array is returned. For odd numbers, the `puts num` statement on line 4 is run, hence outputting `1`, `3` and `5`.
+
+This example demonstrates the difference between `puts` and return values. `puts` here outputs the odd numbers to the console, but returns `nil`. Since the block's return value is `nil` for odd numbers, they are not selected. To select odd numbers, we should replace the if-conditional in the block with `num.odd?`. In that case, the output would be `[1, 3, 5]`.
+
+### 2
+
+What does the following code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]     # 1
+                                          # 2
+arr.select { |n| n.odd? }                 # 3
+````
+
+The above code does not output anything to the console, and returns `[1, 3, 5, 7, 9]`.
+
+On line 1, the local variable `arr` is initialized and assigned to the Array object `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`. On line 3, the `select` method is called on `arr` with the block `{ |n| n.odd? }` passed in as an argument. Upon the method invocation of `select`, every element in `arr` is passed into the block. The element is put into a new array for return if the block's return value is truthy for that element. Within the block, the last evaluated expression is `n.odd?`, which returns `true` for odd numbers and `false` for even numbers, and thus all odd numbers in `arr` is selected and returning `[1, 3, 5, 7, 9]`.
+
+This code demonstrates ...?

@@ -14,17 +14,17 @@
 | [Local Variable Scope](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#local-variable-scope) | 6 |
 | [Local Variable Scope](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#local-variable-scope) | 7 |
 | [Local Variable Scope](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#local-variable-scope) | 8 |
-| `each`, `select`, and `map` | 1 | :white_check_mark:
-| `each`, `select`, and `map` | 2 | :white_check_mark:
-| `each`, `select`, and `map` | 3 |
-| `each`, `select`, and `map` | 4 |
-| `each`, `select`, and `map` | 5 |
-| `each`, `select`, and `map` | 6 |
-| `each`, `select`, and `map` | 7 |
-| `each`, `select`, and `map` | 8 |
-| `each`, `select`, and `map` | 9 |
-| `each`, `select`, and `map` | 10 |
-| `each`, `select`, and `map` | 11 |
+| [`each`, `select`, and `map`](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#each-select-and-map) | 1 | :white_check_mark:
+| [`each`, `select`, and `map`](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#each-select-and-map) | 2 | :white_check_mark: concept demonstrate?
+| [`each`, `select`, and `map`](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#each-select-and-map) | 3 |
+| [`each`, `select`, and `map`](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#each-select-and-map) | 4 |
+| [`each`, `select`, and `map`](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#each-select-and-map) | 5 |
+| [`each`, `select`, and `map`](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#each-select-and-map) | 6 |
+| [`each`, `select`, and `map`](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#each-select-and-map) | 7 |
+| [`each`, `select`, and `map`](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#each-select-and-map) | 8 |
+| [`each`, `select`, and `map`](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#each-select-and-map) | 9 |
+| [`each`, `select`, and `map`](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#each-select-and-map) | 10 |
+| [`each`, `select`, and `map`](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#each-select-and-map) | 11 |
 
 ## Resources
 
