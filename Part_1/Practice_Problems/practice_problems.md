@@ -106,3 +106,21 @@ On line 8, the method `greetings` is called with the variable `word` passed to i
 Upon the method invocation of `greetings` with the arguement `word`, the method paramter `str` is assigned to the object that `word` is referencing, which is the String `"Hello"`. Inside the method defintion, as defined on lines 1 to 4, the `puts` methods are called with arguments `str` and `"Goodbye"` passed to them on lines 2 and 3 respectively, hence outputting `"Hello"` and `"Goodbye"`. As the last evaluated statement in the method defintion is `puts "Goodbye"`, the method returns `nil`.
 
 This code demonstrates method defintion and invocation. The method `greetings` is defined with a method **parameter** `str` on lines 1 to 4, and it is called on line 8 with an **argument** `word`. This also demonstrates how local variables defined outside of a method definiton are made available inside of it by passing them into a method as arguements.
+
+## `each`, `select`, and `map`
+
+### 1
+
+What does the following code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+array = [1, 2, 3, 4, 5]      # 1
+                             # 2
+array.select do |num|        # 3
+    puts num if num.odd?     # 4
+end                          # 5
+````
+
+The above code returns an empty array (`[]`), and outputs `1`, `3` and `5`.
+
+On line 1, the local variable `array` is initialized and assigned to the Array object `[1, 2, 3, 4, 5]`. On line 3, the `select` method is called on `array`, and passed in the `do...end` block on lines 3 to 5 as an argument. Upon the method invocation of `select`, every element in `array` runs through the `do...end` block, and is put into a new array for output based on the truthiness of the return value of the `do...end` block. If the element is an odd number, the last evaluated expression is `puts num` and returns `nil`, which is falsy, and thus odd numbers are not selected. If the element is an even number, the conditional on line 4 is not run and thus the block returns `nil`, which is again falsy, and thus even are not selected either. Therefore, no elements are selected and an empty array is returned. For odd numbers, the `puts num` statement on line 4 is run, hence outputting `1`, `3` and `5`.
