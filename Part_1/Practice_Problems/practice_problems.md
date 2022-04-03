@@ -164,3 +164,28 @@ On line 1, the local variable `arr` is initialized and assigned to the Array obj
 On line 7, the `p` method is invoked and passed in the variable `new_array` as an argument, hencing outputting and returning `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`.
 
 This code demonstrates ...?
+
+### 36
+
+What does the following code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]     # 1
+                                          # 2
+new_array = arr.select do |n|             # 3
+  n + 1                                   # 4
+  puts n                                  # 5
+end                                       # 6
+                                          # 7
+p new_array                               # 8
+````
+
+The above code outputs `1`, `2` through `10` and `[]`, and returns `[]`.
+
+On line 1, the local variable `arr` is initialized and assigned to the Array object `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`.
+
+On line 3, the `select` method is called on `arr` on passed in the `do...end` block on lines 3 to 6 as an argument. For every element in `arr`, it is assigned to the block parameter `n` and run through the block. Hence on line 5, it outputs every element in `arr` to the console. The `select` method puts elements to a new array for return based on the truthiness of the block's return value. As for every element, the last evaluated expression of the `do...end` block is `puts n`, which returns `nil` and is falsy, no element is selected. Therefore an empty array is returned by the `select` method. The return value (`[]`) is then assigned to the local variable `new_array`.
+
+On line 8, the `p` method is called with a variable `new_array` passed in as an argument, hence outputting `[]` and return `[]`.
+
+This code demonstrates ...?
