@@ -213,3 +213,17 @@ On line 3, the method `map` is called on `words` and passed in the `do...end` bl
 On line 7, the `p` method is called and passed in the variable `new_array` as an argument, hence outtputing `[false, true, false, false, true]` to the console and returning `[false, true, false, false, true]`.
 
 This code demonstrates ...?
+
+## Other Collection Methods
+
+### 44
+
+````ruby
+[1, 2, 3].any? do |num|     # 1
+  num > 2                   # 2
+end                         # 3
+````
+
+The above code returns `true` and outputs nothing to the console.
+
+The `any?` method is called on the Array object `[1, 2, 3]` on line 1 and passed in the `do...end` block on lines 1 to 3 as an argument. For every iteration, every element in `[1, 2, 3]` is in turn assigned to the block parameter `num` and run through the block. The `any?` method returns `true` (and stops iterating) if the block returns a truthy value for any element in the calling object, and `false` if otherwise. Since the block's last evaluated expression is `num > 2`, the block returns `true` if any number in `[1, 2, 3]` is greater than `2`. As the block's return value is `true` for one of the elements in the calling object (`3`), the `any?` method return `true`
