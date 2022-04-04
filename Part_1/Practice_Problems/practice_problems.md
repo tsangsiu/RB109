@@ -189,3 +189,27 @@ On line 3, the `select` method is called on `arr` on passed in the `do...end` bl
 On line 8, the `p` method is called with a variable `new_array` passed in as an argument, hence outputting `[]` and return `[]`.
 
 This code demonstrates ...?
+
+### 37
+
+What does the following code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+words = %w(jump trip laugh run talk)     # 1
+                                         # 2
+new_array = words.map do |word|          # 3
+  word.start_with?("t")                  # 4
+end                                      # 5
+                                         # 6
+p new_array                              # 7
+````
+
+The above code outputs `[false, true, false, false, true]` and returns `[false, true, false, false, true]`.
+
+On line 1, the local variable `words` is initialized and assigned to the Array object `['jump', 'trip', 'laugh', 'run', 'talk']`.
+
+On line 3, the method `map` is called on `words` and passed in the `do...end` block on lines 3 to 5 as an argument. For each iteration, each element in `words` is assigned to the block parameter `word` and run through the block. The `map` method will return a new transformed array, where each element in the return way is the return value of the `do...end` block of the corresponding element. In this case, the last evaluated expression is `word.start_with?("t")`. Its return value will be the block's return value. `word.start_with("t")` returns `true` if `word` starts with `"t"` and `false` if otherwise. For each element in `words`, the block's return value is respectively `false`, `true`, `false`, `false` and `true`, and thus the `map` method returns a new array `[false, true, false, false, true]`. The return array is then assigned to the local variable `new_array`.
+
+On line 7, the `p` method is called and passed in the variable `new_array` as an argument, hence outtputing `[false, true, false, false, true]` to the console and returning `[false, true, false, false, true]`.
+
+This code demonstrates ...?
