@@ -263,3 +263,15 @@ end                                                        # 3
 The above code returns `true` and outputs nothing to the console.
 
 The `all?` method is called on the Hash object `{ a: "ant", b: "bear", c: "cat" }` on line 1 and passed in the block on lines 1 to 3 as an argument. For each iteration, each key-value pair is respectively assigned to the block's parameres `key` and `value`, and then run through the block. The `all?` method returns `true` if the block returns `true` for all key-value pairs in the hash. Since the block's last evaluated expression is `value.length >= 3`, its return value would be the block's return value. Looking at the calling hash, the values are all greater than `3` in length. Therefore the block returns `true` for all key-value pairs in the hash, and thus the `all?` method returns `true`.
+
+### 48
+
+````ruby
+[1, 2, 3].each_with_index do |num, index|     # 1
+  puts "The index of #{num} is #{index}."     # 2
+end                                           # 3
+````
+
+The above code returns `[1, 2, 3]`, and outputs `The index of 1 is 0.`, `The index of 2 is 1.` and `The index of 3 is 2.` to the console.
+
+On line 1, the `each_with_index` is called on the Array object `[1, 2, 3]` and passed in the block on lines 1 to 3 as an argument. For each iteration, each element in the array is assigned to the block parameter `num`, and run through the block with another parameter `index` which starts at `0` and is incremented by `1` for each iteration. For each iteration, on line 2, the method `puts` is called and passed in the interpolated string `"The index of #{num} is #{index}."` (with block parameters `num` and `index`) as an argument, hencing outputting `The index of 1 is 0.`, `The index of 2 is 1.` and `The index of 3 is 2.` to the console. The `each_with_index` ignores the return value of the block and always returns the calling object, hence returning `[1, 2, 3]`.
