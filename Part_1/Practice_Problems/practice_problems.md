@@ -287,3 +287,34 @@ end                                                                         # 3
 The above code returns `["ant", "bear", "cat"]` and outputs nothing to the console.
 
 On line 1, the `each_with_object` method is called on the Hash object `{ a: "ant", b: "bear", c: "cat" }` and passed in an empty array `[]` and the block on lines 1 to 3 as arguments. For each iteration, each key-value pair and the given argument are respectively assigned to the block parameters `pair` (as a two-element array, the first element is the key, and the second is the value) and `array`, and then run throughh the block. For each iteration, on line 2, the last element in `pair`, which is the value of every key-value pair, is push to the given array `array`, hence `array` will be `["ant", "bear", "cat"]` after iterating all key-value pairs. The `each_with_object` returns the given argument, which is now mututated to `["ant", "bear", "cat"]`, hence it is the return value.
+
+### 50
+
+````ruby
+{ a: "ant", b: "bear", c: "cat" }.each_with_object({}) do |(key, value), hash|     # 1
+  hash[value] = key                                                                # 2
+end                                                                                # 3
+````
+
+The above code returns `{"ant"=>:a, "bear"=>:b, "cat"=>:c}` and outputs nothing to the console.
+
+On line 1, the `each_with_object` method is called on the Hash object `{ a: "ant", b: "bear", c: "cat" }` and passed in an empty hash `{}` and the block on lines 1 to 3 as arguments. For each iteration, each key-value pair's key and value, and the given hash are respectively assigned to the block parameters `key`, `value` and `hash`, and run through the block. On line 2, the given hash's key and value are respectively assigned as the value and the key of the current key-value pair of the calling hash for every iteration. Therefore, the given hash will become `{"ant"=>:a, "bear"=>:b, "cat"=>:c}` after iterating all key-value pairs in the calling hash. The `each_with_object` returns the given arguement, which is now mutated to `{"ant"=>:a, "bear"=>:b, "cat"=>:c}`, hence it is the return value.
+
+### 51
+
+````ruby
+odd, even = [1, 2, 3].partition do |num|     # 1
+  num.odd?                                   # 2
+end                                          # 3
+                                             # 4
+p odd                                        # 5 
+p even                                       # 6
+````
+
+The above code will return `[[1, 3], [2]]`, `[1, 3]` and `[2]`, and output `[1, 3]` and `[2]` to the console.
+
+On line 1, the `partition` method is called on the Array object `[1, 2, 3]` and passed in the block on lines 1 to 3 as an argument. The `partition` method will return a two-dimensional array with two sub-arrays. The first sub-array will contain elements in the calling array for which the block returns a truthy value, while the second one will contain elements in the calling array for which the block returns a falsy value. As the last evaluated expression of the block is `num.odd?`, its return value would be the block's return value. In this case, the block will return `true` if the element is an odd number, and `false` if otherwise. Therefore, the `partition` method will return `[[1, 3], [2]]`.
+
+The return array with two sub-arrays is then parallelly assigned to two local variables `odd` and `even`. The first sub-array is assigned to `odd` and the second is assigned to `even`. Therefore `odd` and `even` respectively point to `[1, 3]` and `[2]`.
+
+On lines 5 and 6, the `p` method is called and passed in the local variables `odd` and `even` respectively as an argument, hencing returning `[1, 3]` and `[2]`, and outputting `[1, 3]` and `[2]` to the console.
