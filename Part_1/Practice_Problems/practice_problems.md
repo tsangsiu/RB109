@@ -275,3 +275,15 @@ end                                           # 3
 The above code returns `[1, 2, 3]`, and outputs `The index of 1 is 0.`, `The index of 2 is 1.` and `The index of 3 is 2.` to the console.
 
 On line 1, the `each_with_index` is called on the Array object `[1, 2, 3]` and passed in the block on lines 1 to 3 as an argument. For each iteration, each element in the array is assigned to the block parameter `num`, and run through the block with another parameter `index` which starts at `0` and is incremented by `1` for each iteration. For each iteration, on line 2, the method `puts` is called and passed in the interpolated string `"The index of #{num} is #{index}."` (with block parameters `num` and `index`) as an argument, hencing outputting `The index of 1 is 0.`, `The index of 2 is 1.` and `The index of 3 is 2.` to the console. The `each_with_index` ignores the return value of the block and always returns the calling object, hence returning `[1, 2, 3]`.
+
+### 49
+
+````ruby
+{ a: "ant", b: "bear", c: "cat" }.each_with_object([]) do |pair, array|     # 1
+  array << pair.last                                                        # 2
+end                                                                         # 3
+````
+
+The above code returns `["ant", "bear", "cat"]` and outputs nothing to the console.
+
+On line 1, the `each_with_object` method is called on the Hash object `{ a: "ant", b: "bear", c: "cat" }` and passed in an empty array `[]` and the block on lines 1 to 3 as arguments. For each iteration, each key-value pair and the given argument are respectively assigned to the block parameters `pair` (as a two-element array, the first element is the key, and the second is the value) and `array`, and then run throughh the block. For each iteration, on line 2, the last element in `pair`, which is the value of every key-value pair, is push to the given array `array`, hence `array` will be `["ant", "bear", "cat"]` after iterating all key-value pairs. The `each_with_object` returns the given argument, which is now mututated to `["ant", "bear", "cat"]`, hence it is the return value.
