@@ -226,4 +226,28 @@ end                         # 3
 
 The above code returns `true` and outputs nothing to the console.
 
-The `any?` method is called on the Array object `[1, 2, 3]` on line 1 and passed in the `do...end` block on lines 1 to 3 as an argument. For every iteration, every element in `[1, 2, 3]` is in turn assigned to the block parameter `num` and run through the block. The `any?` method returns `true` (and stops iterating) if the block returns a truthy value for any element in the calling object, and `false` if otherwise. Since the block's last evaluated expression is `num > 2`, the block returns `true` if any number in `[1, 2, 3]` is greater than `2`. As the block's return value is `true` for one of the elements in the calling object (`3`), the `any?` method return `true`
+The `any?` method is called on the Array object `[1, 2, 3]` on line 1 and passed in the `do...end` block on lines 1 to 3 as an argument. For every iteration, every element in `[1, 2, 3]` is in turn assigned to the block parameter `num` and run through the block. The `any?` method returns `true` (and stops iterating) if the block returns a truthy value for any element in the calling object, and `false` if otherwise. Since the block's last evaluated expression is `num > 2`, the block returns `true` if any number in `[1, 2, 3]` is greater than `2`. As the block's return value is `true` for one of the elements in the calling object (`3`), the `any?` method returns `true`.
+
+### 45
+
+````ruby
+{ a: "ant", b: "bear", c: "cat" }.any? do |key, value|     # 1
+  value.size > 4                                           # 2
+end                                                        # 3
+````
+
+The above code returns `false` and outputs nothing to the console.
+
+The `any?` method is called on the Hash object `{ a: "ant", b: "bear", c: "cat" }` on line 1 and passed in the `do...end` block on lines 1 to 3 as an argument. For each iteration, each key-value pair is respectively assigned to the block parameter `key` and `value`, and run through the block. The `any?` method returns `true` if the block returns a truthy value for any key-value pair in the hash, and `false` if otherwise. As the block's last evalulated expression is `value.size > 4`, the block returns `true` if there is a value in the hash that has a length greater than `4`. As there is no value of length greater than `4` in the hash, the `any?` method return `false`.
+
+### 46
+
+````ruby
+[1, 2, 3].all? do |num|     # 1
+  num > 2                   # 2
+end                         # 3
+````
+
+The above code returns `false` and outputs nothing to the console.
+
+The `all?` method is called on the Array object `[1, 2, 3]` on line 1 and passed in the `do...end` block on lines 1 to 3 as an argument. For each iteration, each element in the array is assigned to the block parameter `num` and run through the block. The `all?` method returns `true` if the block returns `true` for all elements in the calling object, and `false` if otherwise. Since the block's last evaluated expression is `num > 2`, `all?` will return `true` if all elements in the array are greater than `2`. As there is only one element in the array that is greater than `2`, the `all?` method returns `false`.
