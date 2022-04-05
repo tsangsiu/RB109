@@ -251,3 +251,15 @@ end                         # 3
 The above code returns `false` and outputs nothing to the console.
 
 The `all?` method is called on the Array object `[1, 2, 3]` on line 1 and passed in the `do...end` block on lines 1 to 3 as an argument. For each iteration, each element in the array is assigned to the block parameter `num` and run through the block. The `all?` method returns `true` if the block returns `true` for all elements in the calling object, and `false` if otherwise. Since the block's last evaluated expression is `num > 2`, `all?` will return `true` if all elements in the array are greater than `2`. As there is only one element in the array that is greater than `2`, the `all?` method returns `false`.
+
+### 47
+
+````ruby
+{ a: "ant", b: "bear", c: "cat" }.all? do |key, value|     # 1
+  value.length >= 3                                        # 2
+end                                                        # 3
+````
+
+The above code returns `true` and outputs nothing to the console.
+
+The `all?` method is called on the Hash object `{ a: "ant", b: "bear", c: "cat" }` on line 1 and passed in the block on lines 1 to 3 as an argument. For each iteration, each key-value pair is respectively assigned to the block's parameres `key` and `value`, and then run through the block. The `all?` method returns `true` if the block returns `true` for all key-value pairs in the hash. Since the block's last evaluated expression is `value.length >= 3`, its return value would be the block's return value. Looking at the calling hash, the values are all greater than `3` in length. Therefore the block returns `true` for all key-value pairs in the hash, and thus the `all?` method returns `true`.
