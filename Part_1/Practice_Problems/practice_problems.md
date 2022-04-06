@@ -471,3 +471,33 @@ Considering the if-conditionals on lines 3 to 7, as `"Hello"` evaluates to `true
 On line 4, the `puts` method is called with the String `"Hello is truthy"` passed in as an argument, hence outputting `Hello is truthy` to the console. As the `puts` method always returns `nil`, hence returning `nil`.
 
 This code demonstrates the concept of truthiness in Ruby; specifically the fact that any objects other than `nil` and `false` evaluate to `true` in Ruby.
+
+### 53
+
+What does the following code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+def test                        # 1
+  puts "written assessment"     # 2
+end                             # 3
+                                # 4
+var = test                      # 5
+                                # 6
+if var                          # 7
+  puts "written assessment"     # 8
+else                            # 9
+  puts "interview"              # 10
+end                             # 11
+````
+
+The above code outputs `interview` to the console and returns `nil`.
+
+On line 5, the local variable `var` is initialised and assigned to either the object referenced by a local variable called `test` or the value returned by a method called `test`.
+
+Observing the code, we know that `test` refers to the method defined on lines 1 to 3. In the method definition of `test` on lines 1 to 3, the last evaluated expression is `puts "written assessment"`. Its return value will be the method's return value. As the `puts` method always returns `nil`, the method `test` always return `nil`. Therefore, on line 5, the local variable `var` is assigned to `nil`.
+
+Consider the if-conditional on lines 7 to 11, as `nil` evaluates to `false` in Ruby, the else clause (line 10) is executed.
+
+On line 10, the `puts` method is called and passed in the String `"interview"` as an argument, hence outputting `interview` to the console. As the `puts` method always returns `nil`, hence returning `nil`.
+
+This code demonstrates the concept of truthiness in Ruby; specifically the fact that `nil` evaluates to `false` in Ruby.
