@@ -321,6 +321,26 @@ On line 3, the method `map` is called on the Array object `[1, 2, 3]` and passed
 
 This code demonstrates...?
 
+### 43
+
+What does the following code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+[1, 2, 3].each do |num|     # 1
+  puts num                  # 2
+end                         # 3
+````
+
+The above code outputs `1`, `2`, and `3` to the console and returns `[1, 2, 3]`.
+
+On line 1, the `each` method is called on the Array object `[1, 2, 3]` and passed in the `do...end` block on lines 1 to 3 as an argument. For every iteration, each element in `[1, 2, 3]` is in turn assigned to the block parameter `num` and run through the block.
+
+Within the block on line 2, the `puts` method is called and passed in `num` as an argument, hence outputting `1`, `2` and `3` to the console.
+
+The `each` method ignores the return value of the block and return the calling object, hence returning `[1, 2, 3]`.
+
+This code demonstrates...?
+
 ## Other Collection Methods
 
 ### 44
