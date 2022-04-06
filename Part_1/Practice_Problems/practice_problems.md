@@ -214,6 +214,22 @@ On line 7, the `p` method is called and passed in the variable `new_array` as an
 
 This code demonstrates ...?
 
+### 38
+
+What does the following code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]     # 1
+                                          # 2
+arr.each { |n| puts n }                   # 3
+````
+
+The above code outputs `1`, `2`, `3`, ..., and `10` to the console and returns `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`.
+
+On line 1, the local variable `arr` is assigned to the Array object `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`. On line 3, the `each` method is called on `arr` and passed in the block `{ |n| puts n }` as an argument. For each iteration, each element in `arr` is assigned to the block parameter `n` and run through the block. Inside the block, the statement `puts n` outputs every element in `arr` to the console, hencing outputting `1`, `2`, `3`, ... , and `10` to the console. The `each` method ignores the return value of the block and returns the calling object, hence returning `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`.
+
+This code demonstrates ...?
+
 ## Other Collection Methods
 
 ### 44
