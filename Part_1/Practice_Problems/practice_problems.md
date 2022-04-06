@@ -141,7 +141,7 @@ The above code does not output anything to the console, and returns `[1, 3, 5, 7
 
 On line 1, the local variable `arr` is initialized and assigned to the Array object `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`. On line 3, the `select` method is called on `arr` with the block `{ |n| n.odd? }` passed in as an argument. Upon the method invocation of `select`, every element in `arr` is passed into the block. The element is put into a new array for return if the block's return value is truthy for that element. Within the block, the last evaluated expression is `n.odd?`, which returns `true` for odd numbers and `false` for even numbers, and thus all odd numbers in `arr` is selected and returning `[1, 3, 5, 7, 9]`.
 
-This code demonstrates ...?
+This code demonstrates...?
 
 ### 35
 
@@ -163,7 +163,7 @@ On line 1, the local variable `arr` is initialized and assigned to the Array obj
 
 On line 7, the `p` method is invoked and passed in the variable `new_array` as an argument, hencing outputting and returning `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`.
 
-This code demonstrates ...?
+This code demonstrates...?
 
 ### 36
 
@@ -188,7 +188,7 @@ On line 3, the `select` method is called on `arr` on passed in the `do...end` bl
 
 On line 8, the `p` method is called with a variable `new_array` passed in as an argument, hence outputting `[]` and return `[]`.
 
-This code demonstrates ...?
+This code demonstrates...?
 
 ### 37
 
@@ -212,7 +212,7 @@ On line 3, the method `map` is called on `words` and passed in the `do...end` bl
 
 On line 7, the `p` method is called and passed in the variable `new_array` as an argument, hence outtputing `[false, true, false, false, true]` to the console and returning `[false, true, false, false, true]`.
 
-This code demonstrates ...?
+This code demonstrates...?
 
 ### 38
 
@@ -228,7 +228,7 @@ The above code outputs `1`, `2`, `3`, ..., and `10` to the console and returns `
 
 On line 1, the local variable `arr` is assigned to the Array object `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`. On line 3, the `each` method is called on `arr` and passed in the block `{ |n| puts n }` as an argument. For each iteration, each element in `arr` is assigned to the block parameter `n` and run through the block. Inside the block, the statement `puts n` outputs every element in `arr` to the console, hencing outputting `1`, `2`, `3`, ... , and `10` to the console. The `each` method ignores the return value of the block and returns the calling object, hence returning `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`.
 
-This code demonstrates ...?
+This code demonstrates...?
 
 ### 39
 
@@ -252,7 +252,7 @@ On line 3, the `map` method is called on `arr` and passed in the block on lines 
 
 On line 7, the `p` method is called and passed in the local variable `incremented` as an argument, hence outputting `[2, 3, 4, 5, 6, 7, 8, 9, 10, 11]` to the console and returning `[2, 3, 4, 5, 6, 7, 8, 9, 10, 11]`.
 
-This code demonstrates ...?
+This code demonstrates...?
 
 ### 40
 
@@ -276,7 +276,7 @@ On line 3, the `map` method is called on `arr` and passed in the block on lines 
 
 On line 7, the `p` method is called and passed in the local variable `new_array` as an argument, hence outputting `[false, true, true, true, true, true, true, true, true, true]` to the console and returning `[false, true, true, true, true, true, true, true, true, true]`.
 
-This code demonstrates ...?
+This code demonstrates...?
 
 ### 41
 
@@ -301,7 +301,25 @@ On line 3, the `map` method is called on `arr` and passed in the block on lines 
 
 On line 8, the `p` method is called and passed in the variable `new_array` as an argument, hence outputting `[nil, nil, nil, nil, nil, nil, nil, nil, nil, nil]` to the console and returning `[nil, nil, nil, nil, nil, nil, nil, nil, nil, nil]`.
 
-This code demonstrates ...?
+This code demonstrates...?
+
+### 42
+
+What does the following code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+a = "hello"                   # 1
+                              # 2
+[1, 2, 3].map { |num| a }     # 3
+````
+
+The above code returns `["hello", "hello", "hello"]` and outputs nothing to the console.
+
+On line 1, the local variable `a` is initialized and assigned to the String `"hello"`.
+
+On line 3, the method `map` is called on the Array object `[1, 2, 3]` and passed in `{ |num| a }` as an argument. The method invocation of `map` alongside `{ |num| a }` defines a block and thus creating an inner scope within it. For each iteration, each element in `[1, 2, 3]` is in turn assigned to the block parameter `num` and run through the block. The `map` method will return a new array with each element in `[1, 2, 3]` transformed based on the return value of the block, i.e. each element in the new transformed array will be the block's return value for the corresponding element. Considering the block on line 3, as `a` is initialised outside the block, it is accessible inside the block. And, as the last evaluated expression of the block is `a`, its return value will be the block's return value. In this case, for every element in `[1, 2, 3]`, the block's return value is `a`, which points to the String `"hello"`. Therefore, the `map` method will return `["hello", "hello", "hello"]`.
+
+This code demonstrates...?
 
 ## Other Collection Methods
 
