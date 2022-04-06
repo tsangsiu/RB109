@@ -230,6 +230,28 @@ On line 1, the local variable `arr` is assigned to the Array object `[1, 2, 3, 4
 
 This code demonstrates ...?
 
+### 39
+
+What does the following code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]     # 1
+                                          # 2
+incremented = arr.map do |n|              # 3
+  n + 1                                   # 4
+end                                       # 5
+                                          # 6
+p incremented                             # 7
+````
+
+The above code outputs `[2, 3, 4, 5, 6, 7, 8, 9, 10, 11]` to the console and returns `[2, 3, 4, 5, 6, 7, 8, 9, 10, 11]`.
+
+On line 1, the local variable `arr` is initialized and assigned to the Array object `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`.
+
+On line 3, the `map` method is called on `arr` and passed in the block on lines 3 to 5 as an argument. For each iteration, each element in `arr` is assigned to the block parameter `n` and run through the block. The `map` method will return a new array with each element transformed based on the return value of the block. As the last evaluated expression of the block is `n + 1`, every element in `arr` will be incremented by `1`, hence the `map` method will return a new array `[2, 3, 4, 5, 6, 7, 8, 9, 10, 11]`. The return array is then assigned to the local variable `incremented`.
+
+On line 7, the `p` method is called and passed in the local variable `incremented` as an argument, hence outputting `[2, 3, 4, 5, 6, 7, 8, 9, 10, 11]` to the console and returning `[2, 3, 4, 5, 6, 7, 8, 9, 10, 11]`.
+
 ## Other Collection Methods
 
 ### 44
