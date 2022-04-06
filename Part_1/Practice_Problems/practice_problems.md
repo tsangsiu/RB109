@@ -252,7 +252,7 @@ On line 3, the `map` method is called on `arr` and passed in the block on lines 
 
 On line 7, the `p` method is called and passed in the local variable `incremented` as an argument, hence outputting `[2, 3, 4, 5, 6, 7, 8, 9, 10, 11]` to the console and returning `[2, 3, 4, 5, 6, 7, 8, 9, 10, 11]`.
 
-This code demonstrate ...?
+This code demonstrates ...?
 
 ### 40
 
@@ -270,9 +270,38 @@ p new_array                               # 7
 
 The above code outputs `[false, true, true, true, true, true, true, true, true, true]` to the console and returns `[false, true, true, true, true, true, true, true, true, true]`.
 
-On line 1, the local variable `arr` is initialized and assigned to the Array object `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]` and passed in the block on lines 3 to 5 as an argument. For each iteration, each element in `arr` is assigned to the block parameter `n` and run through the block. The `map` method will return a new array with each element transformed based on the return value of the block. Each element in the return array will be the block's return value for the corresponding element in the calling array. As the last evaluated expression of the block is `n > 1`, its return value would be the block's return value. In this case, the block returns `false` for the first element (`1`) and `true` for the others, hence the `map` method will return a new array `[false, true, true, true, true, true, true, true, true, true]`. The return array is then assigned to the local variable `new_array`.
+On line 1, the local variable `arr` is initialized and assigned to the Array object `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`.
+
+On line 3, the `map` method is called on `arr` and passed in the block on lines 3 to 5 as an argument. For each iteration, each element in `arr` is assigned to the block parameter `n` and run through the block. The `map` method will return a new array with each element transformed based on the return value of the block. Each element in the return array will be the block's return value for the corresponding element in the calling array. As the last evaluated expression of the block is `n > 1`, its return value would be the block's return value. In this case, the block returns `false` for the first element (`1`) and `true` for the others, hence the `map` method will return a new array `[false, true, true, true, true, true, true, true, true, true]`. The return array is then assigned to the local variable `new_array`.
 
 On line 7, the `p` method is called and passed in the local variable `new_array` as an argument, hence outputting `[false, true, true, true, true, true, true, true, true, true]` to the console and returning `[false, true, true, true, true, true, true, true, true, true]`.
+
+This code demonstrates ...?
+
+### 41
+
+What does the following code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]     # 1
+                                          # 2
+new_array = arr.map do |n|                # 3
+  n > 1                                   # 4
+  puts n                                  # 5
+end                                       # 6
+                                          # 7
+p new_array                               # 8
+````
+
+The above code outputs `[nil, nil, nil, nil, nil, nil, nil, nil, nil, nil]` to the console and returns `[nil, nil, nil, nil, nil, nil, nil, nil, nil, nil]`.
+
+On line 1, the local variable `arr` is initialized and assigned to the Array object `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`.
+
+On line 3, the `map` method is called on `arr` and passed in the block on lines 3 to 6 as an argument. For each iteration, each element in `arr` is assigned to the block parameter `n` and run through the block. The `map` will return a new array with each element transformed based on the return value of the block. Each element in the return array is the block's return value for the corresponding element in the calling array. As the last evaluated expression of the block is `puts n`, its return value will be the block return value. As the `puts` method always returns `nil`, each element in `arr` will be transformed to `nil` in the return array, hence returning `[nil, nil, nil, nil, nil, nil, nil, nil, nil, nil]`. The return array is then assigned to the local variable `new_array`.
+
+On line 8, the `p` method is called and passed in the variable `new_array` as an argument, hence outputting `[nil, nil, nil, nil, nil, nil, nil, nil, nil, nil]` to the console and returning `[nil, nil, nil, nil, nil, nil, nil, nil, nil, nil]`.
+
+This code demonstrates ...?
 
 ## Other Collection Methods
 
