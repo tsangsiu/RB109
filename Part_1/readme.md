@@ -33,6 +33,7 @@
 | [49](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#49) | [Other Collection Methods](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#other-collection-methods) | :white_check_mark:
 | [50](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#50) | [Other Collection Methods](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#other-collection-methods) | :white_check_mark:
 | [51](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#51) | [Other Collection Methods](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#other-collection-methods) | :white_check_mark:
+| [52](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#52) | [Truthiness](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#truthiness) | :white_check_mark:
 
 ## Resources
 

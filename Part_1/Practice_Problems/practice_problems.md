@@ -337,7 +337,7 @@ On line 1, the `each` method is called on the Array object `[1, 2, 3]` and passe
 
 Within the block on line 2, the `puts` method is called and passed in `num` as an argument, hence outputting `1`, `2` and `3` to the console.
 
-The `each` method ignores the return value of the block and return the calling object, hence returning `[1, 2, 3]`.
+The `each` method ignores the return value of the block and returns the calling object, hence returning `[1, 2, 3]`.
 
 This code demonstrates...?
 
@@ -445,3 +445,29 @@ On line 1, the `partition` method is called on the Array object `[1, 2, 3]` and 
 The return array with two sub-arrays is then parallelly assigned to two local variables `odd` and `even`. The first sub-array is assigned to `odd` and the second is assigned to `even`. Therefore `odd` and `even` respectively point to `[1, 3]` and `[2]`.
 
 On lines 5 and 6, the `p` method is called and passed in the local variables `odd` and `even` respectively as an argument, hencing returning `[1, 3]` and `[2]`, and outputting `[1, 3]` and `[2]` to the console.
+
+## Truthiness
+
+### 52
+
+What does the following code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+a = "Hello"                  # 1
+                             # 2
+if a                         # 3
+  puts "Hello is truthy"     # 4
+else                         # 5
+  puts "Hello is falsey"     # 6
+end                          # 7
+````
+
+The above code outputs `Hello is truthy` to the console and returns `nil`.
+
+On line 1, the local variable `a` is initialised and assigned to the String `"Hello"`.
+
+Considering the if-conditionals on lines 3 to 7, as `"Hello"` evaluates to `true` in Ruby, the if clause (line 4) is executed.
+
+On line 4, the `puts` method is called with the String `"Hello is truthy"` passed in as an argument, hence outputting `Hello is truthy` to the console. As the `puts` method always returns `nil`, hence returning `nil`.
+
+This code demonstrates the concept of truthiness in Ruby; specifically the fact that any objects other than `nil` and `false` evaluate to `true` in Ruby.
