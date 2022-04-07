@@ -501,3 +501,44 @@ Consider the if-conditional on lines 7 to 11, as `nil` evaluates to `false` in R
 On line 10, the `puts` method is called and passed in the String `"interview"` as an argument, hence outputting `interview` to the console. As the `puts` method always returns `nil`, hence returning `nil`.
 
 This code demonstrates the concept of truthiness in Ruby; specifically the fact that `nil` evaluates to `false` in Ruby.
+
+## `puts` vs `return`
+
+### 54
+
+What does the following code output? What is the return value of `a` and why?
+
+````ruby
+a = puts "stuff"     # 1
+puts a               # 2
+````
+
+The above code outputs `stuff` and an empty line to the console, and the return value of `a` is `nil`.
+
+On line 1, the `puts` method is called and passed in the String object `"stuff"` as an argument, hencing outputting `stuff` to the console. The return value of the `puts` method is then assigned to the local variable `a`. As the `puts` method always returns `nil`, the local variable `a` references `nil`.
+
+On line 2, the `puts` method is called and passed in the local variable `a` as an argument. As `a` points to `nil`, an empty line is outputted to the console.
+
+### 55
+
+What does the following code output and why?
+
+````ruby
+def add_three(number)             # 1
+  return number + 3               # 2
+  number + 4                      # 3
+end                               # 4
+                                  # 5
+returned_value = add_three(4)     # 6
+puts returned_value               # 7
+````
+
+The above code outputs `7` to the console.
+
+On line 6, the `add_three` method is called and passed in the Integer `4` as an argument.
+
+The `add_three` method is defined on lines 1 to 4. Upon the method invocation of `add_three` with an argument `4`, `4` is assigned to the method parameter `number`. `number` is then added `3` on line 2, and then returned by the `add_three` method. After executing line 2, the `return` keyword returns `number + 3`, which is `7`, and exits the method. The line of code after line 2 will not be run. Hence the return value of the `add_three` method is `7` in this case.
+
+On line 6, the local variable `returned_value` is initialized and assigned to the return value by `add_three` (which is `7`).
+
+On line 7, the `puts` method is called and passed in `returned_value` as an argument, hence outputting `7` to the console.

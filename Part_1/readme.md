@@ -35,6 +35,8 @@
 | [51](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#51) | [Other Collection Methods](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#other-collection-methods) | :white_check_mark:
 | [52](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#52) | [Truthiness](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#truthiness) | :white_check_mark:
 | [53](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#53) | [Truthiness](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#truthiness) | :white_check_mark:
+| [54](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#54) | [`puts` vs `return`](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#puts-vs-return) | :white_check_mark:
+| [55](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#55) | [`puts` vs `return`](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#puts-vs-return) | :white_check_mark:
 
 ## Resources
 
