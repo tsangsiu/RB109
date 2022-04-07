@@ -38,6 +38,11 @@
 | [54](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#54) | [`puts` vs `return`](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#puts-vs-return) | :white_check_mark:
 | [55](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#55) | [`puts` vs `return`](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#puts-vs-return) | :white_check_mark:
 
+## An Example from Study Guide
+
+- [An Example from Study Guide](https://github.com/tsangsiu/RB109/blob/main/Part_1/example_study_guide.md)
+
 ## Resources
 
+- [Study Guide](https://launchschool.com/lessons/3ce27abc/assignments/cd8e4629)
 - Srđan's Blog Series: [1](https://medium.com/how-i-started-learning-coding-from-scratch/advices-for-109-written-assessment-part-1-6f7fa821cf84), [2](https://medium.com/how-i-started-learning-coding-from-scratch/advice-for-109-written-assessment-part-2-594060594f6e), [3](https://medium.com/how-i-started-learning-coding-from-scratch/advice-for-109-written-assessment-part-3-d39dceb06c0c), [4](https://medium.com/how-i-started-learning-coding-from-scratch/advice-for-109-written-assessment-part-4-e205174ece7b)
