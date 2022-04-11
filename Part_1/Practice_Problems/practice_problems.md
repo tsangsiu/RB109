@@ -190,6 +190,39 @@ On line 10, the `puts` method is called with `var` as an argument. As `puts` was
 
 This code demonstrates the local variable scoping rules in Ruby: local variables initialized outside a block is accessible inside the block, but those initialized inside a block is not accessible outside the block.
 
+## Variable Shadowing
+
+### 9
+
+What does the following code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+a = 4              # 1
+b = 2              # 2
+                   # 3
+2.times do |a|     # 4
+  a = 5            # 5
+  puts a           # 6
+end                # 7
+                   # 8
+puts a             # 9
+puts b             # 10
+````
+
+The above code outpus `5`, `5`, `4` and `2` to the console.
+
+On lines 1 and 2, the local variables `a` and `b` are initialized and assigned to the Integers `4` and `2` respectively.
+
+On line 4, the `times` method is called on the Integer `2` and passed in the `do...end` on lines 4 to 7 as an argument. The method invocation of `times` alongside the `do...end` defines a block and hence creates an inner scope within the block.
+
+The name of the block parameter is `a`, which is the same as the local variable initalized outside the block on line 1. In this case, the block parameter `a` "shadows" the local variable `a`. The local variable `a` is not accessible within the block. On line 5, `5` is assigned to the local variable `a` passed in as a block parameter. Therefore, when the `puts` method is called on line 6 and passed in `a` as an argument, `5` is outputted to the console (and returns `nil`) twice .
+
+On line 9, the `puts` method is called and passed in `a` as an argument. Here, the local variable `a` passed in as a block parameter is out of scope and thus references `4`, hence outputting `4` to the console and returning `nil`.
+
+On line 10, the `puts` method is called and passed in `b` as an argument, hence outputting `2` to the console and returning `nil`.
+
+This code demonstrates the concept of variable shadowing. When the name of a block parameter is the same as a local variable that was initialized outside the block, the block parameter "shadows" the local variable of the same name. The local variable is not accessible within the block.
+
 ## `each`, `select`, and `map`
 
 ### 33
