@@ -107,6 +107,89 @@ Upon the method invocation of `greetings` with the arguement `word`, the method 
 
 This code demonstrates method defintion and invocation. The method `greetings` is defined with a method **parameter** `str` on lines 1 to 4, and it is called on line 8 with an **argument** `word`. This also demonstrates how local variables defined outside of a method definiton are made available inside of it by passing them into a method as arguements.
 
+### 6
+
+What does the following code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+arr = [1, 2, 3, 4]                 # 1
+counter = 0                        # 2
+sum = 0                            # 3
+                                   # 4
+loop do                            # 5
+  sum += arr[counter]              # 6
+  counter += 1                     # 7
+  break if counter == arr.size     # 8
+end                                # 9
+                                   # 10
+puts "Your total is #{sum}"        # 11
+````
+
+The above code outputs `You total is 10` to the console and returns `nil`.
+
+On line 1, the local variables `arr` is initialized and assigned to the Array object `[1, 2 ,3 ,4]`.
+
+On lines 2 and 3, the local variables `counter` and `sum` are initialized and assigned to the Integer `0`.
+
+On line 5, the `loop` method is called with the `do...end` on lines 5 to 9 passed in as an argument. The method invocation of `loop` alongside the `do...end` defines a block and creates an inner scope within it. For each iteration, the local variable `sum` is incremented by each element in `arr` by using `counter` to keep track of the elements. As both `counter` and `sum` are initialized outside the block, they are accessible and therefore can be manipulated within the block. After adding the last element in `arr` to `sum`, we get out of the loop.
+
+On line 11, the `puts` method is called with `"Your total is #{sum}"` passed in as an argument. As `sum` now points to `10`, line 11 outputs `You total is 10` to the console and returns `nil`.
+
+This code demonstrates the local variable scoping rules in Ruby; specifically the fact that local variables initialized outside a block are accessible within the block.
+
+### 7
+
+What does the following code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+a = 'Bob'          # 1
+                   # 2
+5.times do |x|     # 3
+  a = 'Bill'       # 4
+end                # 5
+                   # 6
+p a                # 7
+````
+
+The above code outputs `"Bill"` to the console and returns `"Bill"`.
+
+On line 1, the local variable `a` is initialized and assigned to the String `'Bob'`.
+
+On line 3, the `times` method is called on the Integer `5` and passed in the `do...end` on lines 3 to 5 as an argument. The method invocation of `times` alongside the `do...end` defines a block and creates an inner scope within it. As `a` was initialized outside the block, it is accessible inside the block. Inside the block, `a` is re-assigned to String `'Bill'` (for 5 times).
+
+On line 7, the `p` method is called with `a` as an arguement. As `a` now points to the String `'Bill'`, line 7 outputs `"Bill"` to the console and returns `"Bill"`.
+
+This code demonstrates the local variable scoping rules in Ruby; specifically the fact that local variables initialized outside a block is accessible inside the block.
+
+### 8
+
+What does the following code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+animal = "dog"       # 1
+                     # 2
+loop do |_|          # 3
+  animal = "cat"     # 4
+  var = "ball"       # 5
+  break              # 6
+end                  # 7
+                     # 8
+puts animal          # 9
+puts var             # 10
+````
+
+The above code returns `nil`, outputs `cat` to the console and throws a NameError.
+
+On line 1, the local variable `animal` is initialized and assigned to the String `"dog"`.
+
+On line 3, the `loop` method is called and passed in the `do...end` on lines 3 to 7 as an argument. The method invocation of `loop` alongside the `do...end` defines a block and hence creates an inner scope within it. As `animal` was initialized outside the block, it is accessible within the block. On line 4, `animal` is re-assigned to the String `"cat"`. On line 5, the local variable `var` is initialized and assigned to the String `"ball"`.
+
+On line 9, the `puts` method is called with `animal` as an argument. As `animal` now points to the String `"cat"`, line 9 outputs `cat` to the console and returns `nil`.
+
+On line 10, the `puts` method is called with `var` as an argument. As `puts` was initialized inside the block on lines 3 to 7, it is not accessible outside the block. Hence, line 10 throws a NameError.
+
+This code demonstrates the local variable scoping rules in Ruby: local variables initialized outside a block is accessible inside the block, but those initialized inside a block is not accessible outside the block.
+
 ## `each`, `select`, and `map`
 
 ### 33
