@@ -223,6 +223,57 @@ On line 10, the `puts` method is called and passed in `b` as an argument, hence 
 
 This code demonstrates the concept of variable shadowing. When the name of a block parameter is the same as a local variable that was initialized outside the block, the block parameter "shadows" the local variable of the same name. The local variable is not accessible within the block.
 
+### 10
+
+What does the following code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+n = 10             # 1
+                   # 2
+1.times do |n|     # 3
+  n = 11           # 4
+end                # 5
+                   # 6
+puts n             # 7
+````
+
+The above code outputs `10` to the console and returns `nil`.
+
+On line 1, the local variable `n` is initialized and assigned to the Integer `10`.
+
+On line 3, the `times` method is called on the Integer `1` and passed in the `do...end` on lines 3 to 5 with a parameter `n` as an arguement. The method invocation of `times` alongside the `do...end` defines a block and hence creates an inner scope within it.
+
+As the name of the block parameter is the same as that of the local variable initialized on line 1, the local variable `n` inside the block "shadows" the one initalized outside the block. The local variable `n` initialized on line 1 is not accessible within the block. Hence when `11` is assigned to `n` passed in as a block parameter on line 4, the local variable `n` initialized on line 1 still points to the Integer `10`.
+
+So, when the `puts` method is called with `n` as an argument on line 7, `10` is outputted to the screen and returns `nil`.
+
+This code demonstrates the concept of variable shadowing. When the name of a block parameter is the same as a local variable initialized outside of the block. The block parameter "shadows" the local variable of the same name. The local variable is not accessible within the block.
+
+### 11
+
+What does the following code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+animal = "dog"       # 1
+                     # 2
+loop do |animal|     # 3
+  animal = "cat"     # 4
+  break              # 5
+end                  # 6
+                     # 7
+puts animal          # 8
+````
+
+The above code outputs `dog` to the console and returns `nil`.
+
+On line 1, the local variable `animal` is initialized and assigned to the String `"dog"`.
+
+On line 3, the `loop` method is called and passed in the `do...end` on lines 3 to 6 as an argument with a paramter `animal`. As the name of the block parameter is the same as that of the local variable initialized on line 1, the local variable `animal` in the block "shadows" the one outside the block of the same name. The one of the same name outside the block is not accessible inside the block. Therefore, when `"cat"` is assigned to the local variable `animal` passed in as a block parameter, the local variable `animal` that was initialized outside the block still points to `"dog"`.
+
+Therefore, when the `puts` method is called with an argument `animal`, `dog` is outputted to the screen and returns `nil`.
+
+This code demonstrate the concept of variable shadowing. When the name of the block parameter is the same as a local variable that was initialized outside the block. The block parameter "shadows" the local variable of the same name. The one outside the block is not accessible inside the block.
+
 ## `each`, `select`, and `map`
 
 ### 33
