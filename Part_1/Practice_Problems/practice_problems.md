@@ -298,6 +298,95 @@ Therefore, when the `puts` method is called with an argument `animal`, `dog` is 
 
 This code demonstrate the concept of variable shadowing. When the name of the block parameter is the same as a local variable that was initialized outside the block. The block parameter "shadows" the local variable of the same name. The one outside the block is not accessible inside the block.
 
+## Object Passing/Variables as Pointers
+
+### 12
+
+What are `a` and `b`? Why? What concept does it demonstrate?
+
+````ruby
+a = "hi there"      # 1
+b = a               # 2
+a = "not there"     # 3
+````
+
+The local variables `a` and `b` respectively reference the String objects `"not there"` and `"hi there"`.
+
+On line 1, the local variable `a` is initialized and assigned to the String object `"hi there"`.
+
+On line 2, the local variable `b` is initialized and assigned to the object that `a` is referencing, which is `"hi there"`.
+
+On line 3, the local variable `a` is re-assigned to another String object `"not there"`.
+
+This code demonstrates how variables behave as pointers to objects in Ruby, and they are not deeply linked to each other, even when one is assigned to the other. It also demonstrates that re-assignment to a new object creates a new object in memory, and that breaks the link between the local variable and the object it previously referenced.
+
+### 13
+
+What does the following code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+a = "hi there"     # 1
+b = a              # 2
+a << ", Bob"       # 3
+````
+
+After the above code is executed, both the local variables `a` and `b` reference the same String object `"hi there, Bob"`.
+
+On line 1, the local variable `a` is initialized and assigned to the String object `"hi there"`.
+
+On line 2, the local variable `b` is initialized and assigned to the object the `a` is referencing, which is `"hi there"`.
+
+On line 3, the object that `a` references is appended with the String `", Bob"`. As `String#<<` is a destructive method, it modifies the String object that `a` references in place to `"hi there, Bob"`. As `b` references the same String object as `a`, this change also reflects in the local variable `b`. Therefore, both `a` and `b` now refernce `"hi there, Bob"`.
+
+This code demonstrates the fact that variables act as pointers to objects.
+
+### 14
+
+What are `a`, `b`, and `c`? What if the last line was `c = a.uniq!`?
+
+````ruby
+a = [1, 2, 3, 3]     # 1
+b = a                # 2
+c = a.uniq           # 3
+````
+
+The local variables `a`, `b` and `c` are respectively `[1, 2, 3, 3]`, `[1, 2, 3, 3]` and `[1, 2, 3]`.
+
+If the last line was `c = a.uniq!`, `a`, `b` and `c` would be all `[1, 2, 3]`.
+
+On line 1, the local variable `a` is initalized and assigned to the Array object `[1, 2, 3, 3]`.
+
+On line 2, the local variable `b` is initalized and assigned to the object that `a` is referencing, which is `[1, 2, 3, 3]`.
+
+On line 3, the local variable `c` is initialized and assigned to the return value of `a.uniq`. As `Array#uniq` is a non-mutating method, it returns a new Array object `[1, 2, 3]`. Therefore, `c` now references `[1, 2, 3]`, and both `a` and `b` are unaffected, referencing the same Array object `[1, 2, 3, 3]`.
+
+If the last line was `c = a.uniq!`, `a.uniq!` would not return a new Array object as `Array#uniq!` is a mutating method. Instead, it modifies the calling object in place. Therefore, `a` is modified in place to `[1, 2, 3]` and assigned to `c`. As `b` references the same Array object as `a`, the change would also reflect in `b`. Therefore `a`, `b` and `c` all reference the same Array object `[1, 2, 3]` at this point.
+
+This code demonstrates that variables act as pointers to objects in Ruby.
+
+### 15
+
+What is `a`? What if we called `map!` instead of `map`?
+
+````ruby
+def test(b)                                             # 1
+  b.map { |letter| "I like the letter: #{letter}" }     # 2
+end                                                     # 3
+                                                        # 4
+a = ['a', 'b', 'c']                                     # 5
+test(a)                                                 # 6
+````
+
+After execution of the above code, a is `['a', 'b', 'c']`. If we called `map!` instead of `map`, `a` would be `["I like the letter: a", "I like the letter: b", "I like the letter: c"]`.
+
+On line 5, the local variable `a` is initalized and assigned to the Array object `['a', 'b', 'c']`.
+
+On line 6, the method `test` is called and passed in `a` as an argument. Upon method invocation, the method parameter `b` is assigned to the object that `a` is referencing, which is `['a', 'b', 'c']`. The `map` method is then called on `b` and passed in the block `{ |letter| "I like the letter: #{letter}" }` as an argument. For each iteration, each element in `b` is assigned to the block parameter `letter` and run through the block. The `map` method will return a *new* transformed array with each element being the block's return value for the corresponding element. For each element in `b`, the block's return value is the return value of the block's last evaluated expression, which is `"I like the letter: #{letter}"`. Therefore, the `map` method returns `["I like the letter: a", "I like the letter: b", "I like the letter: c"]`, and `a` is unaffected. The return array happens to be the method's return value because `b.map { |letter| "I like the letter: #{letter}" }` is the last evaluated expression of the `test` method. Therefore, line 6 returns `["I like the letter: a", "I like the letter: b", "I like the letter: c"]`, and `a` remains to be `['a', 'b', 'c']`.
+
+If the `map!` method is called instead of `map`, the `map!` would not return a new transformed array. Instead, it modifies the calling Array object in place. Therefore, when the local variable `a` and the method parameter `b` both reference the same Array object `['a', 'b', 'c']` upon method invocation, and the method `map!` is called on `b`, the `map!` method modifies `b` in place, and thus the change would also reflect in `a`. Hence, both `a` and `b` would reference the same Array object `["I like the letter: a", "I like the letter: b", "I like the letter: c"]` at the end.
+
+This code demonstrates how objects are passed in Ruby: they are passed by reference, instead of passing by value.
+
 ## `each`, `select`, and `map`
 
 ### 33
