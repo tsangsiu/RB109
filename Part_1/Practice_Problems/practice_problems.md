@@ -2,6 +2,30 @@
 
 ## Local Variable Scope
 
+### 1
+
+What does the followig code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+a = "Hello"       # 1
+b = a             # 2
+a = "Goodbye"     # 3
+puts a            # 4
+puts b            # 5
+````
+
+The above code outputs `Goodbye` and `Hello` to the console, and returns `nil` and `nil`.
+
+On line 1, the local variable `a` is initialized and assigned to the String `"Hello"`.
+
+On line 2, the local variable `b` is initialized and assigned to the object refernced by `a`, which is `"Hello"`.
+
+On line 3, the local variable `a` is re-assigned to another String `"Goodbye"`.
+
+Therefore, on line 4, when the `puts` method is called and passed in `a` as an argument, `Goodbye` is outputted to the console and returns `nil`. For line 5, `Hello` is outputted to the console and returns `nil`.
+
+This code demonstrates how variables behave as *pointers to objects* in Ruby, and are not deeply linked to each other, even when one is assigned to the other. It also demonstrates that assignment creates a new object in memory, and breaks the link between the variable and the object it previously referenced.
+
 ### 2
 
 What does the followig code return? What does it output? Why? What concept does it demonstrate?
