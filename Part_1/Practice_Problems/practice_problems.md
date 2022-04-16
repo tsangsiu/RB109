@@ -387,6 +387,28 @@ If the `map!` method is called instead of `map`, the `map!` would not return a n
 
 This code demonstrates how objects are passed in Ruby: they are passed by reference, instead of passing by value.
 
+### 16
+
+What are `a` and `b`? Why?
+
+````ruby
+a = 5.2      # 1
+b = 7.3      # 2
+             # 3
+a = b        # 4
+b += 1.1     # 5
+````
+
+After execution of the above code, `a` and `b` are respectively `7.3` and `8.4`.
+
+On line 1, the local variable `a` is initialized and assigned to the FLoat object `5.2`.
+
+On line 2, the local variable `b` is initialized and assigned to the Float object `7.3`.
+
+On line 4, `a` is re-assigned to the Float object that `b` is referencing, which is `7.3`.
+
+On line 5, `b` is re-assigned to another Float object `b + 1.1`, which is calculated to be `8.4`. As Floats are immutable, the Float object that `b` references does not mutated. Instead, `b` points to a new Float object `8.4`. Therefore `a` is unaffected and remains to be `5.2`.
+
 ## `each`, `select`, and `map`
 
 ### 33
