@@ -401,13 +401,134 @@ b += 1.1     # 5
 
 After execution of the above code, `a` and `b` are respectively `7.3` and `8.4`.
 
-On line 1, the local variable `a` is initialized and assigned to the FLoat object `5.2`.
+On line 1, the local variable `a` is initialized and assigned to the Float object `5.2`.
 
 On line 2, the local variable `b` is initialized and assigned to the Float object `7.3`.
 
 On line 4, `a` is re-assigned to the Float object that `b` is referencing, which is `7.3`.
 
 On line 5, `b` is re-assigned to another Float object `b + 1.1`, which is calculated to be `8.4`. As Floats are immutable, the Float object that `b` references does not mutated. Instead, `b` points to a new Float object `8.4`. Therefore `a` is unaffected and remains to be `5.2`.
+
+### 17
+
+What does the following code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+def test(str)                       # 1
+  str += '!'                        # 2
+  str.downcase!                     # 3
+end                                 # 4
+                                    # 5
+test_str = 'Written Assessment'     # 6
+test(test_str)                      # 7
+                                    # 8
+puts test_str                       # 9
+````
+
+The last line outputs `Written Assessment` to the console and returns `nil`.
+
+On line 6, the local variable `test_str` is initialized and assigned to the String `'Written Assessment'`. It is then passed in to the method `test` as an argument. Upon the method invocation of `test`, the method parameter `str` is assigned to the String that `test_str` is referencing, which is `'Written Assesssment'`. `str` is then re-assigned to a *new* String `'Written Assessment!'`. At this point, `str` and `test_str` are referencing two different Strings, where `test_str` is still pointing to the String `Written Assessment`. Therefore, when the `puts` method is called on line 9 and passed in `test_str` as an argument, it outputs `Written Assessment` to the screen and returns `nil`.
+
+This code demostrates how variables in Ruby behave as pointers to objects, and that re-assignment breaks the link between the variable and the object it previously referenced.
+
+### 18
+
+What does the following code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+def plus(x, y)     # 1
+  x = x + y        # 2
+end                # 3
+                   # 4
+a = 3              # 5
+b = plus(a, 2)     # 6
+                   # 7
+puts a             # 8
+puts b             # 9
+````
+
+The lines 8 and 9 output `3` and `5` to the console and both return `nil`.
+
+On line 5, the local variable `a` is initialized and assigned to the Integer `3`.
+
+On line 6, the local variable `b` is initialized and assigned to the return value of `plus(a, 2)`.
+
+Upon the method invocation of `plus` with two arguments `a` and `2`, the method parameters `x` and `y` are respectively assigned to `a` (which points to `3`) and `2`. Then, `x` is re-assigned to the return value of `x + y`, which is `5`. As `x = x + y` is the last evaluated expression of the method `plus`, the return value of it (which is `5`) is also the return value of the method. Therefore `b` is initialized and assigned to `5` on line 6.
+
+Therefore, when the `puts` method is called and passed in `a` and `b` respectively on lines 8 and 9, they output `3` and `5` to the console, and both return `nil`.
+
+### 19
+
+What does the following code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+def increment(x)     # 1
+  x << 'b'           # 2
+end                  # 3
+                     # 4
+y = 'a'              # 5
+increment(y)         # 6
+                     # 7
+puts y               # 8
+````
+
+The line 8 outputs `ab` to the console and returns `nil`.
+
+On line 5, the local variable `y` is initialized and assigned to the String `'a'`.
+
+It is then passed in to the method `increment` as an argument. Upon the method invocation of `increment`, the method parameter `x` is assigned to the String that `y` is referencing, which is `'a'`. At this point, both `x` and `y` reference the same String `'a'`. `x` is then appended the String `'b'` destructively to `'ab'`. As `String#<<` is a mutating method, the change reflects in both `x` and `y`.
+
+Therefore, when the method `puts` is called with an arguement `y` on line 8, it outputs `ab` to the console and returns `nil`.
+
+This code demonstrates that variables behave as pointers to objects in Ruby, and thus when two variables points to the same object, any destructive change in the object will reflect in both variables, depsite the fact that method definition has a self-contained scope for local variables.
+
+### 20
+
+What does the following code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+def change_name(name)     # 1
+  name = 'bob'            # 2
+end                       # 3
+                          # 4
+name = 'jim'              # 5
+change_name(name)         # 6
+puts name                 # 7
+````
+
+The line 7 outputs `jim` to the console and returns `nil`.
+
+On line 5, the local variable `name` is initialized and assigned to the String `'jim'`.
+
+It is then passed in to the method `change_name` as an argument. Upon the method invocation of `change_name`, the method parameter `name` is assigned to the String that the local variable `name` is referencing, which is `jim`. Note that here the method parameter `name` and the local variable `name` in the main scope are two different variable, although they happen to reference the same String `jim` at this point. Inside the method definition, `name` is then re-assigned to a new String `'bob'`, while `name` in the main scope still points to `'jim'`.
+
+Therefore, outside the method definition, when the `puts` method is called with an argument `name` on line 7, it outputs `'jim'` to the console and returns `nil`.
+
+This code demonstrate that how variables in Ruby behave as pointers to objects, and that re-assignment breaks the link between the variable and the object it previously referenced.
+
+### 21
+
+What does the following code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+def cap(str)          # 1
+  str.capitalize!     # 2
+end                   # 3
+                      # 4
+name = 'jim'          # 5
+cap(name)             # 6
+puts name             # 7
+````
+
+The line 7 outputs `Jim` to the console and returns `nil`.
+
+On line 5, the local variable `name` is initialized and assigned to the String `'jim'`.
+
+It is then passed in to the method `cap` as an argument. Upon the method invocation of `cap`, the method parameter `str` is assigned to the String that `name` is referencing, which is `jim`. At this point, both `str` and `name` reference the same String `jim`. The `capitalize!` is then called on `str`. The String that `str` references, `'jim'` is modified in place to `'Jim'`. As `String#capitalize!` is a mutating method, the change reflects in both `str` and `name`.
+
+Therefore, outside the method definition, when the `puts` method is called with an arguemnt `name` on line 7, it output `Jim` to the console and returns `nil`.
+
+This code demonstrate that how variables in Ruby behave as pointers to objects, and that when two variables point to the same object and any destructive action is performed on the object, the change will reflect in both variables.
 
 ## `each`, `select`, and `map`
 
