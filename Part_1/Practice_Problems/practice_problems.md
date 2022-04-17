@@ -587,6 +587,33 @@ Therefore, when the `puts` method is called on line 7 and passed in `arr1`, it o
 
 This code demonstrates how you can mutate a shallow copy of a collection object without modifying the original object, as long as the mutating method is called on the shallow copy, rather than on its elements.
 
+## Object Mutability/Mutating Methods
+
+### 24
+
+What does the following code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+def fix(value)          # 1
+  value.upcase!         # 2
+  value.concat('!')     # 3
+  value                 # 4
+end                     # 5
+                        # 6
+s = 'hello'             # 7
+t = fix(s)              # 8
+````
+
+On line 7, the local variable `s` is initialized and assigned to the String `'hello'`.
+
+on line 8, the method `fix` is called with an argument `s`. Upon the method invocation of `fix` with an argument `s`, the method parameter `value` is assigned to the String that `s` is referencing, which is `'hello'`. As this point, both `s` and `value` point to the same String object `'hello'`. As both `upcase!` and `concat` are mutating methods, `value` is then modified in place to `'HELLO'` and then `'HELLO!'`. As the `value` is mutated, so does `s`. As the last evaluated expression of the `fix` method is `value`, its return value is also the method's return value. Hence, on line 8, `fix(s)` returns `'HELLO!'`, and is assigned to the newly-initalized local variable `t`.
+
+Therefore, after the execution of the above code, `s` and `t` both reference the same String object `'HELLO!'`.
+
+This code demonstrates how objects in Ruby are passed around by reference, especially when both variables reference the same object, and some destructive methods are called on the object, the change is reflected on both variables.
+
+### 25
+
 ## `each`, `select`, and `map`
 
 ### 33
