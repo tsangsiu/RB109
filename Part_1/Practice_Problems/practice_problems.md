@@ -530,6 +530,63 @@ Therefore, outside the method definition, when the `puts` method is called with 
 
 This code demonstrate that how variables in Ruby behave as pointers to objects, and that when two variables point to the same object and any destructive action is performed on the object, the change will reflect in both variables.
 
+### 22
+
+What is `arr`? Why? What concept does it demonstrate?
+
+````ruby
+a = [1, 3]       # 1
+b = [2]          # 2
+arr = [a, b]     # 3
+arr              # 4
+                 # 5
+a[1] = 5         # 6
+arr              # 7
+````
+
+On line 4, `arr` is referencing `[[1, 3], [2]]`, while on line 7, `arr` is referencing `[[1, 5], [2]]`.
+
+On line 1, the local variable `a` is initialized and assigned to the Array `[1, 3]`.
+
+On line 2, the local variable `b` is initialized and assigned to the Array `[2]`.
+
+On line 3, the local variable `arr` is initialized and assigned to the Array object `[a, b]` (where `a` and `b` are the local variables initialized above), which is `[[1, 3], [2]]`.
+
+Therefore, on line 4, `arr` is referencing `[[1, 3], [2]]`.
+
+On line 6, the element at position `1` in the Array `a` is re-assigned to `5`. As one of the sub-arrays in `arr` also references `a`. This change not only reflects in `a`, but also in `arr`.
+
+Therefore, on line 7, `arr` is referencing `[[1, 5], [2]]`.
+
+This code demonstrate how variables behave as pointers to objects in Ruby, and that when a variable and an element of a collection object points to the same object and any destructive action is performed on the object, the change will reflect in both variable and the collection object.
+
+### 23
+
+What does the following code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+arr1 = ["a", "b", "c"]     # 1
+arr2 = arr1.dup            # 2
+arr2.map! do |char|        # 3
+  char.upcase              # 4
+end                        # 5
+                           # 6
+puts arr1                  # 7
+puts arr2                  # 8
+````
+
+While line 7 outputs `a`, `b` and `c` to the console, line 8 outputs `A`, `B` and `C` to the console. Both lines return `nil`.
+
+On line 1, the local variable `arr1` is initialized and assigned to the Array object `["a", "b", "c"]`.
+
+On line 2, the local variable `arr2` is initialized and assigned to the shallow copy of `arr1`. At this point, both `arr1` and `arr2` point to two different Array objects, although each corresponding element in both Arrays point to the same String objects.
+
+On line 3, the `map!` method is called on `arr2` and passed in the `do...end` on lines 3 to 5 as an argument. For each iteration, each element in `arr2` is assigned to the block parameter `char` and run through the block. The `map!` method, which is a destructive method, modifies and transformed `arr2` in place based on the block's return value. In this case, each element in `arr2` is transformed to its upper case. As `upcase` is not a destrcutive method, such change to the elements of `arr2` does not affect those in in `arr1`. Therefore, `arr2` is mutated to `["A", "B", "C"]`, while `arr1` is unaffected.
+
+Therefore, when the `puts` method is called on line 7 and passed in `arr1`, it outputs `a`, `b` and `c` to the console and returns `nil`. And on line 8, it outputs `A`, `B` and `B` to the console and returns `nil`.
+
+This code demonstrates how you can mutate a shallow copy of a collection object without modifying the original object, as long as the mutating method is called on the shallow copy, rather than on its elements.
+
 ## `each`, `select`, and `map`
 
 ### 33
