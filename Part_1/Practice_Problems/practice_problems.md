@@ -614,9 +614,188 @@ This code demonstrates how objects in Ruby are passed around by reference, espec
 
 ### 25
 
-## `each`, `select`, and `map`
+What do `s` and `t` reference? Why?
+
+````ruby
+def fix(value)             # 1
+  value = value.upcase     # 2
+  value.concat('!')        # 3
+end                        # 4
+                           # 5
+s = 'hello'                # 6
+t = fix(s)                 # 7
+````
+
+After the execution of the above code, the local variables `s` and `t` reference `'hello'` and `'HELLO!'` respectively.
+
+On line 6, the local variable `s` is initialized and assigned to the Strin `'hello'`.
+
+On line 7, the `fix` method is called with an argument `s`. The method parameter `value` is then assigned to the object that `s` is referencing, which is `'hello'`. `value` is then re-assigned to a new String `'HELLO'`. As re-assignmnet break the link between variable and the object it previously referenced, at this point, `s` and `value` reference two different Strings. As `concat` is a destructive method, `value` is then modified in-place to `'HELLO!'`. The String object that `s` references does not affected, as before this line both `s` and `value` reference two different String objects. As `value.concat('!')` is the last evaluated expression of the method definition of `fix`, its return value is the method's return value. Hence, `fix(s)` returns `'HELLO!'`, which is then assigned to the local variable `t`.
+
+Therefore, the result stated above follows.
+
+### 26
+
+What do `s` and `t` reference? Why?
+
+````ruby
+def fix(value)             # 1
+  value << 'xyz'           # 2
+  value = value.upcase     # 3
+  value.concat('!')        # 4
+end                        # 5
+                           # 6
+s = 'hello'                # 7
+t = fix(s)                 # 8
+````
+
+After the execution of the above code, the local variables `s` and `t` reference `'helloxyz'` and `'HELLOXYZ!'` respectively.
+
+On line 7, the local variable `s` is initialized and assigned to the String `'hello'`.
+
+On line 8, the method `fix` is called with an argument `s`. The method parameter `value` is then assigned to the String that `s` is referencing, which is `'hello'`. `value` is then appended the String `'xyz'` destructively to `'helloxyz'`. This change is also reflected on `s`, because just before this line, both `s` and `value` reference the same Sting object. `value` is then re-assigned to a new String `'HELLOXYZ'`. As re-assignment break the link between variable and the object it previously referenced, at this point, both `s` and `value` reference two different String objects. `value` is then modified in-place to `'HELLOXYZ!'`. This change does not reflect on `s`, as `s` and `value` do not reference the same String just before this line. As `value.concat('!')` is the last evaluated expression of the method definition of `fix`, its return value is the method's return value, and thus `fix(s)` returns `'HELLOXYZ'` which is then assigned to the local variable `t`.
+
+Therefore, after the execution of the above code, the local variables `s` and `t` reference `'helloxyz'` and `'HELLOXYZ!'` respectively.
+
+### 27
+
+What do `s` and `t` reference? Why?
+
+````ruby
+def fix(value)              # 1
+  value = value.upcase!     # 2
+  value.concat('!')         # 3
+end                         # 4
+                            # 5
+s = 'hello'                 # 6
+t = fix(s)                  # 7
+````
+
+On line 6, the local variable `s` is initialized and assigned to the String `'hello'`.
+
+On line 7, the method `fix` is called with an arguement `s`. Upon the method invocation of `fix`, the method parameter `value` is assigned to the String that `s` is referencing, which is `'hello'`. `value` is then modified in-place to `'HELLO'`, and is then assigned back to `value`. Note that this re-assignement of `value` does not break the link between `value` and the object it previously referenced, because the return value of `value.upcase!` which is `value` itself (although modified) is assigned back to `value`. At this point, both `s` and `value` reference `'HELLO'`, because `upcase!` is a mutating method, the change is reflected in both `s` and `value`. `value` is then modified in place to `'HELLO!'`. Again, as `concat` is a mutating method, this change is also reflected in `s`. As `value.concat('!')` is the last evaluated expression of the method definition of `fix`, its return value is the method's return value. Hence, `fix(s)` returns `'HELLO!'` which is then assigned to the local variable `t`.
+
+Therefore, after the execition of the above code, both `s` and `t` reference `'HELLO!'`.
+
+### 28
+
+What do `s` and `t` reference? Why?
+
+````ruby
+def fix(value)       # 1
+  value[1] = 'x'     # 2
+  value              # 3
+end                  # 4
+                     # 5
+s = 'abc'            # 6
+t = fix(s)           # 7
+````
+
+On line 6, the local variable `s` is initialized and assigned to the String `'abc'`.
+
+On line 7, the method `fix` is called with an argument `s`. Upon the method invocation of `fix`, the method parameter `value` is assigned to the String that `s` is referencing, which is `'abc'`. The character at position `1` is then re-assigned to `x`. Hence `value` becomes `'axc'` after this indexed assignment. As indexed assignment (`String#[]=`) is a destructive operation, this change is also reflected on `s`, as both `s` and `value` reference the same String just before this line. As the last evaluated expression of the method definition of `fix` is `value`, `value`, which references `'axc'` at the moment, is returned by `fix(s)`. The return value of `fix(s)` is then assigned to the local variable `t`.
+
+Hence, after the execution of the above code, both `s` and `t` reference the same String `'axc'`.
+
+### 29
+
+What does the following code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+def a_method(string)     # 1
+  string << ' world'     # 2
+end                      # 3
+                         # 4
+a = 'hello'              # 5
+a_method(a)              # 6
+                         # 7
+p a                      # 8
+````
+
+The above code outputs `"hello world"` to the console, and returns `"hello world"`.
+
+On line 5, the local variable `a` is initialized and assigned to the String `'hello'`.
+
+On line 6, the method `a_method` is called with an argument `a`. Upon the method invocation of `a_method`, the method parameter `string` is assigned to the String that `a` is referencing, which is `'hello'`. `string` is then appended the string `' world'` destructively to `'hello world'`. As just before this line both `a` and `string` reference the same String `'hello'`, and `String#<<` is a mutating method, this change is reflected on both `a` and `string`.
+
+Hence, when the `p` method is called with an argument `a` on line 8, it outputs `"hello world"` to the console and returns the same String.
+
+### 30
+
+What does the following code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+num = 3           # 1
+num = 2 * num     # 2
+````
+
+On line 1, the local variable `num` is initialized and assigned to the Integer `3`.
+
+On line 2, `num` is re-assigned to a new Integer `2 * num`, which is calculated to be `6`.
+
+As assignment statement returns the assigned value, the line 2 returns `6` and outputs nothing to the console.
+
+### 31
+
+What does the following code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+a = %w(a b c)     # 1
+a[1] = '-'        # 2
+p a               # 3
+````
+
+The line 3 outputs `["a", "-", "c"]` to the console and returns `["a", "-", "c"]`.
+
+On line 1, the local variable `a` is initialized and assigned to the Array `["a", "b", "c"]`.
+
+On line 2, the element at position 1 of the Array `a` is re-assigned to a new String "-". As element assignment (`Array#[]=`) is a mutating method, `a` is mutated to `["a", "-", "c"]`.
+
+Therefore, when the `p` method is called with an argument `a`, it outputs `["a", "-", "c"]` to the console and returns `["a", "-", "c"]`.
+
+### 32
+
+What does the following code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+def add_name(arr, name)     # 1
+  arr = arr + [name]        # 2
+end                         # 3
+                            # 4
+names = ['bob', 'kim']      # 5
+add_name(names, 'jim')      # 6
+puts names                  # 7
+````
+
+On line 5, the local variable `names` is initialized and assigned to the Array `['bob', 'kim']`.
+
+On line 6, the method `add_name` is called with arguments `names` and `'jim'`. Upon the invocation of `add_name`, the method parameters `arr` and `name` are respectively assigned to the object which `names` is referencing (which is `['bob', 'kim']`) and `'jim'`. At this point, both `names` and `arr` reference the same Array `['bob', 'kim']`. `arr` is then re-assigned to a new array with an element added, which is `['bob', 'kim', 'jim']`. As `Array#+` is a non-mutating method, this change is not reflected on `names`. `add_name(names, 'jim')` returns `['bob', 'kim', 'jim']` and is not assigned to any variables.
+
+Therefore, when the `puts` method is called with an argument `names`, it outputs `bob` and `kim` (in separate line) to the console and returns `nil`.
 
 ### 33
+
+What does the following code return? What does it output? Why? What concept does it demonstrate?
+
+````ruby
+def add_name(arr, name)     # 1
+  arr = arr << name         # 2
+end                         # 3
+                            # 4
+names = ['bob', 'kim']      # 5
+add_name(names, 'jim')      # 6
+puts names                  # 7
+````
+
+On line 5, the local variable `names` is initialized and assigned to the Array `['bob', 'kim']`.
+
+On line 6, the method `add_name` is called with arguments `name` and `'jim'`. Upon the method invocation of `add_name`, the method parameters `arr` and `name` are respectively assigned to the Array that `names` is referencing (which is `['bob', 'kim']`) and `'jim'`. At this point , both `names` and `arr` reference the same Array `['bob', 'kim']`. `arr` is then append an element `'jim'` destructively to `['bob', 'kim', 'jim']`. As `Array#<<` is a mutating method, this change is reflected in both the variables `arr` and `names`.
+
+Therefore, when the `puts` method is called with an argument `names`, it outputs `bob`, `kim` and `jim` (in separate line) to the console and returns `nil`.
+
+## `each`, `select`, and `map`
+
+### 34
 
 What does the following code return? What does it output? Why? What concept does it demonstrate?
 
@@ -634,7 +813,7 @@ On line 1, the local variable `array` is initialized and assigned to the Array o
 
 This example demonstrates the difference between `puts` and return values. `puts` here outputs the odd numbers to the console, but returns `nil`. Since the block's return value is `nil` for odd numbers, they are not selected. To select odd numbers, we should replace the if-conditional in the block with `num.odd?`. In that case, the output would be `[1, 3, 5]`.
 
-### 34
+### 35
 
 What does the following code return? What does it output? Why? What concept does it demonstrate?
 
@@ -650,7 +829,7 @@ On line 1, the local variable `arr` is initialized and assigned to the Array obj
 
 This code demonstrates...?
 
-### 35
+### 36
 
 What does the following code return? What does it output? Why? What concept does it demonstrate?
 
@@ -672,7 +851,7 @@ On line 7, the `p` method is invoked and passed in the variable `new_array` as a
 
 This code demonstrates...?
 
-### 36
+### 37
 
 What does the following code return? What does it output? Why? What concept does it demonstrate?
 
@@ -697,7 +876,7 @@ On line 8, the `p` method is called with a variable `new_array` passed in as an 
 
 This code demonstrates...?
 
-### 37
+### 38
 
 What does the following code return? What does it output? Why? What concept does it demonstrate?
 
@@ -721,7 +900,7 @@ On line 7, the `p` method is called and passed in the variable `new_array` as an
 
 This code demonstrates...?
 
-### 38
+### 39
 
 What does the following code return? What does it output? Why? What concept does it demonstrate?
 
@@ -737,7 +916,7 @@ On line 1, the local variable `arr` is assigned to the Array object `[1, 2, 3, 4
 
 This code demonstrates...?
 
-### 39
+### 40
 
 What does the following code return? What does it output? Why? What concept does it demonstrate?
 
@@ -761,7 +940,7 @@ On line 7, the `p` method is called and passed in the local variable `incremente
 
 This code demonstrates...?
 
-### 40
+### 41
 
 What does the following code return? What does it output? Why? What concept does it demonstrate?
 
@@ -785,7 +964,7 @@ On line 7, the `p` method is called and passed in the local variable `new_array`
 
 This code demonstrates...?
 
-### 41
+### 42
 
 What does the following code return? What does it output? Why? What concept does it demonstrate?
 
@@ -810,7 +989,7 @@ On line 8, the `p` method is called and passed in the variable `new_array` as an
 
 This code demonstrates...?
 
-### 42
+### 43
 
 What does the following code return? What does it output? Why? What concept does it demonstrate?
 
@@ -828,7 +1007,7 @@ On line 3, the method `map` is called on the Array object `[1, 2, 3]` and passed
 
 This code demonstrates...?
 
-### 43
+### 44
 
 What does the following code return? What does it output? Why? What concept does it demonstrate?
 
@@ -850,7 +1029,7 @@ This code demonstrates...?
 
 ## Other Collection Methods
 
-### 44
+### 45
 
 ````ruby
 [1, 2, 3].any? do |num|     # 1
@@ -862,7 +1041,7 @@ The above code returns `true` and outputs nothing to the console.
 
 The `any?` method is called on the Array object `[1, 2, 3]` on line 1 and passed in the `do...end` block on lines 1 to 3 as an argument. For every iteration, every element in `[1, 2, 3]` is in turn assigned to the block parameter `num` and run through the block. The `any?` method returns `true` (and stops iterating) if the block returns a truthy value for any element in the calling object, and `false` if otherwise. Since the block's last evaluated expression is `num > 2`, the block returns `true` if any number in `[1, 2, 3]` is greater than `2`. As the block's return value is `true` for one of the elements in the calling object (`3`), the `any?` method returns `true`.
 
-### 45
+### 46
 
 ````ruby
 { a: "ant", b: "bear", c: "cat" }.any? do |key, value|     # 1
@@ -874,7 +1053,7 @@ The above code returns `false` and outputs nothing to the console.
 
 The `any?` method is called on the Hash object `{ a: "ant", b: "bear", c: "cat" }` on line 1 and passed in the `do...end` block on lines 1 to 3 as an argument. For each iteration, each key-value pair is respectively assigned to the block parameter `key` and `value`, and run through the block. The `any?` method returns `true` if the block returns a truthy value for any key-value pair in the hash, and `false` if otherwise. As the block's last evalulated expression is `value.size > 4`, the block returns `true` if there is a value in the hash that has a length greater than `4`. As there is no value of length greater than `4` in the hash, the `any?` method return `false`.
 
-### 46
+### 47
 
 ````ruby
 [1, 2, 3].all? do |num|     # 1
@@ -886,7 +1065,7 @@ The above code returns `false` and outputs nothing to the console.
 
 The `all?` method is called on the Array object `[1, 2, 3]` on line 1 and passed in the `do...end` block on lines 1 to 3 as an argument. For each iteration, each element in the array is assigned to the block parameter `num` and run through the block. The `all?` method returns `true` if the block returns `true` for all elements in the calling object, and `false` if otherwise. Since the block's last evaluated expression is `num > 2`, `all?` will return `true` if all elements in the array are greater than `2`. As there is only one element in the array that is greater than `2`, the `all?` method returns `false`.
 
-### 47
+### 48
 
 ````ruby
 { a: "ant", b: "bear", c: "cat" }.all? do |key, value|     # 1
@@ -898,7 +1077,7 @@ The above code returns `true` and outputs nothing to the console.
 
 The `all?` method is called on the Hash object `{ a: "ant", b: "bear", c: "cat" }` on line 1 and passed in the block on lines 1 to 3 as an argument. For each iteration, each key-value pair is respectively assigned to the block's parameres `key` and `value`, and then run through the block. The `all?` method returns `true` if the block returns `true` for all key-value pairs in the hash. Since the block's last evaluated expression is `value.length >= 3`, its return value would be the block's return value. Looking at the calling hash, the values are all greater than `3` in length. Therefore the block returns `true` for all key-value pairs in the hash, and thus the `all?` method returns `true`.
 
-### 48
+### 49
 
 ````ruby
 [1, 2, 3].each_with_index do |num, index|     # 1
@@ -910,7 +1089,7 @@ The above code returns `[1, 2, 3]`, and outputs `The index of 1 is 0.`, `The ind
 
 On line 1, the `each_with_index` is called on the Array object `[1, 2, 3]` and passed in the block on lines 1 to 3 as an argument. For each iteration, each element in the array is assigned to the block parameter `num`, and run through the block with another parameter `index` which starts at `0` and is incremented by `1` for each iteration. For each iteration, on line 2, the method `puts` is called and passed in the interpolated string `"The index of #{num} is #{index}."` (with block parameters `num` and `index`) as an argument, hencing outputting `The index of 1 is 0.`, `The index of 2 is 1.` and `The index of 3 is 2.` to the console. The `each_with_index` ignores the return value of the block and always returns the calling object, hence returning `[1, 2, 3]`.
 
-### 49
+### 50
 
 ````ruby
 { a: "ant", b: "bear", c: "cat" }.each_with_object([]) do |pair, array|     # 1
@@ -922,7 +1101,7 @@ The above code returns `["ant", "bear", "cat"]` and outputs nothing to the conso
 
 On line 1, the `each_with_object` method is called on the Hash object `{ a: "ant", b: "bear", c: "cat" }` and passed in an empty array `[]` and the block on lines 1 to 3 as arguments. For each iteration, each key-value pair and the given argument are respectively assigned to the block parameters `pair` (as a two-element array, the first element is the key, and the second is the value) and `array`, and then run throughh the block. For each iteration, on line 2, the last element in `pair`, which is the value of every key-value pair, is push to the given array `array`, hence `array` will be `["ant", "bear", "cat"]` after iterating all key-value pairs. The `each_with_object` returns the given argument, which is now mututated to `["ant", "bear", "cat"]`, hence it is the return value.
 
-### 50
+### 51
 
 ````ruby
 { a: "ant", b: "bear", c: "cat" }.each_with_object({}) do |(key, value), hash|     # 1
@@ -934,7 +1113,7 @@ The above code returns `{"ant"=>:a, "bear"=>:b, "cat"=>:c}` and outputs nothing 
 
 On line 1, the `each_with_object` method is called on the Hash object `{ a: "ant", b: "bear", c: "cat" }` and passed in an empty hash `{}` and the block on lines 1 to 3 as arguments. For each iteration, each key-value pair's key and value, and the given hash are respectively assigned to the block parameters `key`, `value` and `hash`, and run through the block. On line 2, the given hash's key and value are respectively assigned as the value and the key of the current key-value pair of the calling hash for every iteration. Therefore, the given hash will become `{"ant"=>:a, "bear"=>:b, "cat"=>:c}` after iterating all key-value pairs in the calling hash. The `each_with_object` returns the given arguement, which is now mutated to `{"ant"=>:a, "bear"=>:b, "cat"=>:c}`, hence it is the return value.
 
-### 51
+### 52
 
 ````ruby
 odd, even = [1, 2, 3].partition do |num|     # 1
@@ -955,7 +1134,7 @@ On lines 5 and 6, the `p` method is called and passed in the local variables `od
 
 ## Truthiness
 
-### 52
+### 53
 
 What does the following code return? What does it output? Why? What concept does it demonstrate?
 
@@ -979,7 +1158,7 @@ On line 4, the `puts` method is called with the String `"Hello is truthy"` passe
 
 This code demonstrates the concept of truthiness in Ruby; specifically the fact that any objects other than `nil` and `false` evaluate to `true` in Ruby.
 
-### 53
+### 54
 
 What does the following code return? What does it output? Why? What concept does it demonstrate?
 
@@ -1011,7 +1190,7 @@ This code demonstrates the concept of truthiness in Ruby; specifically the fact 
 
 ## `puts` vs `return`
 
-### 54
+### 55
 
 What does the following code output? What is the return value of `a` and why?
 
@@ -1026,7 +1205,7 @@ On line 1, the `puts` method is called and passed in the String object `"stuff"`
 
 On line 2, the `puts` method is called and passed in the local variable `a` as an argument. As `a` points to `nil`, an empty line is outputted to the console.
 
-### 55
+### 56
 
 What does the following code output and why?
 
