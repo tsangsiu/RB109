@@ -70,6 +70,7 @@
 ## Mock Written Assessment
 
 - [Mock Written Assessment](https://github.com/tsangsiu/RB109/blob/main/Part_1/Mock_Written_Assessment/mock_written_assessment.md)
+- [Mock Written Assessment (with Review Notes)](https://github.com/tsangsiu/RB109/blob/main/Part_1/Mock_Written_Assessment/mock_written_assessment_reviewed.md)
 
 ## Resources
 
