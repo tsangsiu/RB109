@@ -521,7 +521,7 @@ This code demonstrates variable shadowing. It occurs when the name of the block 
 
 22:36
 
-## 17
+## 17***
 
 ````ruby
 a = 7                 # 1
@@ -569,9 +569,9 @@ On line 4, the `each` method is again called on `["Moe", "Larry", "Curly", "Shem
 
 As elements at the same position in both Arrays that `array1` and `array2` are referencing are shared and `upcase!` is a mutating method, this change is also reflected on `array2`.
 
-Therefore, when the puts method is called on line 5 with an argument `array2`, it outputs the following to the console:
+Therefore, when the `puts` method is called on line 5 with an argument `array2`, it outputs the following to the console:
 
-````
+````ruby
 Moe
 Larry
 CURLY
@@ -623,7 +623,7 @@ end                                                               # 9
 
 On line 1, the method `map` is called on the two-dimensional array `[[8, 13, 27], ['apple', 'banana', 'cantaloupe']]` and passed in the block on lines 1 to 9. Upon the method invocation of `map`, each sub-array is assigned to the block parameter `arr` and executes the block. The `map` method transforms each element (which is each sub-array) based on the return value of the block.
 
-Inside the block that is passed to the `map` method, the `select` method is called on each sub-array and padded in the block on lines 2 to 8. The `select` method selects elements (which are the elements of each sub-array) based on the truthiness of the return value of the block.
+Inside the block that is passed to the `map` method, the `select` method is called on each sub-array and passed in the block on lines 2 to 8. The `select` method selects elements (which are the elements of each sub-array) based on the truthiness of the return value of the block.
 
 Consider the first sub-array `[8, 13, 27]`, as each element is an integer, the if-clause (`item > 13`) is executed. In this case, the block that is passed to the `select` method returns `true` for elements that are greater than `13`. Therefore, only the element `27` is selected, and thus the `select` method returns a new Array `[27]`.
 
