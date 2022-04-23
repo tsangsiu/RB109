@@ -1,5 +1,11 @@
 # Mock Written Assessment (Edited)
 
+Start Date and Time: 2022-04-22T21:00
+
+Finish Date and Time: 2022-04-22T23:35
+
+Submit Date and Time: 2022-04-22T23:55
+
 ## 1
 
 ````ruby
@@ -19,7 +25,9 @@ Within the **`while`** loop on lines 3 to 6, the local variable `a` is re-assign
 
 Therefore, when the `puts` method is called with an argument `a`, it outputs `5` to the console.
 
-### Note
+21:02
+
+### Note for #1
 
 - `while` on line 3 is a keyword, rather than a method inovcation. Therefore, the `do...end` on lines 3 to 6 does not constitute a block. Therefore, even if we initialize `a` inside the `do...end`, it is still accessible outside it.
 
@@ -53,17 +61,21 @@ On line 12, the method `some_method` is called.
 
 Upon the method invocation of `some_method`, the local variable `a` is initialized to the Integer `1`.
 
-On line 3, the `times` method is called on the Integer `5` with the `do...end` on lines 3 to 6 passed in as an argument. The method invocation of `times` alongside the `do...end` defines a block and hence create an inner scope.
+On line 3, the `times` method is called on the Integer `5` with the `do...end` on lines 3 to 6 passed in as an argument. The method invocation of `times` alongside the `do...end` defines a block and hence creates an inner scope.
 
-Inside the block, on line 4, the `puts` method is called with an argument `a`. As `a` was initialized outside of the block on line 2, it is accessible inside the block, hence outputting `1` to the console. On line 5 within the block, the local variable `b` is initialized to `2`.
+Inside the block, on line 4, the `puts` method is called with an argument `a`. As `a` was initialized outside of the block on line 2, it is accessible inside the block, hence outputting `1` to the console **(for 5 times)**. On line 5, within the block, the local variable `b` is initialized to `2` **(and re-assigned to the same Integer for the subsequent iterations)**.
 
 Outside the block on lines 8 and 9, while the local variable `a` is in scope, `b` is not. It is because `b` was initialized inside the block, it is not accessible outside the block.
 
 Hence, on line 8, it outputs `1` to the console, and on line 9, it throws a `NameError`.
 
-This code demonstrate the local variable scoping rules in Ruby: local variables initialized outside of a block is accessible inside the block, but not vice versa.
+This code demonstrates the local variable scoping rules in Ruby: local variables initialized outside of a block is accessible inside the block, but not vice versa.
 
 21:09
+
+### Note for #2
+
+- I was going too fast that I missed the fact that `puts a` on line 4 outputs `1` to the console for 5 times.
 
 ## 3
 
@@ -82,7 +94,7 @@ On line 1, the local variable `a` is initialized to `"Xyzzy"`.
 
 On line 7, the method `my_value` is called with an argument `a`. Upon the method invocation of `my_value`, the method parameter `b` is assigned to the String that `a` is referencing, which is `"Xyzzy"`. At this point, both `b` and `a` point to the same String `"Xyzzy"`. Then the character at position `2` of the String that `b` is referencing is re-assigned to `'-'`. As indexed assignment is a mutating operation, this change is also reflected on `a`.
 
-Therefore, when the `puts` method is called with `a` as an argument, it outputs `Xy-zy` to the console.
+Therefore, when the `puts` method is called with `a` as an argument on line 8, it outputs `Xy-zy` to the console.
 
 21:12
 
@@ -130,7 +142,7 @@ On line 7, the method `test` is called with an argument `test_str`.
 
 Upon the method invocation of `test`, the method parameter `str` is assigned to the String that `test_str` is referencing, which is `"Written Assessment"`. At this point, both `str` and `test_str` point to the same String `"Written Assessment"`. `str` is then re-assigned to a new String `"Written Assessment?"`. As re-assignment break the link between the variable and the object it previously referenced, at this point, both `test_str` and `str` do not point to the same String anymore. `test_str` and `str` point to `"Written Assessment"` and `"Written Assessment?"` respectively at this point. Therefore, there is no chance to mutate `test_str` again.
 
-Therefore, when the `puts` method is called with an argument `test_str` on line 9, it outputs `"Written Assessment"` to the console.
+Therefore, when the `puts` method is called with an argument `test_str` on line 9, it outputs `Written Assessment` to the console.
 
 21:23
 
@@ -154,6 +166,14 @@ The `test` on line 5 refer to the method definition on lines 1 to 3 here. Upon t
 
 Considering the `if...end` statements on lines 7 to 11, as `var` is referencing `nil`, which is `falsy`, the `else` clause is executed, hence outputting `interview` to the console.
 
+### Note for #6
+
+- Re-Attempt
+
+Upon the method invocation of `test`, the statement `puts "written assessment"` is run. It outputs `written assessmnet` to the console and returns `nil`. As the statement is the last evaluated expression of the method definition of `test`, it return value, which is `nil`, is also the method's return value. The return value `nil` is then assigned to the local variable `var` on line 5 where it is initialized.
+
+When evaluating the **`if` statement**, `var` is pointing to `nil`, which is `falsy`. Therefore the **else clause** is executed, hence outputting `interview` to the console.
+
 21:28
 
 ## 7
@@ -175,11 +195,27 @@ On line 3, the `loop` method is called and passed in the `do...end` with a param
 
 As the name of the block parameter is the same as the local variable initialized on line 1, inside the block, the local variable `animal` initialized on line 1 is not accessible due to variable shadowing. Therefore, while `animal` is re-assigned to `"cat"` on line 4, the local variable initialized on line 1 is untouched.
 
-Outside the block on line 8, the local variable `animal` initialized on line 1 is in scope. As it was untouched. Line 8 outputs `dog` to the console.
+Outside the block on line 8, the local variable `animal` initialized on line 1 is in scope. As it was untouched, line 8 outputs `dog` to the console.
 
 This code demonstrates variable shadowing. It occurs when the name of the block parameter is the same as the local variable initialized outside of the box. In this case, the local variable is not accessible inside the block.
 
 21:34
+
+### Note for #7
+
+- On line 4, the local variable `animal` is actually **re-assigned** to a new String `"cat"`. This can be shown by the following code:
+
+````ruby
+animal = "dog"
+
+loop do |animal|
+  p animal # => nil
+  animal = "cat" # was nil, reassigned to "cat"
+  break
+end
+
+puts animal
+````
 
 ## 8
 
@@ -204,15 +240,15 @@ As the name of the block parameter is the same as the local variable initialized
 
 Inside the block on line 5, the local variable `var` is initialized to `"ball"`.
 
-Outside the block on line 9, the local variable `animal` initialized on line 1 is in scope. As it was untouched. Line 9 outputs `dog` to the console.
+Outside the block on line 9, the local variable `animal` initialized on line 1 is in scope. As it was untouched, line 9 outputs `dog` to the console.
 
-Outside the block on lines 10, the local variable `var` is not in scope. It is because `var` was initialized inside the block, it is not accessible outside the block. Hence, line 10 throws a `NameError`.
+Outside the block on line 10, the local variable `var` is not in scope. It is because `var` was initialized inside the block, it is not accessible outside the block. Hence, line 10 throws a `NameError`.
 
-This code demonstrate the local variable scoping rules in Ruby: local variables initialized outside of a block is accessible inside the block, but not vice versa. However, if the name of a block parameter is the same as the local variable initialized outside the block, the local variable initialized outside the block is not accessible inside the block. That is what the code also demonstrates - variable shadowing.
+This code demonstrates the local variable scoping rules in Ruby: local variables initialized outside of a block is accessible inside the block, but not vice versa. However, if the name of a block parameter is the same as the local variable initialized outside the block, the local variable initialized outside the block is not accessible inside the block. That is what the code also demonstrates: variable shadowing.
 
 21:41
 
-## 9
+## 9***
 
 ````ruby
 MY_TEAM = "Los Angeles Clippers"     # 1
@@ -246,6 +282,26 @@ On line 17, it does not output anything to the console due to the above warning.
 
 21:52
 
+### Note for #9
+
+- This one tripped me up.
+
+- Constants aren't suppose to be re-assigned. Although Ruby lets you do that, it gives you a warning.
+
+- Constants can only be defined **outside** of method definitions.
+
+- Re-Attempt
+
+On line 1, the constant `MY_TEAM` is initialized to `"Los Angeles Clippers"`.
+
+On line 4, `MY_TEAM` is re-assigned to `"Phoenix Suns"`. Although constants are not supposed to be re-assigned, Ruby lets you do it but gives you a warning message. Also, the re-assignment is possible here within the block because constants have a global scope.
+
+The same situation on line 9. Here `MY_TEAM` is re-assigned to `"Los Angeles Lakers"`.
+
+On line 14, it tries to **initialize** a constant `MY_TEAM` inside the method definition of best_team`. However, this is not allowed by Ruby, giving you an error message.
+
+The above code will not get to line 17.
+
 ## 10
 
 ````ruby
@@ -273,21 +329,21 @@ p incremented                      # 20
 
 On line 1, the local variable `array` is initialized to the Array `[1,2,3,4,5,6,7,8,9,10]`.
 
-On line 3, the `select` method is called on the Array that `array` is referencing (which is `[1,2,3,4,5,6,7,8,9,10]`) with the `do...end` block on lines 3 to 5 as an argument. The `select` method selects elements in the calling Array based on the truthiness of the return value of the block. In this case, the block's return value of each element in the Array is the element itself plus `1`, which is always `truthy`. Therefore, all elements in `array` are selected. The `select` method returns a new Array `[1,2,3,4,5,6,7,8,9,10]`, which is then assigned to `odds`.
+On line 3, the `select` method is called on the Array that `array` is referencing (which is `[1,2,3,4,5,6,7,8,9,10]`) with the `do...end` block on lines 3 to 5 as an argument. The `select` method selects elements in the calling Array based on the truthiness of the return value of the block. In this case, the block's return value of each element in the Array is the element itself plus `1`, which is always `truthy`. Therefore, all elements in **the calling Array** are selected. The `select` method returns a new Array `[1,2,3,4,5,6,7,8,9,10]`, which is then assigned to `odds` **where it is initialized**.
 
 Therefore, on line 7, it outputs `[1,2,3,4,5,6,7,8,9,10]` to the console.
 
-On line 9, the `map` method is called on the Array that `array` is referencing (which is `[1,2,3,4,5,6,7,8,9,10]`) with the `do...end` block on lines 9 to 11 as an argument. The `map` method transforms elements in the calling Array based on the return value of the block. In this case, the block's return value for elements that are odd is `true`, and that for elements that are even is `false`. Therefore, the `map` method returns a new Array `[true, false, true, false, true, false, true, false, true, false]`, which is then assigned to `incremented`.
+On line 9, the `map` method is called on the Array that `array` is referencing (which is `[1,2,3,4,5,6,7,8,9,10]`) with the `do...end` block on lines 9 to 11 as an argument. The `map` method transforms elements in the calling Array based on the return value of the block. In this case, the block's return value for elements that are odd is `true`, and that for elements that are even is `false`. Therefore, the `map` method returns a new Array `[true, false, true, false, true, false, true, false, true, false]`, which is then assigned to `incremented` **where it is initialized**.
 
 Therefore, on line 13, it outputs `[true, false, true, false, true, false, true, false, true, false]` to the console.
 
-On line 9, the `map` method is called on the Array that `array` is referencing (which is `[1,2,3,4,5,6,7,8,9,10]`) with the `do...end` block on lines 15 to 18 as an argument. The `map` method transforms elements in the calling Array based on the return value of the block. In this case, the block's return value for all elements is `nil`. Therefore, the `map` method returns a new Array `[nil, nil, nil, nil, nil, nil, nil, nil, nil, nil]`, which is then assigned to `incremented`.
+On line 15, the `map` method is called on the Array that `array` is referencing (which is `[1,2,3,4,5,6,7,8,9,10]`) with the `do...end` block on lines 15 to 18 as an argument. The `map` method transforms elements in the calling Array based on the return value of the block. In this case, **as the last evaluated expression of the block is `puts n`**, the block's return value for all elements is `nil`. Therefore, the `map` method returns a new Array `[nil, nil, nil, nil, nil, nil, nil, nil, nil, nil]`, which is then assigned to `incremented`.
 
 Therefore, on line 20, it outputs `[nil, nil, nil, nil, nil, nil, nil, nil, nil, nil]` to the console.
 
 22:03
 
-## 11
+## 11***
 
 ````ruby
 a = 7               # 1
@@ -308,7 +364,15 @@ As re-assignment does not mutate a variable, the local variable `a` initialized 
 
 Therefore, when the `puts` method is called with an argument `a`, it outputs `7` to the console.
 
-## 12
+### Note for #11
+
+- Re-Attempt
+
+As method definition has a self-contained scope **with respect to local variables**, the local variable `a` initialized on line 1 is not accessible inside the method definition, and that inside the method defintion is not accessible outside of it.
+
+Therefore, when the `puts` method is called with an argument `a` on line 8, the local variable `a` initialized on line 1 is in scope, hence outputting `7` to the console.
+
+## 12***
 
 ````ruby
 a = 7               # 1
@@ -330,6 +394,33 @@ As method definition has a self-contained scope, the local variable `a` inside t
 Outside the method definition, the local variable `a` initialized on line 1 is in scope, hence outputting `7` to the console.
 
 22:14
+
+### Note for #12
+
+- Re-Attempt
+
+As method definition has a self-contained scope **with respect to local variables**, the local variable `a` initialized on line 1 is not accessible inside the method definition, and that inside the method definition is not accessible outside of it.
+
+Therefore, when the `puts` method is called with an argument `a` on line 8, the local variable `a` initialized on line 1 is in scope, hence outputting `7` to the console.
+
+- Additional Practice
+
+````ruby
+a = 7               # 1
+                    # 2
+def my_value(b)     # 3
+  b += 10           # 4
+end                 # 5
+                    # 6
+my_value(a)         # 7
+puts a              # 8
+````
+
+On line 7, the method `my_value` is called with an argument `a`.
+
+Upon the method invocation of `my_value`, the method parameter `b` is assigned to the object that `a` is referencing, which is the Integer `7`. At this point, both `a` and `b` point to the same Integer `7`. `b` is then re-assigned to a new Integer `17`. As re-assignment breaks the link between the variable and the object it previously referenced, at this point, `a` and `b` point to `7` and `17` respectively.
+
+Therefore, when the `puts` method is called with an argument `a`, it outputs `7` to the console.
 
 ## 13
 
