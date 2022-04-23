@@ -1,5 +1,9 @@
 # Written Assessment
 
+## An Example from the Study Guide
+
+- [An Example from the Study Guide](https://github.com/tsangsiu/RB109/blob/main/Part_1/example_study_guide.md)
+
 ## Practice Problems
 
 - [Practice Problems](https://docs.google.com/document/d/16XteFXEm3lFbcavrXDZs45rNEc1iBxSYC8e4pLhT0Rw/edit#)
@@ -63,9 +67,9 @@
 | [55](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#55) | [`puts` vs `return`](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#puts-vs-return) | :white_check_mark:
 | [56](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#56) | [`puts` vs `return`](https://github.com/tsangsiu/RB109/blob/main/Part_1/Practice_Problems/practice_problems.md#puts-vs-return) | :white_check_mark:
 
-## An Example from Study Guide
+## Mock Written Assessment
 
-- [An Example from Study Guide](https://github.com/tsangsiu/RB109/blob/main/Part_1/example_study_guide.md)
+- [Mock Written Assessment](https://github.com/tsangsiu/RB109/blob/main/Part_1/Mock_Written_Assessment/mock_written_assessment.md)
 
 ## Resources
 
