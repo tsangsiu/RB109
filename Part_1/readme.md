@@ -2,7 +2,7 @@
 
 ## An Example from the Study Guide
 
-- [An Example from the Study Guide](https://github.com/tsangsiu/RB109/blob/main/Part_1/example_study_guide.md)
+- [An Example from the Study Guide](https://github.com/tsangsiu/RB109/blob/main/Part_1/Example_Study_Guide/example_study_guide.md)
 
 ## Practice Problems
 
