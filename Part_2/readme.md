@@ -4,7 +4,7 @@
 
 - :star: means the problem is worth re-visiting
 - :star::star: means I couldn't get it right at the first attempt
-- :star::star::star: means the problem took a lot of time
+- :star::star::star: means the problem took me a lot of time
 
 | Part | Remark |
 | --- | --- |
@@ -287,35 +287,6 @@ str.split(/(\.)|(\/)|(\?)/) # => ["abc", ".", "def", "/", "ghi", "?"], why?
 "'''''".match?(/^'+$/) # => true
 "  '  ".match?(/^'+$/) # => false
 ````
-
-### 20220221
-
-#### `Array#delete` and `Array#delete_at`
-
-- `Array#delete` deletes all elements as specified by the argument.
-
-````ruby
-array = [1, 2, 2, 3]
-array.delete(2) # => returns 2
-array # => [1, 3]
-````
-
-- `Array#delete_at` deletes the element at the specified position.
-
-````ruby
-array = [1, 2, 2, 3]
-array.delete_at(2) # => returns 2
-array # => [1, 2, 3]
-````
-
-- Both the above methods are destructive.
-
-### 20220218B
-
-#### Substrings
-
-- A substring of the original string must be consecutive.
-- For example, `"1"`, `"134"` and `"1341"` are substrings of `"1341"`, while `"11"` and `"113"` are not.
 
 ### 20220218
 
