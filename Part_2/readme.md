@@ -1,5 +1,16 @@
 # Interview Assessment
 
+## Watch Others Code
+
+- :star: means the problem is worth re-visiting
+- :star::star: means I couldn't get it right at the first attempt
+- :star::star::star: means the problem took a lot of time
+
+| Part | Remark |
+| --- | --- |
+| [1B](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/part_1_b.rb) | :star::star::star: |
+| [1A](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/part_1_a.rb) | :star::star::star: |
+
 ## Codewars
 
 - [Practice Problems](https://docs.google.com/document/d/1usQUJQFr6PGVo3ZWgMi3nVtDRdeUuOUNRtZPtSKkYuE/edit#heading=h.8sf25q8ccj8w)
