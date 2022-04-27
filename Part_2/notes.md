@@ -2,7 +2,7 @@
 
 *This note contains miscellaneous stuff which I find it's good to know when preparing for the interview assessment.*
 
-## String
+## Strings
 
 ### Substrings
 
@@ -38,7 +38,19 @@ str.gsub!('e', '') # => nil
 str # => 'abbccc'
 ```
 
-## Array
+- We can use regular expressions in `String#sub!` and `String#gsub!`
+
+```ruby
+str = 'abbccc'
+str.sub!(/[^aeiou]/, '') # => 'abccc'
+str # => 'abccc'
+
+str = 'abbccc'
+str.gsub!(/[^aeiou]/, '') # => 'a'
+str # => 'a'
+```
+
+## Arrays
 
 ### To delete only one specific element in an Array when there are more than one of that element
 
