@@ -16,7 +16,6 @@
 # Reutn `output`
 
 # Code
-
 def common_chars(array_strings)
   output = []
   array_strings_chars = array_strings.map { |string| string.chars }
@@ -28,6 +27,42 @@ def common_chars(array_strings)
     end
   end
   output
+end
+
+# Algorithm 2
+# Initialize `output` to an empty Array
+# Create a deep copy of the given Array
+# Iterate through each characters in the first String
+  # If the character exists in all Strings in the Array,
+    # Push that character to `output`
+    # Delete that character in all Strings in the Array
+# Return `output`
+
+# Note
+# This algorithm is basically the same as the above, just that we are working on Strings here rather than Arrays
+
+# Code 2
+def common_chars(arr)
+  output = []
+  arr_copy = arr.dup.map { |str| str.dup }
+  arr.first.each_char do |char|
+    if arr_copy.all? { |str| str.include?(char) }
+      output << char
+      arr_copy.each { |str| str.sub!(char, '') }
+    end
+  end
+  output
+end
+
+# A clever solution from the video which I don't think I can come up with.
+def common_chars(arr)
+  arr_copy = arr.dup.map { |str| str.dup }
+  arr[0].chars.select do |char|
+    # this do the selection and deletion at the same time
+    # if `char` exists, `str.sub!(char, '')` returns the String after deletion is done
+    # if `char` does not exist, `str.sub!(char, '')` returns `nil`
+    arr_copy.all? { |str| str.sub!(char, '') }
+  end
 end
 
 p common_chars(["bella", "label", "roller"]) == ["e", "l", "l"]

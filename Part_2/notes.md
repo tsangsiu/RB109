@@ -8,6 +8,36 @@
 
 A substring of the original string must be consecutive. For example, `"1"`, `"134"` and `"1341"` are substrings of `"1341"`, while `"11"` and `"113"` are not.
 
+### To remove characters from a String
+
+- To remove only one specific character from a String when there are more than one of that character
+
+```ruby
+str = 'abbccc'
+str.sub!('c', '') # => 'abbccc'
+str # => 'abbcc'
+```
+
+- To remove all occurrences of a specific character from a String
+
+```ruby
+str = 'abbccc'
+str.gsub!('c', '') # => 'abb'
+str # => 'abb'
+```
+
+- If the substring to be deleted does not exist, both `String#sub!` and `String#gsub!` returns `nil`
+
+```ruby
+str = 'abbccc'
+
+str.sub!('e', '') # => nil
+str # => 'abbccc'
+
+str.gsub!('e', '') # => nil
+str # => 'abbccc'
+```
+
 ## Array
 
 ### To delete only one specific element in an Array when there are more than one of that element
