@@ -2,8 +2,8 @@
 
 ## Watch Others Code
 
-- :star: means the problem is worth re-visiting
-- :star::star: means I couldn't get it right at the first attempt
+- :star: means I couldn't get it right at the first attempt
+- :star::star: means the problem is worth re-visiting
 - :star::star::star: means the problem took me a lot of time
 
 | Part | Remark |
@@ -15,55 +15,55 @@
 
 - [Practice Problems](https://docs.google.com/document/d/1usQUJQFr6PGVo3ZWgMi3nVtDRdeUuOUNRtZPtSKkYuE/edit#heading=h.8sf25q8ccj8w)
 
-| # | Problem | Remark |
-| --- | --- | --- |
-| 47 | [Array.diff](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/47.rb) |
-| 46 | [Sum of Digits / Digital Root](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/46.rb) | Recursion
-| 45 | [Alphabetized](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/45.rb) | :star::star:
-| 44 | [Counting Duplicates](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/44.rb) |
-| 43 | [Transform to Prime](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/43.rb) | :star:
-| 42 | [Sort Arrays (Ignoring Case)](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/42.rb) |
-| 41 | [Backspaces in String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/41.rb) |
-| 40 | [Duplicate Encoder](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/40.rb) |
-| 39 | [Largest Product in a Series](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/39.rb) |
-| 38 | [String Transformer](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/38.rb) | :star::star:
-| 37 | [Multiples of 3 and 5](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/37.rb) |
-| 36 | [Delete a Digit](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/36.rb) |
-| 35 | [Mexican Wave](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/35.rb) |
-| 34 | |
-| 33 | [Replace with Alphabet Position](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/33.rb) |
-| 32 | [Highest Scoring Word](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/32.rb) | :star::star:
-| 31 | [Anagram Detection](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/31.rb) |
-| 30 | [Anagram Difference](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/30.rb) |
-| 29 | [Split Strings](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/29.rb) |
-| 28 | [Where My Anagrams At?](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/28.rb) |
-| 27 | [Exponent Method](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/27.rb) |
-| 26 | [Mean Square Error](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/26.rb) |
-| 25 | [Pete, the Baker](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/25.rb) |
-| 24 | [The Hashtag Generator](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/24.rb) |
-| 23 | [Longest Alphabetical Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/23.rb) | :star::star::star:
-| 22 | [Scramblies](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/22.rb) |
-| 21 | [Find the Mine!](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/21.rb) |
-| 20 | [Count and Group Character Occurrences in a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/20.rb) | :star::star::star:
-| 19 | [Title Case](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/19.rb) |
-| 18 | [Persistent Bugger](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/18.rb) |
-| 17 | [Write Number in Expanded Form](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/17.rb) |
-| 16 | [Stop gninnipS My sdroW!](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/16.rb) |
-| 15 | [Take a Ten-Minute Walk](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/15.rb) | :star:
-| 14 | [Dubstep](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/14.rb) |
-| 13 | [Kebabize](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/13.rb) |
-| 12 | [Detect Pangram](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/12.rb) |
-| 11 | [Extract the Domain Name From a URL](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/11.rb) | :star:
-| 10 | [Most Frequently Used Words in a Text](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/10.rb) | :star::star::star:
-| 9 | [Typoglycemia Generator](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/09.rb) | :star::star:
-| 8 | [Repeated Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/08.rb) | :star:
-| 7 | [Substring Fun](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/07.rb) |
-| 6 | [Non-Even Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/06.rb) |
-| 5 | [Longest Vowel Chain](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/05.rb) |
-| 4 | [Alphabet Symmetry](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/04.rb) |
-| 3 | [Return Substring Instance Count](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/03.rb)| :star:
-| 2 | [Find All Pairs](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/02.rb) | :star:
-| 1 | [Count Letters in a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/01.rb) |
+| # | Problem | Re-Do | Remark |
+| --- | --- | --- | --- |
+| 47 | [Array.diff](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/47.rb) | |
+| 46 | [Sum of Digits / Digital Root](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/46.rb) | | Recursion
+| 45 | [Alphabetized](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/45.rb) | | :star::star:
+| 44 | [Counting Duplicates](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/44.rb) | |
+| 43 | [Transform to Prime](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/43.rb) | | :star:
+| 42 | [Sort Arrays (Ignoring Case)](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/42.rb) | |
+| 41 | [Backspaces in String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/41.rb) | |
+| 40 | [Duplicate Encoder](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/40.rb) | |
+| 39 | [Largest Product in a Series](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/39.rb) | |
+| 38 | [String Transformer](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/38.rb) | | :star::star:
+| 37 | [Multiples of 3 and 5](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/37.rb) | |
+| 36 | [Delete a Digit](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/36.rb) | |
+| 35 | [Mexican Wave](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/35.rb) | |
+| 34 | | |
+| 33 | [Replace with Alphabet Position](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/33.rb) | |
+| 32 | [Highest Scoring Word](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/32.rb) | | :star::star:
+| 31 | [Anagram Detection](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/31.rb) | |
+| 30 | [Anagram Difference](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/30.rb) | |
+| 29 | [Split Strings](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/29.rb) | |
+| 28 | [Where My Anagrams At?](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/28.rb) | |
+| 27 | [Exponent Method](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/27.rb) | |
+| 26 | [Mean Square Error](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/26.rb) | |
+| 25 | [Pete, the Baker](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/25.rb) | |
+| 24 | [The Hashtag Generator](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/24.rb) | |
+| 23 | [Longest Alphabetical Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/23.rb) | | :star::star::star:
+| 22 | [Scramblies](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/22.rb) | |
+| 21 | [Find the Mine!](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/21.rb) | |
+| 20 | [Count and Group Character Occurrences in a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/20.rb) | | :star::star::star:
+| 19 | [Title Case](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/19.rb) | |
+| 18 | [Persistent Bugger](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/18.rb) | |
+| 17 | [Write Number in Expanded Form](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/17.rb) | |
+| 16 | [Stop gninnipS My sdroW!](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/16.rb) | |
+| 15 | [Take a Ten-Minute Walk](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/15.rb) | | :star:
+| 14 | [Dubstep](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/14.rb) | |
+| 13 | [Kebabize](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/13.rb) | |
+| 12 | [Detect Pangram](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/12.rb) | |
+| 11 | [Extract the Domain Name From a URL](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/11.rb) | | :star:
+| 10 | [Most Frequently Used Words in a Text](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/10.rb) | | :star::star::star:
+| 9 | [Typoglycemia Generator](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/09.rb) | | :star::star:
+| 8 | [Repeated Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/08.rb) | | :star:
+| 7 | [Substring Fun](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/07.rb) | |
+| 6 | [Non-Even Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/06.rb) | |
+| 5 | [Longest Vowel Chain](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/05.rb) | |
+| 4 | [Alphabet Symmetry](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/04.rb) | |
+| 3 | [Return Substring Instance Count](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/03.rb) | | :star:
+| 2 | [Find All Pairs](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/02.rb) | | :star:
+| 1 | [Count Letters in a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/01.rb) | :white_check_mark: | :star:
 
 ## RB101-RB109 - Small Problems
 

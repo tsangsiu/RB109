@@ -4,6 +4,21 @@
 
 ## Strings
 
+### `String#downcase` and `String#upcase`
+
+I usually mix up these method names with other programming languages.
+
+```ruby
+'A'.downcase # => 'a'
+'a'.upcase # => 'A'
+```
+
+### To check if a character is a lowercase letter
+
+```ruby
+('a'..'z').include?('a') # => true
+```
+
 ### Substrings
 
 A substring of the original string must be consecutive. For example, `"1"`, `"134"` and `"1341"` are substrings of `"1341"`, while `"11"` and `"113"` are not.
