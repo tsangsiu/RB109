@@ -4,6 +4,31 @@
 
 ## Strings
 
+#### `String#count` and `String#scan`
+
+- `String#count` counts the intersection of sets defined by the arguments..
+
+```ruby
+# count the number of 'b' ({'b', 'b'} = {'b'})
+'abbc'.count('bb') # => 2
+
+# count the number of 'b', which is the instersection of {'a', 'b'} and {'b', 'c'}
+'abbc'.count('ab', 'bc') # => 2
+
+# count the number of non-'b'
+'abbc'.count('^b') # => 2
+```
+
+Note that `String#count` does not take `Regexp` objects.
+
+- `String#scan`, however, returns an array of substrings which match the given pattern.
+
+```ruby
+'abbc'.scan('bb') # => ["bb"]
+'abbc'.scan(/bb/) # => ["bb"]
+'abbbbbc'.scan(/bb/) # => ["bb", "bb"]
+```
+
 ### `String#downcase` and `String#upcase`
 
 I usually mix up these method names with other programming languages.
@@ -21,7 +46,21 @@ I usually mix up these method names with other programming languages.
 
 ### Substrings
 
+#### Concepts
+
 A substring of the original string must be consecutive. For example, `"1"`, `"134"` and `"1341"` are substrings of `"1341"`, while `"11"` and `"113"` are not.
+
+#### Slicing Strings
+
+There are several ways to slice a String to get a substring.
+
+```ruby
+str = '0123456789'
+
+str[1..5] # => "12345"
+str[1...5] # => "1234"
+str.slice(1, 5) # => "12345"
+```
 
 ### To remove characters from a String
 

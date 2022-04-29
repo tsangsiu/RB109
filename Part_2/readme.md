@@ -61,8 +61,8 @@
 | 6 | [Non-Even Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/06.rb) | |
 | 5 | [Longest Vowel Chain](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/05.rb) | |
 | 4 | [Alphabet Symmetry](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/04.rb) | |
-| 3 | [Return Substring Instance Count](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/03.rb) | | :star:
-| 2 | [Find All Pairs](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/02.rb) | | :star:
+| 3 | [Return Substring Instance Count](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/03.rb) | :white_check_mark: |
+| 2 | [Find All Pairs](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/02.rb) | :white_check_mark: |
 | 1 | [Count Letters in a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/01.rb) | :white_check_mark: | :star:
 
 ## RB101-RB109 - Small Problems
@@ -306,29 +306,4 @@ str.each_char do |char|
   puts char
 end
 # => A B C
-````
-
-### 20220217B
-
-#### `String#count` vs `String#scan`
-
-- `String#count` counts the intersection of sets defined by the arguments..
-
-````ruby
-# count the number of 'b' ({'b', 'b'} = {'b'})
-'abbc'.count('bb') # => 2
-
-# count the number of 'b', which is the instersection of {'a', 'b'} and {'b', 'c'}
-'abbc'.count('ab', 'bc') # => 2
-
-# count the number of non-'b'
-'abbc'.count('^b') # => 2
-````
-
-- `String#scan`, however, returns an array of substrings which match the given pattern.
-
-````ruby
-'abbc'.scan('bb') # => ["bb"]
-'abbc'.scan(/bb/) # => ["bb"]
-'abbbbbc'.scan(/bb/) # => ["bb", "bb"]
 ````

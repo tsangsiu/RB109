@@ -1,72 +1,61 @@
 =begin
 
-Problem:
-- Input: string
-- Output: integer, count
-- Rules
-  - given a string `full_text`, return the number of counts of `search_text`
-- Question
-  - no question for now
+# Problem
+- Given a String and a substring, return the count of the substring in the String
 
-Examples:
+# Examples
 p solution('abcdeb','b') == 2
 p solution('abcdeb', 'a') == 1
 p solution('abbc', 'bb') == 1
+p solution('aa_bb_cc_dd_bb_e', 'bb') == 2
+p solution('aaabbbcccc', 'bbb') == 1
 
-Data Structures:
-- input: string
-- intermediate: (after brainstorm) integer, to accumulate the count 
-- output: integer, count
+# Brainstorm
+- We can't use `String#count` here
+- Instead, thinking to split the given String at the substring
+  - The number of elements in the return Array minus 1 would be the count
+- But there is an edge case, substring happened at both ends
+- In that case,
+  - 1st, check if the String starts with the substring (using `String#start_with?`)
+    - If yes, add 1 to the count
+  - 2nd, check if the String ends with the substring (using `String#end_with?`)
+    - If yes, add 1 to the count
+- Oh! Suddenly realize that it doesn't work when two substrings are concatenated with no other characters in between
 
-Brainstorm:
-- original thoughts:
-  - to count occurrence, the easiest way is the split the string at the search string
-  - the count would be the number substring - 1
-  - for example, to count 'bb' in 'abbc',
-  - 'abbc' -> ['a', 'c'] -> count = 2 - 1
-  - but there are edge cases:
-    - 'bbaacc', 'bbbbaacc', 'bbbbbb'
-  - forgot all above, need to come up with another generic approach
-- another approach
-  - `full_text` = 'bbabb', `search_text` = 'bb'
-  - set count = 0, index = 0
-  - iterate through each character of 'bbabb'
-    - if full_text[index] == search_text[index]
-      - index += 1
-      - count += 1 if index == search_text.length
-    - else
-      - reset index = 0
+# Data Structures
+- Input: String
+- Intermediate: String
+- Output: Integer
 
-Algorithm:
-- given the `full_text` and `search_string`
-- initialise `count` to accumulate counts
-- initialise an index variable `index` to 0
-- iterate through each character in `full_text`
-  - if full_text[index] equals search_text[index]
-    - increment index by 1
-    - if index equals the length of `search_string`
-      - increment count by 1
-      - reset index = 0
-    - else
-      - reset index to 0
-- return count
+# Algorithm
+- Initialize `str_len` to the length of the given String
+- Initialize `substr_len` to the length of the given substring
+- Initialize `start_pos` to `0`
+- Inititalize `count` to `0`
+- While `start_pos` + `substr_len` <= `str_len` 
+  - Get the current substring (call it `curr_substr`) from `start_pos` up to, but not including `start_pos` + `substr_len`
+  - If `curr_substr` equals the given substring,
+    - Increment `count` by 1
+    - Increment `start_pos` by `substr_len`
+  - Else,
+    - Increment `start_pos` by 1
+- Return `count`
 
 =end
 
-# Code:
-
-def solution(full_text, search_string)
+# Code
+def solution(str, substr)
+  str_len = str.length
+  substr_len = substr.length
+  start_pos = 0
   count = 0
-  index = 0
-  full_text.chars.each do |char|
-    if char == search_string[index]
-      index += 1
-      if index == search_string.length
-        count += 1
-        index = 0
-      end
+  while start_pos + substr_len <= str_len
+    curr_substr = str.slice(start_pos, substr_len)
+    if curr_substr == substr
+      count += 1
+      start_pos += substr_len
     else
-      index = 0
+      start_pos += 1
     end
   end
   count
@@ -75,3 +64,5 @@ end
 p solution('abcdeb','b') == 2
 p solution('abcdeb', 'a') == 1
 p solution('abbc', 'bb') == 1
+p solution('aa_bb_cc_dd_bb_e', 'bb') == 2
+p solution('aaabbbcccc', 'bbb') == 1
