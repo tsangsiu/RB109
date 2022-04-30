@@ -81,6 +81,12 @@
 | 20220223 | [Maximum Occurrence of Elements in an Array](https://github.com/tsangsiu/RB109/blob/main/Part_2/Study_Sessions/20220223.rb) |
 | 20220216 | [Sum of Integers in a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Study_Sessions/20220216.rb) |
 
+## Random Problems
+
+| # | Problem | Remark |
+| --- | --- | --- |
+| 1 | [Collapse Consecutive Duplicate Characters into One](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/01_collapse_duplicate_chars.rb) | |
+
 ## Resources
 
 - [Study Guide Companion Materials](https://docs.google.com/document/d/1DmmqXC1GLADlFoFmvIeZmvvLnO-wP3cPmPvjIe5vbEw/edit) by Megan Turley

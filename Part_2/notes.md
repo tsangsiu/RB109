@@ -2,6 +2,17 @@
 
 *This note contains miscellaneous stuff which I find it's good to know when preparing for the interview assessment.*
 
+## Miscellaneous
+
+### To check if an object is a String/Array/Hash, etc
+
+```ruby
+'ABC'.class == String # => true
+123.class == Integer # => true
+3.1415926.class == Float # => true
+[1, 2, 3, 4, 5].class == Array # => true
+```
+
 ## Strings
 
 #### `String#count` and `String#scan`
