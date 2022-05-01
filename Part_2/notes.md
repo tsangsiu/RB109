@@ -15,7 +15,7 @@
 
 ## Strings
 
-#### `String#count` and `String#scan`
+### `String#count` and `String#scan`
 
 - `String#count` counts the intersection of sets defined by the arguments..
 
@@ -150,3 +150,10 @@ array = [1, 1, 2, 2, 2, 3]
 array.delete_at(array.index(2)) # => 2
 array # => [1, 1, 2, 2, 3]
 ```
+
+## Regular Expressions
+
+### Exercises to brush up regex
+
+[#7, Medium 1](https://github.com/tsangsiu/RB101_Programming_Foundations/blob/main/Small_Problems/11_Medium_1/07.rb)
+[#1, Medium 2](https://github.com/tsangsiu/RB101_Programming_Foundations/blob/main/Small_Problems/12_Medium_2/01.rb)

@@ -65,14 +65,6 @@
 | 2 | [Find All Pairs](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/02.rb) | :white_check_mark: |
 | 1 | [Count Letters in a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/01.rb) | :white_check_mark: | :star:
 
-## RB101-RB109 - Small Problems
-
-### Medium 2
-
-| # | Problem | Remark |
-| --- | --- | --- |
-| 1 | [Longest Sentence](https://github.com/tsangsiu/RB101_Programming_Foundations/blob/main/Small_Problems/12_Medium_2/01.rb) |
-
 ## Study Sessions
 
 | Date | Problem | Remark |
@@ -85,6 +77,7 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
+| 2 | [Reverse an Array](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/02_reverse_an_array.rb) | :star::star: |
 | 1 | [Collapse Consecutive Duplicate Characters into One](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/01_collapse_duplicate_chars.rb) | |
 
 ## Resources
