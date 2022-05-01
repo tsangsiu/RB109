@@ -77,6 +77,8 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
+| 4 | [Palindrome Without `reverse`](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/04_palindrome.rb) | |
+| 3 | [Select Elements at Fibonacci Indices](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/03_select_elements_at_fib_index.rb) | |
 | 2 | [Reverse an Array](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/02_reverse_an_array.rb) | :star::star: |
 | 1 | [Collapse Consecutive Duplicate Characters into One](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/01_collapse_duplicate_chars.rb) | |
 
@@ -228,28 +230,6 @@ str.sub("a", "") # => "bcabcabc"
 9 == 9.0 # => true
 ````
 
-### 20220309
-
-#### `Enumerable#each_with_index` and [`Enumerator#with_index`](https://ruby-doc.org/core-2.5.0/Enumerator.html#method-i-with_index)
-
-- The `with_index` method takes an optional parameter to offset the starting index. `each_with_index` does the same thing, but has no optional starting index.
-
-````ruby
-[:foo, :bar, :baz].each.with_index(2) do |value, index|
-  puts "#{index}: #{value}"
-end
-# => 2: foo
-# => 3: bar
-# => 4: baz
-
-[:foo, :bar, :baz].each_with_index do |value, index|
-  puts "#{index}: #{value}"
-end
-# => 0: foo
-# => 1: bar
-# => 2: baz
-````
-
 ### 20220307
 
 #### `Enumerable#max_by` and `Enumerable#min_by`
@@ -285,24 +265,4 @@ str.split(/(\.)|(\/)|(\?)/) # => ["abc", ".", "def", "/", "ghi", "?"], why?
 
 "'''''".match?(/^'+$/) # => true
 "  '  ".match?(/^'+$/) # => false
-````
-
-### 20220218
-
-#### `Array#each` and `String#each_char`
-
-I used to use both `String#split` and `Array#each` to iterate through each character. I could've used only `String#each_char` instead.
-
-````ruby
-str = 'ABC'
-str.split('').each do |char|
-  puts char
-end
-# => A B C
-
-str = 'ABC'
-str.each_char do |char|
-  puts char
-end
-# => A B C
 ````

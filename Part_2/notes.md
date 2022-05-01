@@ -117,6 +117,26 @@ str # => 'a'
 
 ## Arrays
 
+### `Enumerable#each_with_index` and [`Enumerator#with_index`](https://ruby-doc.org/core-2.5.0/Enumerator.html#method-i-with_index)
+
+The `with_index` method takes an optional parameter to offset the starting index. `each_with_index` does the same thing, but has no optional starting index.
+
+````ruby
+[:foo, :bar, :baz].each.with_index(2) do |value, index|
+  puts "#{index}: #{value}"
+end
+# => 2: foo
+# => 3: bar
+# => 4: baz
+
+[:foo, :bar, :baz].each_with_index do |value, index|
+  puts "#{index}: #{value}"
+end
+# => 0: foo
+# => 1: bar
+# => 2: baz
+````
+
 ### To delete only one specific element in an Array when there are more than one of that element
 
 We cannot use `Array#delete` here, because it is a mutating method that deletes all elements as specified by the argument.
