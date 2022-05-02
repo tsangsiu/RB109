@@ -59,8 +59,8 @@
 | 8 | [Repeated Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/08.rb) | | :star:
 | 7 | [Substring Fun](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/07.rb) | |
 | 6 | [Non-Even Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/06.rb) | |
-| 5 | [Longest Vowel Chain](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/05.rb) | |
-| 4 | [Alphabet Symmetry](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/04.rb) | |
+| 5 | [Longest Vowel Chain](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/05.rb) | :white_check_mark: | :star:
+| 4 | [Alphabet Symmetry](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/04.rb) | :white_check_mark: |
 | 3 | [Return Substring Instance Count](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/03.rb) | :white_check_mark: |
 | 2 | [Find All Pairs](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/02.rb) | :white_check_mark: |
 | 1 | [Count Letters in a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/01.rb) | :white_check_mark: | :star:

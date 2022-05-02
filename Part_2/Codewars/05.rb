@@ -1,15 +1,10 @@
 =begin
 
-Problem:
-- Input: string with lowercase only
-- Output: integer, count
-- Rules:
-  - vowels are a, e, i, o, u
-  - find the length of the longest consecutive vowel substring
-- Questions:
-  - nil
+# Problem
+- Given a lowercase String that contains only alphabets and no space,
+  - Return the longest vowel substring
 
-Examples:
+# Examples
 p solve("codewarriors") == 2
 p solve("suoidea") == 3
 p solve("iuuvgheaae") == 4
@@ -19,55 +14,48 @@ p solve("cuboideonavicuare") == 2
 p solve("chrononhotonthuooaos") == 5
 p solve("iiihoovaeaaaoougjyaw") == 8
 
-Data Structures:
-- Input: string
-- Intermediate: string
-- Output: integer
+# Brainstorm
+- Use iteration
+- Iterate from the alphabet at index position `0` to the end
+- If the current alphabet is a vowel,
+  - Increment `count` by `1`
+- Else,
+  - Reset `count` to `0`
+- Need an Array to store all the `count`s
 
-Algorithm:
-- initialise an array `VOWELS` to store all the vowels
-- initialise an array `counts` to store the length of each consecutive vowel substring
-- initialise a variable `count` to store the length of the current consecutive vowel substring
-- initialise a variable `last_char_vowel` to false to indicate if the last character is a vowel
-- iterate through each character
-  - if it is a vowel
-    - set last_char_vowel to true
-    - increment `count` by 1
-    - push `count` to `counts` if the character is the last one
-  - if it is not a vowel
-    - set last_char_vowel to false
-    - push `count` to `counts`
-    - reset `count` to 0
-- find the max number in `counts`
-- return it
+# Algorithm
+- Initialize a constant Array `VOWELS` to `%w(a e i o u)`
+- Initialize `counts` to an empty Array
+- Initialize `count` to 0
+- Iterate through each alphabet in the given String,
+  - If the current alphabet is a vowel,
+    - Increment `count` by `1`
+  - Else,
+    - Push `count` to `counts` if `count` is not equal to `0`
+    - Reset `count` to `0`
+- Return the maximum value in `counts`
 
 =end
 
-# Code:
-
 VOWELS = %w(a e i o u)
-
-def solve(word)
+def solve(str)
   counts = []
   count = 0
-  last_char_vowel = false
-  word.each_char do |char|
-    if VOWELS.include?(char)
-      last_char_vowel = true
+  str.each_char do |alphabet|
+    if VOWELS.include?(alphabet)
       count += 1
     else
-      last_char_vowel = false
-      counts << count
+      counts << count if count != 0
       count = 0
     end
   end
-  counts << count
+  counts << count if count != 0
   counts.max
 end
 
 p solve("codewarriors") == 2
 p solve("suoidea") == 3
-p solve("iuuvgheaae") == 4
+p solve("iuuvgheaae") #== 4
 p solve("ultrarevolutionariees") == 3
 p solve("strengthlessnesses") == 1
 p solve("cuboideonavicuare") == 2
