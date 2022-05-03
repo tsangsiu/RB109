@@ -15,6 +15,28 @@
 
 ## Strings
 
+### `String#index`
+
+- `String#index` returns the index position of the first occurrence of the argument
+
+```ruby
+'abbccc'.index('c') # => 3
+```
+
+- We can also specify the starting position
+
+```ruby
+'abbccc'.index(/c/, 5) # => 5
+```
+
+- :bulb: A negative offset position is just another way to specify an offset position. It works like indices in collection objects. The `String#index` method still looks for the target substring from **left to right**.
+
+```ruby
+# the below two expressions are equivalent
+'abbccc'.index(/b/, -1) # => nil
+'abbccc'.index(/b/, 5) # => nil
+```
+
 ### `String#count` and `String#scan`
 
 - `String#count` counts the intersection of sets defined by the arguments..
@@ -116,6 +138,20 @@ str # => 'a'
 ```
 
 ## Arrays
+
+#### `Array#delete` and `String#delete`
+
+Unlike `String#delete`, `Array#delete` is destructive.
+
+``ruby
+str = "abcabcabc"
+str.delete("a") # => "bcbcbc"
+str # => "abcabcabc"
+
+array = [1, 2, 2, 3]
+array.delete(2) # => returns 2
+array # => [1, 3]
+```
 
 ### `Enumerable#each_with_index` and [`Enumerator#with_index`](https://ruby-doc.org/core-2.5.0/Enumerator.html#method-i-with_index)
 

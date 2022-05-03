@@ -55,10 +55,10 @@
 | 12 | [Detect Pangram](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/12.rb) | |
 | 11 | [Extract the Domain Name From a URL](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/11.rb) | | :star:
 | 10 | [Most Frequently Used Words in a Text](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/10.rb) | | :star::star::star:
-| 9 | [Typoglycemia Generator](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/09.rb) | | :star::star:
-| 8 | [Repeated Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/08.rb) | | :star:
-| 7 | [Substring Fun](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/07.rb) | |
-| 6 | [Non-Even Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/06.rb) | |
+| 9 | [Typoglycemia Generator](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/09.rb) | :white_check_mark: | :star::star::star:
+| 8 | [Repeated Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/08.rb) | :white_check_mark: |
+| 7 | [Substring Fun](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/07.rb) | :white_check_mark: |
+| 6 | [Non-Even Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/06.rb) | :white_check_mark: | :star:
 | 5 | [Longest Vowel Chain](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/05.rb) | :white_check_mark: | :star:
 | 4 | [Alphabet Symmetry](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/04.rb) | :white_check_mark: |
 | 3 | [Return Substring Instance Count](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/03.rb) | :white_check_mark: |
@@ -87,22 +87,6 @@
 - [Study Guide Companion Materials](https://docs.google.com/document/d/1DmmqXC1GLADlFoFmvIeZmvvLnO-wP3cPmPvjIe5vbEw/edit) by Megan Turley
 
 ## Notes
-
-### 20220330
-
-#### `Array#delete` and `String#delete`
-
-- Unlike `String#delete`, `Array#delete` is destructive.
-
-````ruby
-str = "abcabcabc"
-str.delete("a") # => "bcbcbc"
-str # => "abcabcabc"
-
-array = [1, 2, 2, 3]
-array.delete(2) # => returns 2
-array # => [1, 3]
-````
 
 ### 20220329
 

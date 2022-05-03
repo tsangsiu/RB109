@@ -1,22 +1,13 @@
 =begin
-  
-Problem:
-- Input: string of a single word/sentence
-- Output: string
-- Rules:
-  - return a string where:
-    - the first and last characters remain in original place for each word
-    - characters between the first and last characters must be sorted alphabetically
-    - punctuation should remain at the same place, shouldn't -< sdhlnu't
-  - for this problem, the punctuation is limited to hypen, apostrophe, comma, and period
-  - ignore capitalisation
-- Questions:
-  - What defines a word?
-    - by space
-  - What is the input?
-    - by the examples given, the input can be a single word or a sentence
 
-Examples:
+# Problem
+- Given a String, transform every word in the following way:
+	- Keep the first and last alphabet in place
+	- Sort the alphabets in between
+	- Symbols should be kept in the same place (they are limited to ",", "-", ".", "'" for this exercise)
+	- Ignore case
+
+# Examples
 p scramble_words('professionals') == 'paefilnoorsss'
 p scramble_words('i') == 'i'
 p scramble_words('') == ''
@@ -28,81 +19,90 @@ p scramble_words('-dcba') == '-dbca'
 p scramble_words('dcba.') == 'dbca.'
 p scramble_words("you've gotta dance like there's nobody watching, love like you'll never be hurt, sing like there's nobody listening, and live like it's heaven on earth.") == "you've gotta dacne like teehr's nbdooy wachintg, love like ylo'ul neevr be hrut, sing like teehr's nbdooy leiinnstg, and live like it's haeevn on earth."
 
-Data Structure:
-- Input: string
-- Intermediate: array to store intermediate 'string'
-- Output: string
+# Brainstorm
+- Consider a single word only:
+	- Get the length of the given word
+	- Create an empty Array
+	- Put the first and last alphabets, and punctuation in the corresponding place of the Array
+	- Sort the remaining alphabets
+	- Fill the remaining space one by one
+- How to find the first and the last alphabet?
+	- `String#index` with regex can help to locate the position of the first alphabet
+	- If I do not know `String#index`, I can do iteration
 
-Algorithm:
-- Consider only a single word case first:
-  - given a single word
-  - split the word into characters
-  - initalise an empty array to store the 'string' in the process of transformation
-  - iterate through the letter
-    - put the first alphabet in the corresponding position of the array
-    - put the last alphabet in the corresponding position of the array
-    - put the punctuations in the corresponding place
-    - remove all the above characters from the original word (set the char to nil)
-  - sort the remaining characters in the word
-  - place them in order in the null place of the initialised array
-  - merge all the characters in the above array into a word
-  - return that word
-
-- for the main function, where the input could be a string or a sentence:
-  - split the string into words
-  - iterate through the words
-    - for each word, apply the method defined above to transform it
-  - merge all words back to a sentence
-  - return that word
-
+# Algorithm
+- Consider a single word only:
+	- If the length of the word is <= 3,
+		- Return the given word
+	- Else,
+		- Initialize `word_split` to an empty Array
+		- Split the given word into an Array of characters, and save it to `chars`
+		- Iterate through the word from position `0` till the end,
+			- If the character at position `i` is a punctuation,
+				- Put that in the corresponding position in `word`
+				- Remove that character from `chars`
+		- Iterate through the word from position `0` till the end, character by character
+			- If the character at position `i` is an alphabet,
+				- Put that in the corresponding position in `word`
+				- Remove that character from `chars`
+				- Break the iteration
+		- Iterate through the word from the end till position `0`, character by character
+			- If the character at position `i` is an alphabet,
+				- Put that in the corresponding position in `word`
+				- Remove that character from `chars
+				- Break the iteration
+		- Sort the remaining characters in `chars`, ignoring case
+		- Fill the `nil` space in `word_split` in sorted order
+		- Return the merged String from `word_split`
+- Consider the whole String:
+	- Split the String at spaces into words
+	- Transform each word using the above method
+	- Merge each word back to a String
+	- Return the String
+	
 =end
 
-# Code:
-
-PUNCTUATIONS = %w(- ' , .)
-
+# Code
 def scramble_word(word)
-  chars = word.split('')
-  chars_transformed = []
-
-  0.upto(word.length - 1) do |index|
-    if ('a'..'z').to_a.include?(chars[index]) # or chars[index] =~ /[a-z]/
-      chars_transformed[index] = chars[index]
-      chars[index] = nil
-      break
-    end      
-  end
-
-  (word.length - 1).downto(0) do |index|
-    if ('a'..'z').to_a.include?(chars[index])
-      chars_transformed[index] = chars[index]
-      chars[index] = nil
-      break
-    end
-  end
-
-  0.upto(word.length - 1) do |index|
-    if PUNCTUATIONS.include?(chars[index])
-      chars_transformed[index] = chars[index]
-      chars[index] = nil
-    end
-  end
-
-  chars.delete(nil)
-  chars.sort!
-  chars_transformed.each_with_index do |char, index|
-    chars_transformed[index] = chars.shift if char == nil
-  end
-
-  chars_transformed.join('')
+	if word.length <= 3
+		return word
+	else
+		word_split = []
+		chars = word.split('')
+		word.each_char.with_index do |char, index|
+			if %w(, . - ').include?(char)
+				word_split[index] = char
+				chars.delete_at(chars.index(char))
+			end
+		end
+		word.each_char.with_index do |char, index|
+			if ('a'..'z').include?(char.downcase)
+				word_split[index] = char
+				chars.delete_at(chars.index(char))
+				break
+			end
+		end
+		word.reverse.each_char.with_index do |char, index|
+			if ('a'..'z').include?(char.downcase)
+				word_split[word.length - 1 - index] = char
+				chars.delete_at(chars.index(char))
+				break
+			end
+		end
+		chars.sort_by! { |char| char.downcase }
+		word_split.each_with_index do |space, index|
+			word_split[index] = chars.shift if space.nil?
+		end
+		word_split.join('')
+	end
 end
 
-def scramble_words(string)
-  words = string.split
-  words = words.map do |word|
-    scramble_word(word)
-  end
-  words.join(' ')
+def scramble_words(sentence)
+	words = sentence.split
+	words = words.map do |word|
+		scramble_word(word)
+	end
+	words.join(' ')
 end
 
 p scramble_words('professionals') == 'paefilnoorsss'

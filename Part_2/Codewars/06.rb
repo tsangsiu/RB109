@@ -1,17 +1,10 @@
 =begin
 
-Problem:
-- Input: a string of integers
-- Output: integer, count
-- Rules:
-  - Given a string of integer, e.g. '1341'
-  - return the number of odd-number substring that can be formed
-- Questions:
-  - Do replicate numbers counted as one or two?
-  - why "1341" only 7? should be more than that
-    - oh! a SUBSTRING is formed by neighbour digits
+# Problem
+- Given a string, find the number of substrings that are odd numbers
 
-Examples:
+# Examples
+- For example, for "1341", they are 1, 1, 3, 13, 41, 341, 1341, a total of 7 numbers
 p solve("1341") == 7
 p solve("1357") == 10
 p solve("13471") == 12
@@ -19,57 +12,36 @@ p solve("134721") == 13
 p solve("1347231") == 20
 p solve("13472315") == 28
 
-Data Structures:
-- Input: a string of integers
-- Intermediate: the same string
-- Output: integer, count
+# Brainstorm
+- Iterate the whole string mutliple times
+- Consider a substring of a fixed length at a time
 
-Algorithm:
-- initialise an array `odd_numbers` to store all odd numbers
-- given a string of integers
-- iterate through each character (integers)
-  - for each character (integers), iterate from the current char to the end
-    - get the current substring
-    - convert the substring to integer
-    - if the integer is an odd number
-    - append it to `odd_numbers`
-- count the number of elements in `odd_numbers`
-- return the number
+# Algorithm
+- Initialize `substr_len` to `1`
+- Initialize `count` to `0`
+- While `substr_len` <= length of the given String,
+  - Iterate through the String from index position `0` to (length of the given String - 1 - `substr_len`),
+    - Get the current substring (from current index position to (current index position + `substr_len`))
+    - Convert the current substring to an Integer
+    - If the Integer is odd,
+      - Increment `count` by `1`
+  - Increment `substr_len` by `1`
+- Return `count`
 
 =end
 
-# Code:
-
-def solve(string)
-  odd_numbers = []
-  anchor = 0
-  loop do
-    index = anchor
-    loop do
-      substring = string[anchor..index]
-      integer = substring.to_i
-      odd_numbers << integer if integer.odd?
-      index += 1
-      break if index == string.length
+# Code
+def solve(str)
+  substr_len = 1
+  count = 0
+  while substr_len <= str.length
+    0.upto(str.length - substr_len) do |index|
+      substr = str[index, substr_len]
+      count += 1 if substr.to_i.odd?
     end
-    anchor += 1
-    break if anchor == string.length
+    substr_len += 1
   end
-  odd_numbers.size
-end
-
-# Refactor
-
-def solve(string)
-  odd_numbers = []
-  0.upto(string.length - 1) do |anchor|
-    anchor.upto(string.length - 1) do |index|
-      substring = string[anchor..index]
-      integer = substring.to_i
-      odd_numbers << integer if integer.odd?
-    end
-  end
-  odd_numbers.size
+  count
 end
 
 p solve("1341") == 7
