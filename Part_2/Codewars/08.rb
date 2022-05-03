@@ -13,21 +13,21 @@ p f("abcde") == ["abcde", 1]
   - Get the current substring
   - If the length of the given String is a multiple of the length of the current substring,
     - If current substring * (length of the given String / length of the current substring) == the given String,
-	  - Return an Array with two elements: the current substring and the ratio
+      - Return an Array with two elements: the current substring and the ratio
   - Else,
-  	- Go to the next iteration
+    - Go to the next iteration
 
 =end
 
 def f(str)
   1.upto(str.length) do |substr_len|
     substr = str[0, substr_len]
-	if str.length % substr.length == 0
-	  len_ratio = str.length / substr.length
-	  return [substr, len_ratio] if substr * len_ratio == str
-	else
-    next
-	end
+    if str.length % substr.length == 0
+      len_ratio = str.length / substr.length
+      return [substr, len_ratio] if substr * len_ratio == str
+    else
+      next
+    end
   end
 end
 
