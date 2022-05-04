@@ -54,7 +54,7 @@
 | 13 | [Kebabize](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/13.rb) | |
 | 12 | [Detect Pangram](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/12.rb) | |
 | 11 | [Extract the Domain Name From a URL](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/11.rb) | | :star:
-| 10 | [Most Frequently Used Words in a Text](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/10.rb) | | :star::star::star:
+| 10 | [Most Frequently Used Words in a Text](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/10.rb) | :white_check_mark: | :star::star::star:
 | 9 | [Typoglycemia Generator](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/09.rb) | :white_check_mark: | :star::star::star:
 | 8 | [Repeated Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/08.rb) | :white_check_mark: |
 | 7 | [Substring Fun](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/07.rb) | :white_check_mark: |

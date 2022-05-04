@@ -139,11 +139,11 @@ str # => 'a'
 
 ## Arrays
 
-#### `Array#delete` and `String#delete`
+### `Array#delete` and `String#delete`
 
 Unlike `String#delete`, `Array#delete` is destructive.
 
-``ruby
+```ruby
 str = "abcabcabc"
 str.delete("a") # => "bcbcbc"
 str # => "abcabcabc"
