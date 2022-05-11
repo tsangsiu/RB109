@@ -70,7 +70,6 @@
 | Date | Problem | Remark |
 | --- | --- | --- |
 | 20220309 | [Maximum Occurrence of Elements in an Array](https://github.com/tsangsiu/RB109/blob/main/Part_2/Study_Sessions/20220309.rb) |
-| 20220223 | [Maximum Occurrence of Elements in an Array](https://github.com/tsangsiu/RB109/blob/main/Part_2/Study_Sessions/20220223.rb) |
 | 20220216 | [Sum of Integers in a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Study_Sessions/20220216.rb) |
 
 ## Random Problems

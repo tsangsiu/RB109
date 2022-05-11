@@ -1,92 +1,63 @@
 =begin
 
-Question:
-Implement a method that calculates the sum of the integers inside a string. Only
-positive integers will be test, e.g., "L12aun3ch Sch3oo45l".
+# Problem
+- Implement a method that calculates the sum of the Integers inside a String. Only positive Integers are considered
+- Consecutive Integers are considered as one Integer
+- No Integers means that the sum is 0
 
-Problem:
-- input: string
-- output: integer (sum)
-- rules:
-  - find the integers, calculate the sum
-  - only positive integer will be tested
-  - only care about the integers, ignore the rest of the string
-  - consecutive integers are considered as one integer
-  - no integers means that the sum is 0
-  - we only care about the numbers
-
-Question:
-- What to do with consecutive integers? ('12' mean '1' + '2' or '12'?)
-
-Examples:
+# Examples
+p sum_of_integers("L12aun3ch Sch3oo45l") == 63
 p sum_of_integers("HE2LL3O W1OR5LD") == 11
 p sum_of_integers("The30quick20brown10f0x1203jumps914ov3r1349the102l4zy dog") == 3635
 p sum_of_integers("HELLO WORLD!") == 0
 p sum_of_integers("HELLO WORLD77!") == 77
 
-Data Structures:
-- input: string
-- intermediate**: array
-- output: integer
+# Data Structure
+- Input: String
+- Intermediate: String
+- Output: Integer
 
-Brainstorm (Optional):
-- To do iteration?
-- Should I split the string? If so, how?
-- How do I iterate to incorporate the array?
-- If the next character is not a number, that's the end of the number
-- Not only the next number, sometimes you need to look further - look until it's not an integer
-- Nested iteration? Single iteration?
-- Create an empty string to store an integer? What are the next steps necessary?
+# Brainstorm
+- Initialize an Array (called `nums`) to store all the numbers in the String
+- Initialize an empty String (called `num`) to construct the current number
+- Iterate through the String
+- If the current char is an Integer, append it to `num`
+- Else if `num` is not empty, change it to Intger and push it to `nums`
+- Push `num` (converted to an Integer) to `nums` when we get to the last char
+- Calculate the sum in `nums` and return it
 
-Algorithm:
-- Luke's
-  - accept a str as argument
-  - create an empty array to contain the numbers
-  - create an empty string for the current number
-  - break the string apart and look at each character
-    - if the character is a number
-      - add it to the end of the current number
-    - if the character is not a number
-      - add the current number to the array
-      - reset current number
-  - sum the numbers of the array
-  - return the sum
-- Mine
-  - initialize an empty string, say `number_string` to temporarily store the number in string
-  - initialize an empty array, say `numbers` to store the numbers
-  - split the string into an array of characters
-  - loop through the array of characters
-    - if it is an integer
-      - append the character to `number_string`
-    - else if `number_string` is not empty
-      - change it to an integer
-      - append it to `numbers`
-      - set `number_string` to empty
-  - calculate the sum of integers in `numbers`
-  - return the sum
+# Algorithm
+- Initialize `nums` to an empty Array
+- Initialize `num` to an empty String
+- Iterate through the String,
+  - If the current character is an Integer, push it to `num`
+  - Else if `num` is not emmpty,
+    - Convert it to Integer and append it to `nums`
+    - Set `num` to empty
+- If we get to the last character and `num` is not empty,
+  - Convert it to Integer and append it to `nums`
+- Return the sum of all elements in `nums`
 
 =end
 
-# Code:
+# Code
 
-INTEGERS = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
-# INTEGER = ("0 ".."9").to_a
-
-def sum_of_integers(string)
-  number_string = ""
-  numbers = []
-  chars = string.chars
-  chars.each do |char|
-    if INTEGERS.include?(char)
-      number_string << char
-    else
-      numbers << number_string.to_i if number_string != ""
-      number_string = ""
+def sum_of_integers(str)
+  nums = []
+  num = ''
+  str.each_char.with_index do |char, index|
+    if ('0'..'9').include?(char)
+      num << char
+    elsif !num.empty?
+      nums << num.to_i
+      num = ''
     end
+    nums << num.to_i if index == str.length - 1 && !num.empty?
   end
-  numbers.sum
+  nums.sum
 end
 
+p sum_of_integers("L12aun3ch Sch3oo45l") == 63
 p sum_of_integers("HE2LL3O W1OR5LD") == 11
 p sum_of_integers("The30quick20brown10f0x1203jumps914ov3r1349the102l4zy dog") == 3635
 p sum_of_integers("HELLO WORLD!") == 0
