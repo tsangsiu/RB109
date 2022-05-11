@@ -78,10 +78,11 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
-| 4 | [Palindrome Without `reverse`](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/04_palindrome.rb) | |
-| 3 | [Select Elements at Fibonacci Indices](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/03_select_elements_at_fib_index.rb) | |
-| 2 | [Reverse an Array](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/02_reverse_an_array.rb) | :star::star: |
-| 1 | [Collapse Consecutive Duplicate Characters into One](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/01_collapse_duplicate_chars.rb) | |
+| 5 | [Collapse a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/05_collapse_string.rb) |
+| 4 | [Palindrome Without `reverse`](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/04_palindrome.rb) |
+| 3 | [Select Elements at Fibonacci Indices](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/03_select_elements_at_fib_index.rb) |
+| 2 | [Reverse an Array](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/02_reverse_an_array.rb) | :star::star:
+| 1 | [Collapse Consecutive Duplicate Characters into One](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/01_collapse_duplicate_chars.rb) |
 
 ## Resources
 
