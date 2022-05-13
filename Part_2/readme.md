@@ -77,13 +77,15 @@
 ## Live Coding Practice
 
 | Date | Problem | Time | Remark |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | 20220512 | [Longest Substring of Unique Characters](https://github.com/tsangsiu/RB109/blob/main/Part_2/Live_Coding_Practice/20220512.rb) | 21:54 | :star:
 
 ## Random Problems
 
 | # | Problem | Remark |
 | --- | --- | --- |
+| 7 | [Substring Hash](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/07_substring_hash.rb) |
+| 6 | [Count Duplicates](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/06_count_duplicates.rb) |
 | 5 | [Collapse a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/05_collapse_string.rb) |
 | 4 | [Palindrome Without `reverse`](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/04_palindrome.rb) |
 | 3 | [Select Elements at Fibonacci Indices](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/03_select_elements_at_fib_index.rb) |
