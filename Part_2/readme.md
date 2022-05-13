@@ -74,6 +74,12 @@
 | 20220309 | [Maximum Occurrence of Elements in an Array](https://github.com/tsangsiu/RB109/blob/main/Part_2/Study_Sessions/20220309.rb) |
 | 20220216 | [Sum of Integers in a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Study_Sessions/20220216.rb) |
 
+## Live Coding Practice
+
+| Date | Problem | Time | Remark |
+| --- | --- | --- |
+| 20220512 | [Longest Substring of Unique Characters](https://github.com/tsangsiu/RB109/blob/main/Part_2/Live_Coding_Practice/20220512.rb) | 21:54 | :star:
+
 ## Random Problems
 
 | # | Problem | Remark |
