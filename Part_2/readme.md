@@ -8,8 +8,9 @@
 
 | Part | Remark |
 | --- | --- |
-| [1B](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/part_1_b.rb) | :star::star::star: |
-| [1A](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/part_1_a.rb) | :star::star::star: |
+| [2](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/02.rb) | :star::star::star: |
+| [1B](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/01b.rb) | :star::star::star: |
+| [1A](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/01a.rb) | :star::star::star: |
 
 ## Codewars
 
