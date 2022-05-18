@@ -8,6 +8,8 @@
 
 | Part | Remark |
 | --- | --- |
+| [4B](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/04b.rb) | |
+| [4A](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/04a.rb) | |
 | [3B](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/03b.rb) | |
 | [3A](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/03a.rb) | |
 | [2](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/02.rb) | :star::star::star: |
