@@ -1,21 +1,22 @@
 # Interview Assessment
 
-## Watch Others Code
-
 - :star: means I couldn't get it right at the first attempt
 - :star::star: means the problem is worth re-visiting
 - :star::star::star: means the problem took me a lot of time
 
-| Part | Remark |
-| --- | --- |
-| [5](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/05.rb) | :star: |
-| [4B](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/04b.rb) | |
-| [4A](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/04a.rb) | |
-| [3B](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/03b.rb) | |
-| [3A](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/03a.rb) | |
-| [2](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/02.rb) | :star::star::star: |
-| [1B](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/01b.rb) | :star::star::star: |
-| [1A](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/01a.rb) | :star::star::star: |
+## Watch Others Code :white_check_mark:
+
+| Part | Problem | Remark |
+| --- | --- | --- |
+| 6 | [Find Even Index](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/06.rb) | |
+| 5 | [Longest Palindrome](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/05.rb) | :star: |
+| 4B | [Scramble](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/04b.rb) | |
+| 4A | [Substring Test](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/04a.rb) | |
+| 3B | [Common Prefix](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/03b.rb) | |
+| 3A | [Maximum Subarray](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/03a.rb) | |
+| 2 | [Next Bigger Number](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/02.rb) | :star::star::star: |
+| 1B | [Common Characters](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/01b.rb) | :star::star::star: |
+| 1A | [Repeated Substrings](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/01a.rb) | :star::star::star: |
 
 ## Codewars
 
