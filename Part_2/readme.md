@@ -4,7 +4,7 @@
 - :star::star: means the problem is worth re-visiting
 - :star::star::star: means the problem took me a lot of time
 
-## Watch Others Code :white_check_mark:
+## :white_check_mark: Watch Others Code
 
 | Part | Problem | Remark |
 | --- | --- | --- |
@@ -17,6 +17,18 @@
 | 2 | [Next Bigger Number](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/02.rb) | :star::star::star: |
 | 1B | [Common Characters](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/01b.rb) | :star::star::star: |
 | 1A | [Repeated Substrings](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/01a.rb) | :star::star::star: |
+
+## Beginning Ruby
+
+| Part | Problem | Remark |
+| --- | --- | --- |
+| 6 | | |
+| 5C | | |
+| 5B | | |
+| 5A | | |
+| 4C | [Inventory Query](https://github.com/tsangsiu/RB109/blob/main/Part_2/Beginning_Ruby/04c.rb) | |
+| 4B | [FizzBuzz](https://github.com/tsangsiu/RB109/blob/main/Part_2/Beginning_Ruby/04b.rb) | |
+| 4A | [Reverse String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Beginning_Ruby/04a.rb) | |
 
 ## Codewars
 
