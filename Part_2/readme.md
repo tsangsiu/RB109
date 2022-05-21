@@ -23,9 +23,9 @@
 | Part | Problem | Remark |
 | --- | --- | --- |
 | 6 | | |
-| 5C | | |
-| 5B | | |
-| 5A | | |
+| 5C | [Find Primes](https://github.com/tsangsiu/RB109/blob/main/Part_2/Beginning_Ruby/05c.rb) | |
+| 5B | [Balancer](https://github.com/tsangsiu/RB109/blob/main/Part_2/Beginning_Ruby/05b.rb) | |
+| 5A | [Remove Vowels](https://github.com/tsangsiu/RB109/blob/main/Part_2/Beginning_Ruby/05a.rb) | |
 | 4C | [Inventory Query](https://github.com/tsangsiu/RB109/blob/main/Part_2/Beginning_Ruby/04c.rb) | |
 | 4B | [FizzBuzz](https://github.com/tsangsiu/RB109/blob/main/Part_2/Beginning_Ruby/04b.rb) | |
 | 4A | [Reverse String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Beginning_Ruby/04a.rb) | |
