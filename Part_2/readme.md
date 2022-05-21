@@ -18,11 +18,10 @@
 | 1B | [Common Characters](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/01b.rb) | :star::star::star: |
 | 1A | [Repeated Substrings](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/01a.rb) | :star::star::star: |
 
-## Beginning Ruby
+## :white_check_mark: Beginning Ruby
 
 | Part | Problem | Remark |
 | --- | --- | --- |
-| 6 | | |
 | 5C | [Find Primes](https://github.com/tsangsiu/RB109/blob/main/Part_2/Beginning_Ruby/05c.rb) | |
 | 5B | [Balancer](https://github.com/tsangsiu/RB109/blob/main/Part_2/Beginning_Ruby/05b.rb) | |
 | 5A | [Remove Vowels](https://github.com/tsangsiu/RB109/blob/main/Part_2/Beginning_Ruby/05a.rb) | |
