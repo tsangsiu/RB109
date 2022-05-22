@@ -26,6 +26,7 @@
 | 4B | [Friday 13th](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code_Old/04b.rb) | |
 | 4A | [Capitalize](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code_Old/04a.rb) | |
 | 3 | [Computer](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code_Old/03.rb) | :star::star: |
+| 2 | [Palindrome](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code_Old/02.rb) | |
 | 1C | [Interleave Array](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code_Old/01c.rb) | |
 | 1B | [Sum or Product](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code_Old/01b.rb) | |
 | 1A | [Prime](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code_Old/01a.rb) | |
