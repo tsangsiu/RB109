@@ -19,6 +19,7 @@
 | 1A | [Repeated Substrings](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code/01a.rb) | :star::star::star: |
 
 ## :white_check_mark: Watch Others Code (Old)
+
 | Part | Problem | Remark |
 | --- | --- | --- |
 | 4C | [Random Maths Problems](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code_Old/04c.rb) | |

@@ -1,3 +1,5 @@
+# Write a method that converts an english phrase into a mathematical expression, step by step.
+
 NUMBERS = {
   "ZERO" => 0,
   "ONE" => 1,
@@ -51,6 +53,7 @@ p computer("two plus two") == 4
 p computer('seven minus six') == 1
 p computer('zero plus eight') == 8
 
+# more operations
 p computer('two plus two minus three') == 1
 p computer("three minus one plus five minus 4 plus six plus 10 minus 4") == 15
 
@@ -59,6 +62,7 @@ p computer("three minus one plus five minus 4 plus six plus 10 minus 4") == 15
 # p computer('one plus four times two minus two') == 8
 # p computer('nine divided by three times six') == 18
 
+# compute using order of operations
 p computer('eight times four plus six divided by two minus two') == 33
 p computer('one plus four times two minus two') == 7
 p computer('nine divided by three times six') == 18
