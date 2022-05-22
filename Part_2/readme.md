@@ -1,7 +1,7 @@
 # Interview Assessment
 
 - :star: means I couldn't get it right at the first attempt
-- :star::star: means the problem is worth re-visiting
+- :star::star: means the  problem is worth re-visiting
 - :star::star::star: means the problem took me a lot of time
 
 ## :white_check_mark: Watch Others Code
@@ -21,6 +21,9 @@
 ## :white_check_mark: Watch Others Code (Old)
 | Part | Problem | Remark |
 | --- | --- | --- |
+| 4C | [Random Maths Problems](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code_Old/04c.rb) | |
+| 4B | [Friday 13th](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code_Old/04b.rb) | |
+| 4A | [Capitalize](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code_Old/04a.rb) | |
 | 3 | [Computer](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code_Old/03.rb) | :star::star: |
 
 ## :white_check_mark: Beginning Ruby
