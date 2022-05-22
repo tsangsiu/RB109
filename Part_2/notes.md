@@ -15,6 +15,37 @@
 
 ## Strings
 
+### `String#delete`
+
+- `String#delete` is a non-mutating method, despite the fact that `Array#delete` is destructive.
+
+```ruby
+str = "He's handsome!"
+str.delete("^a-zA-Z' ") # => "He's handsome"
+str # => "He's handsome!"
+```
+
+### Ways to Remove a Character from a String: `String#delete`, `String#gsub` and `String#sub`
+
+- `String#delete` and `String#gsub` remove all characters as specified by the argument.
+
+```ruby
+str = "abcabcabc"
+str.delete("a") # => "bcbcbc"
+str # => "abcabcabc" (String#delete is not destructive)
+
+str = "abcabcabc"
+str.gsub("a", "") # => "bcbcbc"
+str # => "abcabcabc"
+```
+
+- `String#sub` removes the first occurrence of the character as specified by the argument.
+
+```ruby
+str = "abcabcabc"
+str.sub("a", "") # => "bcabcabc"
+```
+
 ### `String#index`
 
 - `String#index` returns the index position of the first occurrence of the argument
@@ -137,6 +168,14 @@ str.gsub!(/[^aeiou]/, '') # => 'a'
 str # => 'a'
 ```
 
+### `String#split` with Regular Expressions
+
+```ruby
+str = 'abc.def/ghi?'
+str.split(/\.|\/|\?/) # => ["abc", "def", "ghi"]
+str.split(/(\.)|(\/)|(\?)/) # => ["abc", ".", "def", "/", "ghi", "?"], why?
+```
+
 ## Arrays
 
 ### `Array#delete` and `String#delete`
@@ -157,7 +196,7 @@ array # => [1, 3]
 
 The `with_index` method takes an optional parameter to offset the starting index. `each_with_index` does the same thing, but has no optional starting index.
 
-````ruby
+```ruby
 [:foo, :bar, :baz].each.with_index(2) do |value, index|
   puts "#{index}: #{value}"
 end
@@ -171,7 +210,7 @@ end
 # => 0: foo
 # => 1: bar
 # => 2: baz
-````
+```
 
 ### To delete only one specific element in an Array when there are more than one of that element
 
@@ -207,9 +246,58 @@ array.delete_at(array.index(2)) # => 2
 array # => [1, 1, 2, 2, 3]
 ```
 
+### `Enumerable#each_with_object`
+
+You can't use immutable objects like numbers, `true` or `false` as the memo.
+
+```ruby
+(1..5).each_with_object(1) { |value, memo| memo *= value } # => 1
+```
+
+### `Enumerable#max_by` and `Enumerable#min_by`
+
+- `Enumerable#max_by` and `Enumerable#min_by` return only the first object for which the block returns a truthy value.
+
+```ruby
+strings = ['a', 'boy', 'car', 'toy']
+strings.max_by { |str| str.length } # => 'boy'
+```
+
+### `Enumerable#inject` and `Enumerable#reduce`
+
+- They are aliases.
+- [Reference](https://medium.com/@terrancekoar/inject-method-explained-ed531eff9af8)
+
+### `Enumerable#sort_by`
+
+- The result is not quaranteed to be stable. When two keys are equal, the order of the corresponding elements is unpredictable.
+
+```ruby
+"A b B a".delete("^a-zA-Z").chars.sort_by(&:downcase)
+# => ["A", "a", "b", "B"]
+# Note the "b" and "B", they follow the order in the original string.
+
+"The Holy Bible".delete("^a-zA-Z").chars.sort_by(&:downcase)
+# => ["B", "b", "e", "e", "H", "h", "i", "l", "l", "o", "T", "y"]
+# Note the "H" and "h", they do not follow the order in the original string.
+```
+
 ## Regular Expressions
 
 ### Exercises to brush up regex
 
-[#7, Medium 1](https://github.com/tsangsiu/RB101_Programming_Foundations/blob/main/Small_Problems/11_Medium_1/07.rb)
-[#1, Medium 2](https://github.com/tsangsiu/RB101_Programming_Foundations/blob/main/Small_Problems/12_Medium_2/01.rb)
+- [#7, Medium 1](https://github.com/tsangsiu/RB101_Programming_Foundations/blob/main/Small_Problems/11_Medium_1/07.rb)
+- [#1, Medium 2](https://github.com/tsangsiu/RB101_Programming_Foundations/blob/main/Small_Problems/12_Medium_2/01.rb)
+
+### Splitting a String at a Word Boundary
+
+```ruby
+"Input Example".split # => ["Input", "Example"]
+"Input Example".split(/\b/) # => ["Input", " ", "Example"]
+
+"  Input   Example  ".split # => ["Input", "Example"]
+"  Input   Example  ".split(/\b/) # => ["  ", "Input", "   ", "Example", "  "]
+
+"How are you?".split # => ["How", "are", "you?"]
+"How are you?".split(/\b/) # => ["How", " ", "are", " ", "you", "?"]
+```

@@ -4,6 +4,10 @@
 - :star::star: means the  problem is worth re-visiting
 - :star::star::star: means the problem took me a lot of time
 
+## Resources
+
+- [Study Guide Companion Materials](https://docs.google.com/document/d/1DmmqXC1GLADlFoFmvIeZmvvLnO-wP3cPmPvjIe5vbEw/edit) by Megan Turley
+
 ## :white_check_mark: Watch Others Code
 
 | Part | Problem | Remark |
@@ -84,8 +88,8 @@
 | 14 | [Dubstep](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/14.rb) | |
 | 13 | [Kebabize](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/13.rb) | |
 | 12 | [Detect Pangram](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/12.rb) | |
-| 11 | [Extract the Domain Name From a URL](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/11.rb) | | :star:
-| 10 | [Most Frequently Used Words in a Text](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/10.rb) | :white_check_mark: | :star::star::star:
+| 11 | [Extract the Domain Name From a URL](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/11.rb) | - | :star: Regex
+| 10 | [Most Frequently Used Words in a Text](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/10.rb) | :white_check_mark: | :star::star::star: Regex
 | 9 | [Typoglycemia Generator](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/09.rb) | :white_check_mark: | :star::star::star:
 | 8 | [Repeated Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/08.rb) | :white_check_mark: |
 | 7 | [Substring Fun](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/07.rb) | :white_check_mark: |
@@ -122,172 +126,3 @@
 | 3 | [Select Elements at Fibonacci Indices](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/03_select_elements_at_fib_index.rb) |
 | 2 | [Reverse an Array](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/02_reverse_an_array.rb) | :star::star:
 | 1 | [Collapse Consecutive Duplicate Characters into One](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/01_collapse_duplicate_chars.rb) |
-
-## Resources
-
-- [Study Guide Companion Materials](https://docs.google.com/document/d/1DmmqXC1GLADlFoFmvIeZmvvLnO-wP3cPmPvjIe5vbEw/edit) by Megan Turley
-
-## Notes
-
-### 20220329
-
-#### Splitting Strings and Integers
-
-- `String#chars`
-
-````ruby
-'abc'.chars # => ["a", "b", "c"]
-````
-
-- `Integer#digits`
-
-````ruby
-123.digits # => [3, 2, 1]
-````
-
-### 20220328
-
-#### `Enumerable#sort_by`
-
-- The result is not quaranteed to be stable. When two keys are equal, the order of the corresponding elements is unpredictable.
-
-````ruby
-"A b B a".delete("^a-zA-Z").chars.sort_by(&:downcase)
-# => ["A", "a", "b", "B"]
-# Note the "b" and "B", they follow the order in the original string.
-
-"The Holy Bible".delete("^a-zA-Z").chars.sort_by(&:downcase)
-# => ["B", "b", "e", "e", "H", "h", "i", "l", "l", "o", "T", "y"]
-# Note the "H" and "h", they do not follow the order in the original string.
-````
-
-### 20220326
-
-#### Ways to Determine if a Number is Prime
-
-- Self-Defined Methods
-
-````ruby
-def prime?(int)
-  (2..(int - 1)).none? { |num| int % num == 0 }
-end
-````
-
-- Using the `Prime` Class
-
-````ruby
-require 'prime'
-
-p Prime.prime?(2) # => "true"
-p Prime.prime?(4) # => "false"
-````
-
-### 20220322
-
-#### `Enumerable#inject` and `Enumerable#reduce`
-
-- They are aliases.
-- [Reference](https://medium.com/@terrancekoar/inject-method-explained-ed531eff9af8)
-
-### 20220321
-
-#### Splitting a String at a Word Boundary
-
-````ruby
-"Input Example".split # => ["Input", "Example"]
-"Input Example".split(/\b/) # => ["Input", " ", "Example"]
-
-"  Input   Example  ".split # => ["Input", "Example"]
-"  Input   Example  ".split(/\b/) # => ["  ", "Input", "   ", "Example", "  "]
-
-"How are you?".split # => ["How", "are", "you?"]
-"How are you?".split(/\b/) # => ["How", " ", "are", " ", "you", "?"]
-````
-
-#### `String#swapcase`
-
-````ruby
-"How are you?".swapcase # => "hOW ARE YOU?"
-````
-
-### 20220316
-
-#### `Enumerable#each_with_object`
-
-You can't use immutable objects like numbers, `true` or `false` as the memo.
-
-````ruby
-(1..5).each_with_object(1) { |value, memo| memo *= value } # => 1
-````
-
-### 20220314
-
-#### Ways to Remove a Character from a String: `String#delete`, `String#gsub` and `String#sub`
-
-- `String#delete` and `String#gsub` remove all characters as specified by the argument.
-
-````ruby
-str = "abcabcabc"
-str.delete("a") # => "bcbcbc"
-str # => "abcabcabc" (String#delete is not destructive)
-
-str = "abcabcabc"
-str.gsub("a", "") # => "bcbcbc"
-str # => "abcabcabc"
-````
-
-- `String#sub` removes the first occurrence of the character as specified by the argument.
-
-````ruby
-str = "abcabcabc"
-str.sub("a", "") # => "bcabcabc"
-````
-
-### 20220310
-
-#### `Integer` and `Float`
-
-- Objects from different classes can be equal?
-
-````ruby
-9.class # => Integer
-9.0.class # => Float
-9 == 9.0 # => true
-````
-
-### 20220307
-
-#### `Enumerable#max_by` and `Enumerable#min_by`
-
-- `Enumerable#max_by` and `Enumerable#min_by` return only the first object for which the block returns a truthy value.
-
-````ruby
-strings = ['a', 'boy', 'car', 'toy']
-strings.max_by { |str| str.length } # => 'boy'
-````
-
-### 20220224
-
-#### `String#split` with Regular Expressions
-
-````ruby
-str = 'abc.def/ghi?'
-str.split(/\.|\/|\?/) # => ["abc", "def", "ghi"]
-str.split(/(\.)|(\/)|(\?)/) # => ["abc", ".", "def", "/", "ghi", "?"], why?
-````
-
-### 20220222
-
-#### Regular Expressions
-
-````ruby
-# to split at non-alphabets and non-apostrophes
-"I won't give up".split(/[^a-zA-Z']/) # => ["I", "won't", "give", "up"]
-
-# to check if a string is purely apostrophes
-"'''''".match?(/'+/) # => true
-"  '  ".match?(/'+/) # => true
-
-"'''''".match?(/^'+$/) # => true
-"  '  ".match?(/^'+$/) # => false
-````
