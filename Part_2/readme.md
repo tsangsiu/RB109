@@ -86,8 +86,8 @@
 | 16 | [Stop gninnipS My sdroW!](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/16.rb) | |
 | 15 | [Take a Ten-Minute Walk](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/15.rb) | | :star:
 | 14 | [Dubstep](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/14.rb) | |
-| 13 | [Kebabize](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/13.rb) | |
-| 12 | [Detect Pangram](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/12.rb) | |
+| 13 | [Kebabize](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/13.rb) | :white_check_mark: |
+| 12 | [Detect Pangram](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/12.rb) | :white_check_mark: |
 | 11 | [Extract the Domain Name From a URL](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/11.rb) | - | :star: Regex
 | 10 | [Most Frequently Used Words in a Text](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/10.rb) | :white_check_mark: | :star::star::star: Regex
 | 9 | [Typoglycemia Generator](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/09.rb) | :white_check_mark: | :star::star::star:

@@ -1,37 +1,52 @@
 =begin
 
-Problem:
-- Rules:
-  - convert a camel case string to a kebak case
-- Questions:
-  - what is camel case?
-    - example: myCamelCasedString
-  - what is kebak case?
-    - example: my-kebah-case-string
-  - renew a new string?
-    - i assume it's no, as the question states to modify
+# Problem
+- given a string a camel case, turn it into a kebab case and return it
+- a kebab case are words in lowercase letters, separated by a hypen (-)
+- all non-alphabets are deleted
+- Input: string
+- Output: string
 
-Examples:
+# Examples
 p kebabize('myCamelCasedString') == 'my-camel-cased-string'
 p kebabize('myCamelHas3Humps') == 'my-camel-has-humps'
 
-Data Structures:
-- Input: string
-- Intermediate: string
-- Output: string
+# Algorithm
+- given a string in camel case, remove all non-alphabets
+- initialize `words` to an empty array
+- initialize `word` to an empty string
+- iterate through the given string,
+  - if the current character is a capital letter
+    - push `word` to `words`
+    - set `word` to an empty string
+    - push the current letter (in lower case) to `word`
+  - else,
+    - push the current character to `word`
+- push `word` to `words`
+- Join `words` with hypen
+- Return the result
 
-Algorithm:
-- given a camel case string
-  - remove all non-alphabets
-  - iterate through the chars
-    - if it is a capital chars
-      - replcae it with and hyphen (-) and its lower case
-  - return the string
-  
 =end
 
-# Code:
+# Code
+def kebabize(str)
+  str = str.gsub(/[^a-z]/i, "")
+  words = []
+  word = ""
+  str.each_char do |char|
+    if ('A'..'Z').to_a.include?(char)
+      words << word
+      word = ""
+      word << char.downcase
+    else
+      word << char  
+    end
+  end
+  words << word
+  words.join('-')
+end
 
+# my previous solution
 def kebabize(string)
   string.gsub!(/[^A-Z]/i, "")
   string.each_char do |char|
@@ -42,5 +57,5 @@ def kebabize(string)
   string
 end
 
-p kebabize('myCamelCasedString') == 'my-camel-cased-string'
-p kebabize('myCamelHas3Humps') == 'my-camel-has-humps'
+p kebabize('myCamelCasedString') #== 'my-camel-cased-string'
+p kebabize('myCamelHas3Humps') #== 'my-camel-has-humps'
