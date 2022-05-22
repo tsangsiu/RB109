@@ -21,7 +21,7 @@
 ## :white_check_mark: Watch Others Code (Old)
 | Part | Problem | Remark |
 | --- | --- | --- |
-| 3 | [Computer](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code_Old/04.rb) | :star::star: |
+| 3 | [Computer](https://github.com/tsangsiu/RB109/blob/main/Part_2/Watch_Others_Code_Old/03.rb) | :star::star: |
 
 ## :white_check_mark: Beginning Ruby
 
