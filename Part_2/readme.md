@@ -80,11 +80,11 @@
 | 22 | [Scramblies](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/22.rb) | |
 | 21 | [Find the Mine!](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/21.rb) | |
 | 20 | [Count and Group Character Occurrences in a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/20.rb) | | :star::star::star:
-| 19 | [Title Case](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/19.rb) | |
-| 18 | [Persistent Bugger](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/18.rb) | |
-| 17 | [Write Number in Expanded Form](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/17.rb) | |
-| 16 | [Stop gninnipS My sdroW!](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/16.rb) | |
-| 15 | [Take a Ten-Minute Walk](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/15.rb) | | :star:
+| 19 | [Title Case](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/19.rb) | :white_check_mark: |
+| 18 | [Persistent Bugger](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/18.rb) | :white_check_mark: |
+| 17 | [Write Number in Expanded Form](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/17.rb) | :white_check_mark: |
+| 16 | [Stop gninnipS My sdroW!](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/16.rb) | :white_check_mark: |
+| 15 | [Take a Ten-Minute Walk](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/15.rb) | :white_check_mark: | :star:
 | 14 | [Dubstep](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/14.rb) | :white_check_mark: |
 | 13 | [Kebabize](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/13.rb) | :white_check_mark: |
 | 12 | [Detect Pangram](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/12.rb) | :white_check_mark: |
