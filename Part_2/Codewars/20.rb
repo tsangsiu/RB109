@@ -1,73 +1,66 @@
 =begin
 
-Problem:
-- Rules
-  - Given a string,
-    - group the number of times each character appears in the string
-    - sort descendingly by the number of occurrence
-    - for the alphabets that appear the same number of times,
-      - they should be sorted alphabetically
-    - output as a hash
-- Problem
-  - Case insensitive?
-    - Yes
-  - What are counted as 'letters'?
-    - Only alphabets and digits
-- Input: String
-- Output: Hash
+# Problem
+- Given a string,
+- return a hash for counts
+- the keys are the numbers of occurrence
+- the values are arrays of characters of that number of occurrence
+- The hash is sorted in descending order by the keys (count)
+- The value (array of character) are sorted in ascending order
+- Just count the alphabets and numbers, ignore all other characters
+- Cases are not important here
+- Input: string
+- Output: hash
 
-Examples:
-p get_char_count("cba") => {1=>["a", "b", "c"]}
+# Examples
+p get_char_count("cba") == {1=>["a", "b", "c"]}
 p get_char_count("Mississippi") == {4=>["i", "s"], 2=>["p"], 1=>["m"]}
 p get_char_count("Hello. Hello? HELLO!!") == {6=>["l"], 3=>["e", "h", "o"]}
 p get_char_count("aaa...bb...c!") == {3=>["a"], 2=>["b"], 1=>["c"]}
 p get_char_count("aaabbbccc") == {3=>["a", "b", "c"]}
 p get_char_count("abc123") == {1=>["1", "2", "3", "a", "b", "c"]}
 
-Data Structures:
-- Input: String
-- Intermediate: Hash
-- Output: Hash
-
-Algorithm:
+# Algorithm
 - Given a string,
-  - initialise a hash called `count` for output
-  - split the string into characters
-  - remove the letters that are not alphabets or digits
-  - convert all character to down case
-  - iterate through the characters
-    - count the number of occurrence
-    - if the count does not exist as a key in `count`,
-      - set the count as a key
-      - set a array containing that character as its value
-    - if the count exists as a key in `count`,
-      - check if the character exists in the value (array) as an element
-      - if yes,
-        - append the character in the array
-- Sort the hash by the key (count) in descending order
-- Sort the value (array) for each key in ascending order
-- Output the hash
+- Turn the whole string to lowercase
+- Delete all non-alphabets and non-digits
+- Initialize `count` to an empty Hash
+- Create an array of unique characters
+- Iterate through the array
+  - count the number of current character in the given string
+  - If the count appears as a key in `count`,
+    - push the current character to the value (array) of the corresponding key
+  - Else,
+    - Create the key
+    - Set the value of that key as an array of the current character
+- Sort `count` in descending order by the key
+- Sort each value (array) in alphabetical order
+- Return `count`
 
 =end
 
-# Code:
-def get_char_count(string)
-  count = {}
+# Code
+def get_char_count(str)
+  counts = {}
+  str = str.downcase.delete("^a-zA-z1-90")
+  chars = str.chars.uniq
 
-  chars = string.chars.map(&:downcase)
-  chars = chars.select { |char| (('0'..'9').to_a + ('a'..'z').to_a).include?(char) }
   chars.each do |char|
-    occurrence = chars.count(char)
-    if !count.has_key?(occurrence)
-      count[occurrence] = [char]
+    count = str.count(char)
+    if counts.has_key?(count)
+      counts[count] << char
     else
-      count[occurrence] << char if !count[occurrence].include?(char)
+      counts[count] = [char]
     end
   end
+  
+  counts = counts.sort_by do |key, value|
+    key
+  end.reverse.to_h
 
-  count = count.sort_by { |(key, value)| key }.reverse.to_h
-  count = count.each_pair { |key, value| value.sort! }
-  count
+  counts.each do |_, value|
+    value.sort!
+  end
 end
 
 p get_char_count("cba") == {1=>["a", "b", "c"]}

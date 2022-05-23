@@ -1,5 +1,74 @@
 =begin
 
+# Problem
+- Given a string,
+- return the longest substring which is in alphabetical order
+- A substring will be at least one letter long
+- If there are more than one, return the first one that appears
+
+# Examples
+p longest('asd') == 'as'
+p longest('nab') == 'ab'
+p longest('abcdeapbcdef') == 'abcde'
+p longest('asdfaaaabbbbcttavvfffffdf') == 'aaaabbbbctt'
+p longest('asdfbyfgiklag') =='fgikl'
+p longest('z') == 'z'
+p longest('zyba') == 'z'
+
+# Algorithm
+- Get all possible substrings
+  - Initialize `substrings` to an empty array
+  - From index 0 to (length of the string - 1) `start_index`,
+    - Set `end_index` to `start_index`
+    - Iterate from `end_index` to (length of the string - 1),
+      - Get the substring from `start_index` to `end_index`
+      - Push the substring to `substrings`
+
+- Select all substrings that are in alphabetical order
+  - Iterate from index 1 to (length of the string - 1),
+    - Get the current letter
+    - return false if the current letter is smaller than the one to the left
+  - return true
+
+- Return the longest one
+
+=end
+
+# Code
+def substrings(str)
+  substrings = []
+  (0...str.length).each do |start_index|
+    end_index = start_index
+    (end_index...str.length).each do |end_index|
+      substrings << str[start_index..end_index]
+    end
+  end
+  substrings
+end
+
+def alphabetical_order?(str)
+  (1...str.length).each do |index|
+    return false if str[index] < str[index - 1]
+  end
+  true
+end
+
+def longest(str)
+  substrings = substrings(str)
+  substrings_order = substrings.select { |substring| alphabetical_order?(substring) }
+  substrings_order.max_by { |substring| substring.length } 
+end
+
+p longest('asd') == 'as'
+p longest('nab') == 'ab'
+p longest('abcdeapbcdef') == 'abcde'
+p longest('asdfaaaabbbbcttavvfffffdf') == 'aaaabbbbctt'
+p longest('asdfbyfgiklag') =='fgikl'
+p longest('z') == 'z'
+p longest('zyba') == 'z'
+
+=begin
+
 Problem
 - Rules: 
   - Find the longest substring in alphabetical order

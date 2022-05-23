@@ -76,10 +76,10 @@
 | 26 | [Mean Square Error](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/26.rb) | |
 | 25 | [Pete, the Baker](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/25.rb) | |
 | 24 | [The Hashtag Generator](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/24.rb) | |
-| 23 | [Longest Alphabetical Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/23.rb) | | :star::star::star:
-| 22 | [Scramblies](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/22.rb) | |
-| 21 | [Find the Mine!](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/21.rb) | |
-| 20 | [Count and Group Character Occurrences in a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/20.rb) | | :star::star::star:
+| 23 | [Longest Alphabetical Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/23.rb) | :white_check_mark: | :star::star::star:
+| 22 | [Scramblies](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/22.rb) | :white_check_mark: |
+| 21 | [Find the Mine!](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/21.rb) | :white_check_mark: |
+| 20 | [Count and Group Character Occurrences in a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/20.rb) | :white_check_mark: | :star::star::star:
 | 19 | [Title Case](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/19.rb) | :white_check_mark: |
 | 18 | [Persistent Bugger](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/18.rb) | :white_check_mark: |
 | 17 | [Write Number in Expanded Form](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/17.rb) | :white_check_mark: |
