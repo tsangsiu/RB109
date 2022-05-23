@@ -15,6 +15,18 @@
 
 ## Strings
 
+### `String#squeeze`
+
+- To compress the same consecutive characters into one
+
+```ruby
+str = 'a      b c               d'
+str.squeeze(' ') # => "a b c d"
+
+str = 'aaaabbbbbcccccdddd'
+str.squeeze('abcd') # => "abcd"
+```
+
 ### `String#delete`
 
 - `String#delete` is a non-mutating method, despite the fact that `Array#delete` is destructive.

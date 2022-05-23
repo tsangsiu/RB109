@@ -85,7 +85,7 @@
 | 17 | [Write Number in Expanded Form](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/17.rb) | |
 | 16 | [Stop gninnipS My sdroW!](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/16.rb) | |
 | 15 | [Take a Ten-Minute Walk](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/15.rb) | | :star:
-| 14 | [Dubstep](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/14.rb) | |
+| 14 | [Dubstep](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/14.rb) | :white_check_mark: |
 | 13 | [Kebabize](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/13.rb) | :white_check_mark: |
 | 12 | [Detect Pangram](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/12.rb) | :white_check_mark: |
 | 11 | [Extract the Domain Name From a URL](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/11.rb) | - | :star: Regex
