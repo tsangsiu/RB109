@@ -115,6 +115,8 @@
 
 | Date | Problem | Time | Remark |
 | --- | --- | --- | --- |
+| 20220524B | [#Smaller Numbers than Current](https://github.com/tsangsiu/RB109/blob/main/Part_2/Live_Coding_Practice/20220524B.rb) | 9:45 | Practice Problem #1
+| 20220524A | [Longer Contiguous Segments of Ones than Zeros](https://github.com/tsangsiu/RB109/blob/main/Part_2/Live_Coding_Practice/20220524A.rb) | 27:30 | :star::star: LeetCode #1869
 | 20220512 | [Longest Substring of Unique Characters](https://github.com/tsangsiu/RB109/blob/main/Part_2/Live_Coding_Practice/20220512.rb) | 21:54 | :star:
 
 ## Random Problems
