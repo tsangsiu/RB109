@@ -40,7 +40,7 @@
 | Part | Problem | Remark |
 | --- | --- | --- |
 | 5C | [Find Primes](https://github.com/tsangsiu/RB109/blob/main/Part_2/Beginning_Ruby/05c.rb) | |
-| 5B | [Balancer](https://github.com/tsangsiu/RB109/blob/main/Part_2/Beginning_Ruby/05b.rb) | |
+| 5B | [Balanced Parentheses](https://github.com/tsangsiu/RB109/blob/main/Part_2/Beginning_Ruby/05b.rb) | |
 | 5A | [Remove Vowels](https://github.com/tsangsiu/RB109/blob/main/Part_2/Beginning_Ruby/05a.rb) | |
 | 4C | [Inventory Query](https://github.com/tsangsiu/RB109/blob/main/Part_2/Beginning_Ruby/04c.rb) | |
 | 4B | [FizzBuzz](https://github.com/tsangsiu/RB109/blob/main/Part_2/Beginning_Ruby/04b.rb) | |
@@ -121,9 +121,8 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
-| 7 | [Remove All Adjacent Duplicates in Strings](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/07.rb) | :star::star::star:
-| 6 | [Substring Hash](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/06_substring_hash.rb) |
-| 5 | [Count Duplicates](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/05_count_duplicates.rb) |
+| 6 | [Remove All Adjacent Duplicates in Strings](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/06.rb) | :star::star::star: LeetCode #1209
+| 5 | [Substring Hash](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/05_substring_hash.rb) |
 | 4 | [Palindrome Without `reverse`](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/04_palindrome.rb) |
 | 3 | [Select Elements at Fibonacci Indices](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/03_select_elements_at_fib_index.rb) |
 | 2 | [Reverse an Array](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/02_reverse_an_array.rb) | :star::star:
