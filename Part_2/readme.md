@@ -121,6 +121,7 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
+| 7 | [Remove All Adjacent Duplicates in Strings](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/07.rb) | :star::star::star:
 | 6 | [Substring Hash](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/06_substring_hash.rb) |
 | 5 | [Count Duplicates](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/05_count_duplicates.rb) |
 | 4 | [Palindrome Without `reverse`](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/04_palindrome.rb) |
