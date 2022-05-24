@@ -5,12 +5,12 @@
   - Retrun a new String that contains the original String with all consecutive duplicate characters collapsed into a single character
 
 # Examples
-p collapse(‘bbbbbbbbb’) == ‘b’
-p collapse(‘wwooonndeerrfull woorrlldd’) == ‘wonderful world’
-p collapse(‘222xyzxyzyx’) == ‘2xyzxyzyx’
-p collapse(‘Q’) == ‘Q’
-p collapse(‘AAbbCC’) == ‘AbC’
-p collapse(‘’) == ‘’
+p collapse('bbbbbbbbb') == 'b'
+p collapse('wwooonndeerrfull woorrlldd') == 'wonderful world'
+p collapse('222xyzxyzyx') == '2xyzxyzyx'
+p collapse('Q') == 'Q'
+p collapse('AAbbCC') == 'AbC'
+p collapse('') == ''
 
 # Data Structure
 - Input: String
