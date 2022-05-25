@@ -123,6 +123,7 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
+| 7 | [Two Sum](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/07.rb) | LeetCode #1
 | 6 | [Remove All Adjacent Duplicates in Strings](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/06.rb) | :star::star::star: LeetCode #1209
 | 5 | [Substring Hash](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/05_substring_hash.rb) |
 | 4 | [Palindrome Without `reverse`](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/04_palindrome.rb) |
