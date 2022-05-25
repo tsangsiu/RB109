@@ -66,16 +66,16 @@
 | 36 | [Delete a Digit](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/36.rb) | |
 | 35 | [Mexican Wave](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/35.rb) | |
 | 34 | | |
-| 33 | [Replace with Alphabet Position](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/33.rb) | |
-| 32 | [Highest Scoring Word](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/32.rb) | | :star::star:
-| 31 | [Anagram Detection](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/31.rb) | |
-| 30 | [Anagram Difference](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/30.rb) | |
-| 29 | [Split Strings](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/29.rb) | |
-| 28 | [Where My Anagrams At?](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/28.rb) | |
-| 27 | [Exponent Method](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/27.rb) | |
-| 26 | [Mean Square Error](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/26.rb) | |
-| 25 | [Pete, the Baker](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/25.rb) | |
-| 24 | [The Hashtag Generator](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/24.rb) | |
+| 33 | [Replace with Alphabet Position](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/33.rb) | :white_check_mark: |
+| 32 | [Highest Scoring Word](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/32.rb) | :white_check_mark: | :star::star:
+| 31 | [Anagram Detection](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/31.rb) | :white_check_mark: |
+| 30 | [Anagram Difference](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/30.rb) | :white_check_mark: |
+| 29 | [Split Strings](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/29.rb) | :white_check_mark: |
+| 28 | [Where My Anagrams At?](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/28.rb) | :white_check_mark: |
+| 27 | [Exponent Method](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/27.rb) | :white_check_mark: |
+| 26 | [Mean Square Error](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/26.rb) | :white_check_mark: |
+| 25 | [Pete, the Baker](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/25.rb) | :white_check_mark: |
+| 24 | [The Hashtag Generator](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/24.rb) | :white_check_mark: |
 | 23 | [Longest Alphabetical Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/23.rb) | :white_check_mark: | :star::star::star:
 | 22 | [Scramblies](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/22.rb) | :white_check_mark: |
 | 21 | [Find the Mine!](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/21.rb) | :white_check_mark: |
