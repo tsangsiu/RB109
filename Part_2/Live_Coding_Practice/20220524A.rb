@@ -141,3 +141,74 @@ p check_zero_ones("1101") == true
 p check_zero_ones("11010111100") == true
 
 # ~27:30, with Harold
+
+# Re-Do
+
+=begin
+
+"000011101111101"
+"0000|[1]1101111101"
+"[1]1101111101", length0 = [4], length1 = []
+"111|[0]1111101"
+"0|[1]111101", length0 = [4], length1 = [3]
+"[1]111101", length0 = [4, 1], length1 = [3]
+...
+
+# Algorithm
+- Initialize two empty arrays `length0` and `length1` to store the lengths of consecutive 0's and 1's
+
+- Initialize `index` to 0
+- Slice the str into groups of 0's and 1's
+  - Iterate through the string,
+    - If the current digit is not the same as the last one and not the first digit,
+      - Slice the string from the start upto, but not including the current position
+      - Find the length
+      - Push the length to `length0` or `length1` based on the digit
+      - Remove the digits from start to the current position
+      - Reset `index` to 0
+    - Else
+      - Increment `index` by 1
+
+- Count the lengths of each group of 0's and 1's and put the result to the above respective arrays
+- If `length0` or `length1` is empty, set it to `[0]`
+- Return true if the max in `length1` is greater than that of `length0`
+
+=end
+
+def check_zero_ones(str)
+  length0 = [0]
+  length1 = [0]
+  
+  index = 0
+  loop do
+    if str[index] != str[index - 1] && index != 0
+      digit_gp = str[0...index]
+      length = digit_gp.length
+      digit_gp[0] == "0" ? length0 << length : length1 << length
+      str = str[index..]
+      index = 0
+    else
+      index += 1
+    end
+    break if str == ""
+  end
+  
+  length1.max > length0.max
+end
+
+# using `slice_when`
+def check_zero_ones(str)
+  length0 = [0]
+  length1 = [0]
+  digit_grp = str.chars.slice_when { |a, b| a != b }.to_a
+  digit_grp.each { |grp| grp.first == "0" ? length0 << grp.length : length1 << grp.length }
+  length1.max > length0.max
+end
+
+p check_zero_ones("110") #== true
+p check_zero_ones("0011") == false
+p check_zero_ones("1") == true
+p check_zero_ones("0") == false
+p check_zero_ones("110100010") == false
+p check_zero_ones("1101") == true
+p check_zero_ones("11010111100") == true
