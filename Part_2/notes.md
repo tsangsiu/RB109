@@ -13,6 +13,51 @@
 [1, 2, 3, 4, 5].class == Array # => true
 ```
 
+## Enumerable
+
+### :thumbsup: `Enumerable#slice_when`
+
+To slice an Array when a certain condition is satisfied
+
+```ruby
+str = "0000110111100000111111"
+
+arr_sliced = str.chars.slice_when do |a, b|
+  a != b
+end.to_a
+
+p arr_sliced # => [["0", "0", "0", "0"], ["1", "1"], ["0"], ["1", "1", "1", "1"], ["0", "0", "0", "0", "0"], ["1", "1", "1", "1", "1", "1"]]
+```
+
+### `Enumerable#group_by`
+
+```ruby
+(1..6).group_by { |num| num % 3} # => {0=>[3, 6], 1=>[1, 4], 2=>[2, 5]}
+
+"deeedbbcccbdaa".chars.group_by { |char| char }
+# => {"a"=>["a", "a"], "b"=>["b", "b", "b"], "c"=>["c", "c", "c"], "d"=>["d", "d", "d"], "e"=>["e", "e", "e"]}
+```
+
+### `Enumerable#each_with_index` and [`Enumerator#with_index`](https://ruby-doc.org/core-2.5.0/Enumerator.html#method-i-with_index)
+
+The `with_index` method takes an optional parameter to offset the starting index. `each_with_index` does the same thing, but has no optional starting index.
+
+```ruby
+[:foo, :bar, :baz].each.with_index(2) do |value, index|
+  puts "#{index}: #{value}"
+end
+# => 2: foo
+# => 3: bar
+# => 4: baz
+
+[:foo, :bar, :baz].each_with_index do |value, index|
+  puts "#{index}: #{value}"
+end
+# => 0: foo
+# => 1: bar
+# => 2: baz
+```
+
 ## Strings
 
 ### `String#squeeze`
@@ -202,26 +247,6 @@ str # => "abcabcabc"
 array = [1, 2, 2, 3]
 array.delete(2) # => returns 2
 array # => [1, 3]
-```
-
-### `Enumerable#each_with_index` and [`Enumerator#with_index`](https://ruby-doc.org/core-2.5.0/Enumerator.html#method-i-with_index)
-
-The `with_index` method takes an optional parameter to offset the starting index. `each_with_index` does the same thing, but has no optional starting index.
-
-```ruby
-[:foo, :bar, :baz].each.with_index(2) do |value, index|
-  puts "#{index}: #{value}"
-end
-# => 2: foo
-# => 3: bar
-# => 4: baz
-
-[:foo, :bar, :baz].each_with_index do |value, index|
-  puts "#{index}: #{value}"
-end
-# => 0: foo
-# => 1: bar
-# => 2: baz
 ```
 
 ### To delete only one specific element in an Array when there are more than one of that element
