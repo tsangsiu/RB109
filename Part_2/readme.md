@@ -123,6 +123,9 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
+| 10 | [Longest Common Prefix](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/10.rb) | LeetCode #14
+| 9 | [Longest Palindromic Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/09.rb) | LeetCode #5
+| 8 | [Longest Substring Without Repeating Characters](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/08.rb) | LeetCode #3
 | 7 | [Two Sum](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/07.rb) | LeetCode #1
 | 6 | [Remove All Adjacent Duplicates in Strings](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/06.rb) | :star::star::star: LeetCode #1209
 | 5 | [Substring Hash](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/05_substring_hash.rb) |
