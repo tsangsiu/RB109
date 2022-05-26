@@ -125,6 +125,10 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
+| 20 | [Counting Prefixes](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/20.rb) | LeetCode #2255
+| 19 | [Max Repeating Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/19.rb) | LeetCode #1668
+| 18 | [Max Consecutive Ones](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/18.rb) | LeetCode #485
+| 17 | [Move Zeroes](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/17.rb) | LeetCode #283
 | 16 | [Find Resultant Array After Removing Anagrams](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/16.rb) | LeetCode #2273
 | 15 | [Word Pattern](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/15.rb) | LeetCode #290
 | 14 | [Reverse Vowels of a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/14.rb) | LeetCode #345
