@@ -104,6 +104,8 @@
 
 | Date | Problem | Remark |
 | --- | --- | --- |
+| 20220526B | [Alphabetized](https://github.com/tsangsiu/RB109/blob/main/Part_2/Study_Sessions/20220526B.rb) |
+| 20220526A | [Formatted Numbers](https://github.com/tsangsiu/RB109/blob/main/Part_2/Study_Sessions/20220526A.rb) | :star::star:
 | 20220523B | [Sum of Consecutive Integers](https://github.com/tsangsiu/RB109/blob/main/Part_2/Study_Sessions/20220523B.rb) |
 | 20220523A | [Minimal Sub-Array Sum](https://github.com/tsangsiu/RB109/blob/main/Part_2/Study_Sessions/20220523A.rb) |
 | 20220420B | [Sum of Consecutive Integers](https://github.com/tsangsiu/RB109/blob/main/Part_2/Study_Sessions/20220420B.rb) | :star::star:
