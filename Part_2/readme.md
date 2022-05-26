@@ -48,7 +48,7 @@
 
 ## Codewars
 
-- [Practice Problems](https://docs.google.com/document/d/1usQUJQFr6PGVo3ZWgMi3nVtDRdeUuOUNRtZPtSKkYuE/edit#heading=h.8sf25q8ccj8w)
+- [Practice Problems](https://docs.google.com/document/d/1WVxV5LeGCeVdR1n-cMNdl7Rwr-avKanXoihpK9YoYkE/edit?usp=sharing)
 
 | # | Problem | Re-Do | Remark |
 | --- | --- | --- | --- |
@@ -125,6 +125,12 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
+| 16 | [Find Resultant Array After Removing Anagrams](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/16.rb) | LeetCode #2273
+| 15 | [Word Pattern](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/15.rb) | LeetCode #290
+| 14 | [Reverse Vowels of a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/14.rb) | LeetCode #345
+| 13 | [First Unique Character](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/13.rb) | LeetCode #387
+| 12 | [Find the Difference](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/12.rb) | LeetCode #389
+| 11 | [Is Subsequence](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/11.rb) | :star::star::star: LeetCode #392
 | 10 | [Longest Common Prefix](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/10.rb) | LeetCode #14
 | 9 | [Longest Palindromic Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/09.rb) | LeetCode #5
 | 8 | [Longest Substring Without Repeating Characters](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/08.rb) | LeetCode #3
