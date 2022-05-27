@@ -125,6 +125,14 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
+| 28 | [Find Closest Number to Zero](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/28.rb) | :star: Leetcode #2239
+| 27 | [Sort Even and Odd Indices Independently](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/27.rb) | Leetcode #2164
+| 26 | [A's Before B's?](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/26.rb) | Leetcode #2124
+| 25 | [Swap Pairs](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/25.rb) |
+| 24 | [Largest Good Number](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/24.rb) |
+| 23 | [Intersection of Two Arrays](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/23.rb) | :star::star::star: LeetCode #350
+| 22 | [Digit Sum](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/22.rb) | :star::star::star: LeetCode #2243
+| 21 | [Intersection of Two Arrays](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/21.rb) | LeetCode #349
 | 20 | [Counting Prefixes](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/20.rb) | LeetCode #2255
 | 19 | [Max Repeating Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/19.rb) | LeetCode #1668
 | 18 | [Max Consecutive Ones](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/18.rb) | LeetCode #485
