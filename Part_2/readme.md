@@ -125,6 +125,14 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
+| 36 | [Find Common Characters](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/36.rb) | LeetCode #1002
+| 35 | [Remove Palindromic Subsequences](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/35.rb) | LeetCode #1332
+| 34 | [Remove All Adjacent Duplicates in Strings II](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/34.rb) | LeetCode #1047
+| 33 | [Keep Multiplying Found Values by Two](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/33.rb) | LeetCode #2154
+| 32 | [A Number After a Double Reversal](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/32.rb) | LeetCode #2119
+| 31 | [Count Vowel Substrings of a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/31.rb) | LeetCode #2169
+| 30 | [Count Vowel Substrings of a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/30.rb) | :star::star::star: Leetcode #2062
+| 29 | [Divide a String Into Groups](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/29.rb) | :star::star::star: Leetcode #2239
 | 28 | [Find Closest Number to Zero](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/28.rb) | :star: Leetcode #2239
 | 27 | [Sort Even and Odd Indices Independently](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/27.rb) | Leetcode #2164
 | 26 | [A's Before B's?](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/26.rb) | Leetcode #2124
@@ -147,7 +155,7 @@
 | 9 | [Longest Palindromic Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/09.rb) | LeetCode #5
 | 8 | [Longest Substring Without Repeating Characters](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/08.rb) | LeetCode #3
 | 7 | [Two Sum](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/07.rb) | LeetCode #1
-| 6 | [Remove All Adjacent Duplicates in Strings](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/06.rb) | :star::star::star: LeetCode #1209
+| 6 | [Remove All Adjacent Duplicates in Strings II](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/06.rb) | :star::star::star: LeetCode #1209
 | 5 | [Substring Hash](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/05_substring_hash.rb) |
 | 4 | [Palindrome Without `reverse`](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/04_palindrome.rb) |
 | 3 | [Select Elements at Fibonacci Indices](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/03_select_elements_at_fib_index.rb) |
