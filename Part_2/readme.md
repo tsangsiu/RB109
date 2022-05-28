@@ -125,6 +125,10 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
+| 40 | [Reverse Only Letters](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/40.rb) | LeetCode #917
+| 39 | [Longest Nice Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/39.rb) | LeetCode #1763
+| 38 | [Count Binary Substrings](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/38.rb) | LeetCode #2068
+| 37 | [Check Whether Two Strings are Almost Equivalent](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/37.rb) | LeetCode #2068
 | 36 | [Find Common Characters](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/36.rb) | LeetCode #1002
 | 35 | [Remove Palindromic Subsequences](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/35.rb) | LeetCode #1332
 | 34 | [Remove All Adjacent Duplicates in Strings II](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/34.rb) | LeetCode #1047
