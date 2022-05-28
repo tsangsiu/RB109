@@ -125,6 +125,9 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
+| 43 | [Largest Substring Between Two Equal Characters](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/43.rb) | LeetCode #1624
+| 42 | [Redistribute Characters to Make All Strings Equal](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/42.rb) | LeetCode #1897
+| 41 | [Longest Uncommon Subequence I](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/41.rb) | LeetCode #521
 | 40 | [Reverse Only Letters](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/40.rb) | LeetCode #917
 | 39 | [Longest Nice Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/39.rb) | LeetCode #1763
 | 38 | [Count Binary Substrings](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/38.rb) | LeetCode #2068
