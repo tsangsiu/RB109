@@ -46,4 +46,8 @@ def string_transformer(str)
   str.chars.map(&:swapcase).join.split(/\b/).reverse.join
 end
 
-p string_transformer("Example Input")#== 'iNPUT eXAMPLE'
+def string_transformer(str)
+  str.swapcase.split(' ').reverse.join(' ')
+end
+
+p string_transformer("Example Input") == 'iNPUT eXAMPLE'

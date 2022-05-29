@@ -35,6 +35,26 @@ def digital_root(n)
   sum.to_s.length == 1 ? (return sum) : digital_root(sum)
 end
 
+=begin
+
+# Algorithm (Without Using Recursion)
+- Until the result is a single-digit number,
+  - turn the number to a string
+  - split it into individual digits
+  - turn them back to integers
+  - sum it
+- Return the result
+
+=end
+
+def digital_root(num)
+  result = num
+  until result < 10
+    result = result.to_s.chars.map(&:to_i).sum
+  end
+  result
+end
+
 p digital_root(16) == 7
 p digital_root(942) == 6
 p digital_root(132189) == 6

@@ -52,20 +52,20 @@
 
 | # | Problem | Re-Do | Remark |
 | --- | --- | --- | --- |
-| 47 | [Array.diff](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/47.rb) | |
-| 46 | [Sum of Digits / Digital Root](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/46.rb) | | Recursion
-| 45 | [Alphabetized](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/45.rb) | | :star::star:
-| 44 | [Counting Duplicates](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/44.rb) | |
-| 43 | [Transform to Prime](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/43.rb) | | :star:
-| 42 | [Sort Arrays (Ignoring Case)](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/42.rb) | |
-| 41 | [Backspaces in String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/41.rb) | |
-| 40 | [Duplicate Encoder](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/40.rb) | |
-| 39 | [Largest Product in a Series](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/39.rb) | |
-| 38 | [String Transformer](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/38.rb) | | :star::star:
-| 37 | [Multiples of 3 and 5](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/37.rb) | |
-| 36 | [Delete a Digit](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/36.rb) | |
-| 35 | [Mexican Wave](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/35.rb) | |
-| 34 | | |
+| 47 | [Array.diff](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/47.rb) | :white_check_mark: |
+| 46 | [Sum of Digits / Digital Root](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/46.rb) | :white_check_mark: |
+| 45 | [Alphabetized](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/45.rb) | :white_check_mark: | :star::star:
+| 44 | [Counting Duplicates](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/44.rb) | :white_check_mark: |
+| 43 | [Transform to Prime](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/43.rb) | :white_check_mark: | :star:
+| 42 | [Sort Arrays (Ignoring Case)](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/42.rb) | :white_check_mark: |
+| 41 | [Backspaces in String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/41.rb) | :white_check_mark: |
+| 40 | [Duplicate Encoder](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/40.rb) | :white_check_mark: |
+| 39 | [Largest Product in a Series](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/39.rb) | :white_check_mark: |
+| 38 | [String Transformer](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/38.rb) | :white_check_mark: | :star::star:
+| 37 | [Multiples of 3 and 5](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/37.rb) | :white_check_mark: |
+| 36 | [Delete a Digit](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/36.rb) | :white_check_mark: |
+| 35 | [Mexican Wave](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/35.rb) | :white_check_mark: |
+| 34 | [Sherlock on Pockets](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/34.rb) | - | :star::star::star:
 | 33 | [Replace with Alphabet Position](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/33.rb) | :white_check_mark: |
 | 32 | [Highest Scoring Word](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/32.rb) | :white_check_mark: | :star::star:
 | 31 | [Anagram Detection](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/31.rb) | :white_check_mark: |
