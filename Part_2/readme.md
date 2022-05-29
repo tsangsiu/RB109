@@ -125,6 +125,9 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
+| 46 | [Three Sum](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/46.rb) | :star::star::star: LeetCode #15
+| 45 | [Finding 3-Digit Even Numbers](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/45.rb) | :star::star::star: LeetCode #2094
+| 44 | [Minimum Sum of Four Digit Number After Splitting Digits](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/44.rb) | :star::star::star: LeetCode #2160
 | 43 | [Largest Substring Between Two Equal Characters](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/43.rb) | LeetCode #1624
 | 42 | [Redistribute Characters to Make All Strings Equal](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/42.rb) | LeetCode #1897
 | 41 | [Longest Uncommon Subequence I](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/41.rb) | LeetCode #521
