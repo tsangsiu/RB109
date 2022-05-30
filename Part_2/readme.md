@@ -52,6 +52,13 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
+| 59 | [Triple Double](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/59.rb) | :star::star:
+| 58 | [Count Letters in a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/58.rb) |
+| 57 | [Find the Nexus of the Codewars Universe](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/57.rb) | :star::star:
+| 56 | [Grouping and Counting](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/56.rb) |
+| 55 | [Are They the "Same"?](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/55.rb) |
+| 54 | [WeIrD StRiNg CaSe](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/54.rb) |
+| 53 | [Bouncing Balls](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/53.rb) | :star:
 | 52 | [Decipher This!](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/52.rb) | :star::star:
 | 51 | [Reverse or Rotate?](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/51.rb) |
 | 50 | [Equal Sides of an Array](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/50.rb) |
