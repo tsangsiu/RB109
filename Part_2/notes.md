@@ -60,6 +60,13 @@ end
 
 ## Strings
 
+### Conversion Between ASCII Code and Letters
+
+```ruby
+'A'.ord # => 65
+65.chr # => 'A'
+```
+
 ### `String#squeeze`
 
 - To compress the same consecutive characters into one

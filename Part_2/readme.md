@@ -1,7 +1,7 @@
 # Interview Assessment
 
 - :star: means I couldn't get it right at the first attempt
-- :star::star: means the  problem is worth re-visiting
+- :star::star: means the problem is worth re-visiting
 - :star::star::star: means the problem took me a lot of time
 
 ## Resources
@@ -52,6 +52,10 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
+| 52 | [Decipher This!](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/52.rb) | :star::star:
+| 51 | [Reverse or Rotate?](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/51.rb) |
+| 50 | [Equal Sides of an Array](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/50.rb) |
+| 49 | [Playing with Digits](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/49.rb) |
 | 48 | [Where Is My Parent?](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/48.rb) |
 | 47 | [Array.diff](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/47.rb) |
 | 46 | [Sum of Digits / Digital Root](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/46.rb) |
