@@ -51,7 +51,7 @@
 | # | Problem | Time |
 | --- | --- | --- |
 | 2 | [Minimum Sum of Consecutive Numbers](https://github.com/tsangsiu/RB109/blob/main/Part_2/Practice_Problems/02.rb) | 16:33
-| 1 | [#Smaller Numbers than Current](https://github.com/tsangsiu/RB109/blob/main/Part_2/Live_Coding_Practice/20220524B.rb) | 9:45
+| 1 | [Number of Smaller Number than the Current Number](https://github.com/tsangsiu/RB109/blob/main/Part_2/Live_Coding_Practice/20220524B.rb) | 9:45
 
 ## Codewars
 
@@ -59,6 +59,8 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
+| 62 | [Find the Missing Letter](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/62.rb) |
+| 61 | [Format a String of Names](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/61.rb) |
 | 60 | [What Are In?](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/60.rb) |
 | 59 | [Triple Double](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/59.rb) | :star::star:
 | 58 | [Count Letters in a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/58.rb) |
