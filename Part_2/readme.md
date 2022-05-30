@@ -46,6 +46,13 @@
 | 4B | [FizzBuzz](https://github.com/tsangsiu/RB109/blob/main/Part_2/Beginning_Ruby/04b.rb) | |
 | 4A | [Reverse String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Beginning_Ruby/04a.rb) | |
 
+## Practice Problems
+
+| # | Problem | Time |
+| --- | --- | --- |
+| 2 | [Minimum Sum of Consecutive Numbers](https://github.com/tsangsiu/RB109/blob/main/Part_2/Practice_Problems/02.rb) | 16:33
+| 1 | [#Smaller Numbers than Current](https://github.com/tsangsiu/RB109/blob/main/Part_2/Live_Coding_Practice/20220524B.rb) | 9:45
+
 ## Codewars
 
 - [Practice Problems](https://docs.google.com/document/d/1WVxV5LeGCeVdR1n-cMNdl7Rwr-avKanXoihpK9YoYkE/edit?usp=sharing)
