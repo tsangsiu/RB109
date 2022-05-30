@@ -52,6 +52,7 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
+| 60 | [What Are In?](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/60.rb) |
 | 59 | [Triple Double](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/59.rb) | :star::star:
 | 58 | [Count Letters in a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/58.rb) |
 | 57 | [Find the Nexus of the Codewars Universe](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/57.rb) | :star::star:
