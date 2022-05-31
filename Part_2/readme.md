@@ -46,10 +46,13 @@
 | 4B | [FizzBuzz](https://github.com/tsangsiu/RB109/blob/main/Part_2/Beginning_Ruby/04b.rb) | |
 | 4A | [Reverse String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Beginning_Ruby/04a.rb) | |
 
-## Practice Problems
+## :white_check_mark: Practice Problems
 
 | # | Problem | Time |
 | --- | --- | --- |
+| 5 | [The Character of the Least Occurrence](https://github.com/tsangsiu/RB109/blob/main/Part_2/Practice_Problems/05.rb) | 13:56
+| 4 | [The Closest Pair](https://github.com/tsangsiu/RB109/blob/main/Part_2/Practice_Problems/04.rb) | 12:52
+| 3 | [To Weird Case](https://github.com/tsangsiu/RB109/blob/main/Part_2/Practice_Problems/03.rb) | 16:19
 | 2 | [Minimum Sum of Consecutive Numbers](https://github.com/tsangsiu/RB109/blob/main/Part_2/Practice_Problems/02.rb) | 16:33
 | 1 | [Number of Smaller Number than the Current Number](https://github.com/tsangsiu/RB109/blob/main/Part_2/Live_Coding_Practice/20220524B.rb) | 9:45
 
