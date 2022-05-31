@@ -242,6 +242,33 @@ str.split(/(\.)|(\/)|(\?)/) # => ["abc", ".", "def", "/", "ghi", "?"], why?
 
 ## Arrays
 
+### :thumbsup: `Array#combination`, `Array#repeated_combination` and `Array#product`
+
+To get all possible combinations of elements in an array `arr` of a specific size
+
+```ruby
+arr = [0, 1, 2, 3]
+arr.combination(3).to_a # => [[0, 1, 2], [0, 1, 3], [0, 2, 3], [1, 2, 3]] 
+```
+
+When elements can be chosen more than once:
+
+```ruby
+arr = [0, 1, 2, 3]
+arr.repeated_combination(3).to_a
+# => => [[0, 0, 0], [0, 0, 1], [0, 0, 2], [0, 0, 3], [0, 1, 1], [0, 1, 2], [0, 1, 3], [0, 2, 2], [0, 2, 3], [0, 3, 3], [1, 1, 1], [1, 1, 2], [1, 1, 3], [1, 2, 2], [1, 2, 3], [1, 3, 3], [2, 2, 2], [2, 2, 3], [2, 3, 3], [3, 3, 3]]
+```
+
+To get all possible combinations of elements from several arrays (one from each array)
+
+```ruby
+arr1 = [1, 2, 3]
+arr2 = [4, 5, 6]
+arr3 = [7, 8, 9]
+arr1.product(arr2, arr3)
+# => [[1, 4, 7], [1, 4, 8], [1, 4, 9], [1, 5, 7], [1, 5, 8], [1, 5, 9], [1, 6, 7], [1, 6, 8], [1, 6, 9], [2, 4, 7], [2, 4, 8], [2, 4, 9], [2, 5, 7], [2, 5, 8], [2, 5, 9], [2, 6, 7], [2, 6, 8], [2, 6, 9], [3, 4, 7], [3, 4, 8], [3, 4, 9], [3, 5, 7], [3, 5, 8], [3, 5, 9], [3, 6, 7], [3, 6, 8], [3, 6, 9]]
+```
+
 ### `Array#delete` and `String#delete`
 
 Unlike `String#delete`, `Array#delete` is destructive.

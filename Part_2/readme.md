@@ -53,12 +53,17 @@
 | 2 | [Minimum Sum of Consecutive Numbers](https://github.com/tsangsiu/RB109/blob/main/Part_2/Practice_Problems/02.rb) | 16:33
 | 1 | [Number of Smaller Number than the Current Number](https://github.com/tsangsiu/RB109/blob/main/Part_2/Live_Coding_Practice/20220524B.rb) | 9:45
 
-## Codewars
+## :white_check_mark: Codewars
 
 - [Practice Problems](https://docs.google.com/document/d/1WVxV5LeGCeVdR1n-cMNdl7Rwr-avKanXoihpK9YoYkE/edit?usp=sharing)
 
 | # | Problem | Remark |
 | --- | --- | --- |
+| 67 | [Integer reduction](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/67.rb) | :star::star::star:
+| 66 | [Reversing and Combining Text](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/66.rb) | :star::star::star:
+| 65 | [Is Integer Array?](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/65.rb) |
+| 64 | [Find The Parity Outlier](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/64.rb) |
+| 63 | [Who Likes It?](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/63.rb) |
 | 62 | [Find the Missing Letter](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/62.rb) |
 | 61 | [Format a String of Names](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/61.rb) |
 | 60 | [What Are In?](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/60.rb) |
