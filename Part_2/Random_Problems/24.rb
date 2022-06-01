@@ -41,6 +41,48 @@ def largest_good_integer(str)
   end
 end
 
+=begin
+
+You are given a string num representing a large integer. An integer is good if it meets the following conditions:
+
+   It is a substring of num with length 3.
+   It consists of only one unique digit.
+
+Return the maximum good integer as a string or an empty string "" if no such integer exists.
+
+Note:
+
+   A substring is a contiguous sequence of characters within a string.
+   There may be leading zeroes in num or a good integer.
+
+# Problem
+- Given a string of large integer, return the largest good integer as a string
+- A good number is
+  - a substring of the given large integer of length 3
+  - consists of only one unique digit
+- Return an empty string "" if such number does not exist
+
+# Algorithm
+"11458000"
+-> ["11", "4", "5", "8", "000"]
+-> ["000"]
+-> "000"
+
+- Split the given large integer in strings into groups of the same digits
+- From the result array, select the strings of length 3 and equal digits
+- Return "" if the result array is empty
+- Return the maximum in value of the result array
+
+=end
+
+def largest_good_integer(int_s)
+  groups = int_s.chars.slice_when { |digit1, digit2| digit1 != digit2 }.to_a
+  groups = groups.map { |group| group.join('') }
+  groups = groups.select { |group| group.length == 3 && group.squeeze == group[0] }
+  return "" if groups.empty?
+  groups.max_by { |group| group.to_i }
+end
+
 p largest_good_integer('13455587222') == "555"
 p largest_good_integer('456987') == ""
 p largest_good_integer("11458000") == "000"

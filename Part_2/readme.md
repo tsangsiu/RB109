@@ -155,6 +155,9 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
+
+| 48 | [Find the Peaks](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/48.rb) | :star::star::star:
+| 47 | [Forward/Backward Letters](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/47.rb) |
 | 46 | [Three Sum](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/46.rb) | :star::star::star: LeetCode #15
 | 45 | [Finding 3-Digit Even Numbers](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/45.rb) | :star::star::star: LeetCode #2094
 | 44 | [Minimum Sum of Four Digit Number After Splitting Digits](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/44.rb) | :star::star::star: LeetCode #2160
@@ -170,7 +173,7 @@
 | 34 | [Remove All Adjacent Duplicates in Strings II](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/34.rb) | LeetCode #1047
 | 33 | [Keep Multiplying Found Values by Two](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/33.rb) | LeetCode #2154
 | 32 | [A Number After a Double Reversal](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/32.rb) | LeetCode #2119
-| 31 | [Count Vowel Substrings of a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/31.rb) | LeetCode #2169
+| 31 | [Count Operations to Obtain Zero](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/31.rb) | LeetCode #2169
 | 30 | [Count Vowel Substrings of a String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/30.rb) | :star::star::star: Leetcode #2062
 | 29 | [Divide a String Into Groups](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/29.rb) | :star::star::star: Leetcode #2239
 | 28 | [Find Closest Number to Zero](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/28.rb) | :star: Leetcode #2239

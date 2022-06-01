@@ -73,3 +73,45 @@ p sort_pairs([1,2,3,4]) == [2,1,4,3]
 p sort_pairs([]) == []
 p sort_pairs([1]) == [1]
 p sort_pairs([4,6,8,10,4,12]) == [6,4,10,8,12,4]
+
+=begin
+
+Given a array, swap every two adjacent elements and return the re-sorted array.
+You must solve the problem without modifying the values in the array's elements
+(i.e., only elements themselves may be changed.)
+
+Given an array and returns an array where each element is swapped with the
+adjacent element.
+
+# Problem
+- Given an array, swap the elements between each pair
+- Non-mutating (I suppose)
+- Do not swap the odd element
+- Input: Array
+- Output: A new array
+
+# Algorithm
+- Create a copy of the given array
+- Iterate through the copied array with the index noted
+  - If the current index is even, and the next element is available,
+    - Swap the two elements
+- Return the array
+
+=end
+
+# Code
+def sort_pairs(arr)
+  arr_dup = arr.dup
+  index = 0
+  loop do
+    arr_dup[index], arr_dup[index + 1] = arr_dup[index + 1], arr_dup[index] if (index + 1) < arr.size
+    index += 2
+    break if index >= arr.size
+  end
+  arr_dup
+end
+
+p sort_pairs([1,2,3,4]) == [2,1,4,3]
+p sort_pairs([]) == []
+p sort_pairs([1]) == [1]
+p sort_pairs([4,6,8,10,4,12]) == [6,4,10,8,12,4]

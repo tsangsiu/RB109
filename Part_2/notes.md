@@ -79,6 +79,13 @@ str = 'aaaabbbbbcccccdddd'
 str.squeeze('abcd') # => "abcd"
 ```
 
+- It can also be called without an argument
+
+```ruby
+str = "333"
+str.squeeze # => "3"
+```
+
 ### `String#delete`
 
 - `String#delete` is a non-mutating method, despite the fact that `Array#delete` is destructive.
