@@ -147,6 +147,9 @@
 
 | Date | Problem | Time | Remark |
 | --- | --- | --- | --- |
+| 20220601C | [Typoglycemia Generator](https://github.com/tsangsiu/RB109/blob/main/Part_2/Live_Coding_Practice/20220601C.rb) | 41:16 |
+| 20220601B | [Pangram?](https://github.com/tsangsiu/RB109/blob/main/Part_2/Live_Coding_Practice/20220601B.rb) | 10:19 |
+| 20220601A | [Longest Consecutive Elements of X in Y](https://github.com/tsangsiu/RB109/blob/main/Part_2/Live_Coding_Practice/20220601A.rb) | ~14:00 |
 | 20220524B | [#Smaller Numbers than Current](https://github.com/tsangsiu/RB109/blob/main/Part_2/Live_Coding_Practice/20220524B.rb) | 9:45 | Practice Problem #1
 | 20220524A | [Longer Contiguous Segments of Ones than Zeros](https://github.com/tsangsiu/RB109/blob/main/Part_2/Live_Coding_Practice/20220524A.rb) | 27:30 | :star::star: LeetCode #1869
 | 20220512 | [Longest Substring of Unique Characters](https://github.com/tsangsiu/RB109/blob/main/Part_2/Live_Coding_Practice/20220512.rb) | 21:54 | :star:
@@ -155,7 +158,6 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
-
 | 48 | [Find the Peaks](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/48.rb) | :star::star::star:
 | 47 | [Forward/Backward Letters](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/47.rb) |
 | 46 | [Three Sum](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/46.rb) | :star::star::star: LeetCode #15
