@@ -158,6 +158,15 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
+| 57 | [Best Travel](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/57.rb) |
+| 56 | [Rotate 13](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/56.rb) |
+| 55 | [Decode Tongues](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/55.rb) |
+| 54 | [Simple Pig Latin](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/54.rb) |
+| 53 | [Unique in Order](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/53.rb) |
+| 52 | [Range Extraction](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/52.rb) |
+| 51 | [Jumbled String](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/51.rb) |
+| 50 | [Goat Latin](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/50.rb) | LeetCode #824
+| 49 | [Vowels of All Substrings](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/49.rb) | LeetCode #2063
 | 48 | [Find the Peaks](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/48.rb) | :star::star::star:
 | 47 | [Forward/Backward Letters](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/47.rb) |
 | 46 | [Three Sum](https://github.com/tsangsiu/RB109/blob/main/Part_2/Random_Problems/46.rb) | :star::star::star: LeetCode #15
