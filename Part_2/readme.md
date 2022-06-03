@@ -147,6 +147,8 @@
 
 | Date | Problem | Time | Remark |
 | --- | --- | --- | --- |
+| 20220603B | [Anagram Difference](https://github.com/tsangsiu/RB109/blob/main/Part_2/Live_Coding_Practice/20220603B.rb) | 25:46 |
+| 20220603A | [Non-Even Substring](https://github.com/tsangsiu/RB109/blob/main/Part_2/Live_Coding_Practice/20220603A.rb) | 14:28 |
 | 20220601C | [Typoglycemia Generator](https://github.com/tsangsiu/RB109/blob/main/Part_2/Live_Coding_Practice/20220601C.rb) | 41:16 |
 | 20220601B | [Pangram?](https://github.com/tsangsiu/RB109/blob/main/Part_2/Live_Coding_Practice/20220601B.rb) | 10:19 |
 | 20220601A | [Longest Consecutive Elements of X in Y](https://github.com/tsangsiu/RB109/blob/main/Part_2/Live_Coding_Practice/20220601A.rb) | ~14:00 |
