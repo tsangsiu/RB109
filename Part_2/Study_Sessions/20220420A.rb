@@ -51,6 +51,46 @@ def third_max(arr)
   end
 end
 
+=begin
+
+# Re-do
+
+# Given integer array nums, return the third largest number in this array. If the third largest number does not exist, return the largest number.
+# You are not allowed to sort the array
+
+# p third_max([3, 2, 1]) == 1
+# p third_max([1, 2]) == 2
+# p third_max([2, 2, 3, 1]) == 1
+# p third_max([1, 3, 4, 2, 2, 5, 6]) == 4
+
+# Problem
+- Given an array of numbers,
+  - Return the third largest number in the array
+  - If the third largest number does not exist, return the largest number
+- Not allowed to sort the array
+- Note that in an array the third largest number does not exist when the number of unique numbers in the array is less than 3
+
+# Algorithm
+- Given an array of numbers,
+  - Remove the duplicates numbers in the array
+  - If the number of numbers in the result array is less than 3,
+    - Return the largest number
+  - Else,
+    - Delete the two largest numbers in the array
+    - Return the maximum number in the result array
+
+=end
+
+def third_max(arr)
+  arr_uniq = arr.uniq
+  if arr_uniq.size < 3
+    return arr_uniq.max
+  else
+    2.times { |_| arr_uniq.delete(arr_uniq.max) }
+    return arr_uniq.max
+  end
+end
+
 p third_max([3, 2, 1]) == 1
 p third_max([1, 2]) == 2
 p third_max([2, 2, 3, 1]) == 1
