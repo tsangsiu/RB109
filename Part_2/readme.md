@@ -62,7 +62,7 @@
 
 | # | Problem | Remark |
 | --- | --- | --- |
-| 67 | [Integer reduction](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/67.rb) | :star::star::star:
+| 67 | [Integer Reduction](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/67.rb) | :star::star::star:
 | 66 | [Reversing and Combining Text](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/66.rb) | :star::star::star:
 | 65 | [Is Integer Array?](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/65.rb) |
 | 64 | [Find The Parity Outlier](https://github.com/tsangsiu/RB109/blob/main/Part_2/Codewars/64.rb) |
