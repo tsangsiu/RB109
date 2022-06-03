@@ -44,6 +44,25 @@ def scramble(str1, str2)
   true
 end
 
+=begin
+
+# A New Algorithm
+- Iterate through each character in `str2`,
+  - If the count of the current character in `str2` is greater than that in `str1`,
+    - Return false
+- Return true
+
+=end
+
+def scramble(str1, str2)
+  # str2.each_char do |char|
+  #   return false if str2.count(char) > str1.count(char)
+  # end
+  # true
+
+  str2.chars.all? { |char| str2.count(char) <= str1.count(char) }
+end
+
 p scramble('javaass', 'jjss') == false
 p scramble('rkqodlw', 'world') == true
 p scramble('cedewaraaossoqqyt', 'codewars') == true

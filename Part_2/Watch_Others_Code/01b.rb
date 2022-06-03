@@ -65,7 +65,33 @@ def common_chars(arr)
   end
 end
 
-p common_chars(["bella", "label", "roller"]) == ["e", "l", "l"]
-p common_chars(["cool", "lock", "cook"]) == ["c", "o"]
-p common_chars(["hello", "goodbye", "booya", "random"]) == ["o"]
-p common_chars(["aabbaaaa", "ccdddddd", "eeffee", "ggrrrrr", "yyyzzz"]) == []
+=begin
+
+# New Algorithm
+- Initialize `output` to an empty array
+- Find the shortest string
+- Turn it into an array of unique individual characters
+- Iterate through the above array,
+  - Find the numbers of the current character in other strings
+  - Find the minimum (`count_min`) of the above number
+  - For `count_min` times,
+    - Push the current character to `output`
+- Return `output`
+
+=end
+
+def common_chars(arr_str)
+  output = []
+  str_shortest = arr_str.min_by { |str| str.length }
+  chars_shortest = str_shortest
+  chars_shortest.chars.uniq.each do |char|
+    count_min = arr_str.map { |str| str.count(char) }.min
+    count_min.times { |_| output << char }
+  end
+  output  
+end
+
+p common_chars(["bella", "label", "roller"]) #== ["e", "l", "l"]
+p common_chars(["cool", "lock", "cook"]) #== ["c", "o"]
+p common_chars(["hello", "goodbye", "booya", "random"]) #== ["o"]
+p common_chars(["aabbaaaa", "ccdddddd", "eeffee", "ggrrrrr", "yyyzzz"]) #== []
