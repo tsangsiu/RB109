@@ -40,10 +40,45 @@ def smaller_numbers_than_current(arr)
   end
 end
 
+# 9:45, with Harold
+
+=begin
+
+# Re-do before the assessment
+
+# Given an array of numbers, for each number find out how many numbers
+# in the array are smaller than it. When counting numbers, only count
+# unique values. That is, if a given number occurs multiple times in
+# the array, it should only be counted once.
+
+# Problem
+- Given an array of numbers,
+  - For each number, find the numbers in the array that is smaller than it
+- If a number appears multiple times, it should only be counted once
+- Input: Array of numbers
+- Output: Array of counts
+
+# Algorithm
+[8,1,2,2,3]
+-> [8,1,2,3]
+- Given an array, get an array of unique values `arr_uniq`
+- Iterate through the given array,
+  - For each number, count the number of numbers that is smaller than the current number
+  - Transform the current number with the count
+- Return the array with the counts
+
+=end
+
+# Code
+def smaller_numbers_than_current(arr)
+  arr_uniq = arr.uniq
+  arr.map do |num|
+    arr_uniq.count { |num_uniq| num_uniq < num }
+  end
+end
+
 p smaller_numbers_than_current([8,1,2,2,3]) == [3, 0, 1, 1, 2]
 p smaller_numbers_than_current([1,4,6,8,13,2,4,5,4]) == [0, 2, 4, 5, 6, 1, 2, 3, 2]
 p smaller_numbers_than_current([7,7,7,7]) == [0,0,0,0]
 p smaller_numbers_than_current([6,5,4,8]) == [2, 1, 0, 3]
 p smaller_numbers_than_current([1]) == [0]
-
-# 9:45, with Harold

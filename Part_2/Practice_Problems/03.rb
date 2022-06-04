@@ -46,6 +46,45 @@ def to_weird_case(str)
   words.join(' ')
 end
 
+=begin
+  
+# Re-do before assessment
+
+# Algorithm
+- Given a string, break it into an array individual words
+- Iterate through the array with index noted,
+  - If the current word is every third word,
+    - Change every second character in that word to upper case
+- Join the words back to a single string
+- Return the string
+
+- Helper method: change every second character in a word to upper case
+  - Given a word, split it into an array of individual character
+  - Iterate through the array with index noted
+    - If the current character is every second character,
+      - Change that character to upper case
+  - Join the characters back to a single word
+  - Return word
+
+=end
+
+# Code
+def to_weird_case_word(word)
+  chars = word.chars
+  chars = chars.map.with_index do |char, index|
+    index.odd? ? char.upcase : char
+  end
+  chars.join('')
+end
+
+def to_weird_case(str)
+  words = str.split(' ')
+  words = words.map.with_index do |word, index|
+    (index + 1) % 3 == 0 ? to_weird_case_word(word) : word
+  end
+  words.join(' ')
+end
+
 p to_weird_case('Lorem Ipsum is simply dummy text of the printing') == 'Lorem Ipsum iS simply dummy tExT of the pRiNtInG'
 p to_weird_case(
   'It is a long established fact that a reader will be distracted') == 'It is a long established fAcT that a rEaDeR will be dIsTrAcTeD'
